@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9e3;
+    font-family: "Courier New"; /* Legge inn fallback value? */
+}
+
+* {
+    border: red solid 1px;
+}
+
+/* Header og navbar */
+
+.logo img { /* Lage logo i annen farge enn blå? */
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-home {
+    text-align: center;
+}
+
+.navbar-home a {
+    text-decoration: none;
+}
+
+
+/* Responsive navigation menu for desktops */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* Responsive navigation menu for laptops */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Responsive navigation menu for tablets */
+@media screen and (max-width: 768px) {
+    
+}
+
+/*Responsive navigation menu for mobile devices */
+@media screen and (max-width: 480px) {
+    .navbar-home {
+        
+}
