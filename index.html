@@ -11,27 +11,87 @@
 
         <header>
 
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/Logo_blå.png" alt="Sulten hjem">
-                </a>
-            </div>
+            <!--Lage logo i annen farge enn blå? Feks brun?-->
+            <!--Legge inn bildekilde-->
+            <a href="index.html">
+                <img src="images/Logo_blå.png" alt="Sulten hjemlogo">
+            </a>
 
         </header>
 
         <nav>
-            <div class="navbar-home" >
-                <a href="meny.html">MENY</a>
-                <a href="booking.html">BOOKING</a>
-                <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
-                <a href="aktuelt.html">TOPICAL PAGE</a>
-            </div>
+
+            <a href="meny.html">MENY</a>
+            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
+            <a href="aktuelt.html">TOPICAL PAGE</a>
+            <a href="booking.html" class="nav-booking">BOOKING</a>
 
         </nav>
 
         <main>
+
             <!--Slideshow-->
+            <!--Legge inn bildekilde på alle tre bilder-->
+            <div class="slideshow">
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/header.jpg" alt="Kaffe, juice, smoothie, diverse retter som toast, avocado, omelett, dessert">
+                </div>
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/suppe.jpg" alt="Vitaminsuppe med reddik og brød">
+                </div>
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/dessert.jpg" alt="Croissanter toppet med mandler">
+                </div>
+
+                <!--Neste- og tilbakeknapper-->
+                <a class="knapp-tilbake" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="knapp-neste" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+                <!-- Sirkler -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <!--JavaScript for slideshow-->
+                <script src="javascript/myFile.js"></script>
+
+
+
         </main>
+
+        <footer>
+
+            <!--Kontaktinfo + instagramlogo-->
+            <div class="rad-footer">
+                <div class="footercolumn">
+                    <p class="overskrift-footer">Åpningstider</p>
+                    <p>Mandag-fredag 09:00-16:00 </p>
+                    <p>Lørdag 09:00-15:00</p>
+                    <p>Søndag stengt</p>
+                </div>
+        
+                <div class="footercolumn">
+                    <p class="overskrift-footer">Kontaktinfo</p>
+                    <p>Telefonnummer (+47) 657 56 589</p>
+                    <p><a href="mailto:restaurantsulten@sulten.com">Send e-post</a></p>
+                    <p><a href="https://facebook.com" target="_blank">Besøk vår facebookside</a></p>
+                </div>
+            
+                <div class="footercolumn">
+                    <p class="overskrift-footer">Adresse</p>
+                    <p>Skomværsgata 2</p>
+                    <p>3921 Porsgrunn</p>        
+                </div>
+            </div>
+        
+        </footer>
 
     </body>
 </html>

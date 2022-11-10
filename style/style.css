@@ -1,50 +1,145 @@
-body {
+*, body {
     margin: 0;
     padding: 0;
-    background-color: #f2e9e3;
+    box-sizing: border-box;
+    background-color: #E6C9AD;
+    color: #3F3F3F;
     font-family: "Courier New"; /* Legge inn fallback value? */
 }
 
-* {
-    border: red solid 1px;
-}
+/* Header */
 
-/* Header og navbar */
-
-.logo img { /* Lage logo i annen farge enn blå? */
-    width: 10%;
+header img {
+    width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 
-.navbar-home {
+/* Navbar */
+
+nav {
     text-align: center;
+    margin: 2rem;
 }
 
-.navbar-home a {
+nav a {
     text-decoration: none;
+    padding: 1rem;
 }
 
-
-/* Responsive navigation menu for desktops */
-@media screen and (max-width: 1200px) {
-    
+nav a:hover {
+    color: #E68B61;
 }
 
-/* Responsive navigation menu for laptops */
-@media screen and (max-width: 1024px) {
-    
+.nav-booking {
+    background-color: #E68B61;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+.nav-booking:hover {
+    background-color: #663D0A;
+}
+
+/* Slideshow bilder*/
+
+.slideshow {
+    position: relative;
+    max-height: 30rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.bilde-slideshow img {
+    width: 100%;
+}
+
+/* Neste- og tilbakeknapper */
+
+.knapp-tilbake, .knapp-neste {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    transition: 0.5s ease;
+    padding: 1rem;
+    user-select: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.knapp-tilbake:hover, .knapp-neste:hover {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 0.3rem;
+  }
+
+/* Plasserer neste-knappen til høyre */
+
+.knapp-neste {
+    right: 0;
+}
+
+/* Sirklene */
+
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.dot:hover, .active {
+    background-color: #717171;
+}
+
+/* Fade slideshow bilder */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Footer */
+
+footer a:hover {
+    color: #E68B61;
+}
+
+.rad-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.footercolumn {
+    margin: 0.7rem 1rem;
+}
+
+.overskrift-footer {
+    font-weight: bold;
 }
 
 /* Responsive navigation menu for tablets */
+
 @media screen and (max-width: 768px) {
     
 }
 
 /*Responsive navigation menu for mobile devices */
+
 @media screen and (max-width: 480px) {
-    .navbar-home {
+    nav {
 
     }
 }
