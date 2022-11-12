@@ -87,7 +87,7 @@ nav a:hover {
     cursor: pointer;
     height: 1rem;
     width: 1rem;
-    margin: 0 2px;
+    margin: 0 0.5rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
