@@ -1,314 +1,189 @@
-* {
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f1ece8;
+    color: #3F3F3F;
+    font-family: "Courier New"; /* Legge inn fallback value? */
+    /*border: solid red 1px;*/
 }
+
 @font-face {
     font-family: "fira sans";
     src: url("https://use.typekit.net/vrz2vde.css");
 }
+/* Header */
 
-.header {
-    background-color: #fefbed;
-    padding: 20px;
-    padding-left: 45px;
-    padding-right: 45px;
-    font-family: fira-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+header img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
 }
 
-.header img {
-    max-height: 80px;
-}
+/* Navbar */
 
-.header img:hover {
-    opacity: 0.6;
-}
-
-.header ul {
-    text-align: right;
-    padding-top: 32px;
-    float: right;
-    font-size: 22px;
-    color: #fefbed;
-}
-
-.header li {
-    display: inline-block;
-    padding-right: 40px;
-    color: #c33535;
-}
-
-.header ul a:link {
-    color: inherit;
-    text-decoration: none;    
-}
-
-.header ul a:hover:visited {
-    color:#0199d1;
-}
-
-.header ul a:hover {
-    color:#0199d1;
-}
-
-.header ul a:visited {
-    color: #c33535;
-}
-
-.knapp {
-    background-color: #c33535;
-    color: #fefbed;
-    padding: 14px 32px;
-    float: right;
+nav {
     text-align: center;
+    margin: 2rem;
+}
+
+nav a {
     text-decoration: none;
-    font-size: 22px;
-    margin: -15px;
-    border-radius: 35px;
+    padding: 1rem;
 }
 
-.header .knapp:hover {
-    background-color: #0199d1;
-    color: #fefbed;
+nav a:hover {
+    color: #E68B61;
 }
 
-.top-photo {
+.nav-booking {
+    background-color: #E68B61;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+.nav-booking:hover {
+    background-color: #663D0A;
+}
+/* lagt inn bredden for selve menyen under class meny. Padding for avstand fra nav bar*/
+
+/* https://unsplash.com/photos/Ww8eQWjMJWk */
+
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.container {
+    position: relative;    
+}
+
+.centered {
+    position: absolute;
+    background: none;
+    color: #5a3c3c;
+    width: 40%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.container img{
     width: 100%;
-    background: url("images/header.jpg");
-    background-size: cover;
-    height: 900px;
 }
 
-.main {
-    font-family: "fira sans", sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    min-width: 200px;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color:#fefbed;
-    color:#3F3F3F;
-    display:flow-root;
-    padding-top: 30px;
+/*minsker tekst i header slik at teksten passer til bilde*/
+@media only screen and (max-width: 600px) {
+    .centered{ font-size: 14px;
+        padding: 0rem;
+}
 }
 
-.innhold {
-    width: 1000px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.main h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: gooddog-new, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.meny{
+    width: 70%;
     margin: auto;
+    padding-top: 5rem;
 }
 
-.meny_overskrift {
-    font-family: gooddog-new, sans-serif;
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    color: #0199d1;
-    letter-spacing: 1px;
+.åpningstider{
+    text-align: center;
 }
 
-.type_rett {
-    font-family: fira sans, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    color: #3F3F3F;
-    letter-spacing: 1px;
+/*sjekk h kategori*/
+h1{
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 4rem;
+    padding: 2rem;
+    color: #5a3c3c;
 }
 
-.boxJuiceSmoothie p {
-    margin-bottom: 20px;
+
+h2{
+    color: #db5a23;
+    font-size: 36px;
+    padding-bottom: 2rem;
 }
 
-.rett_innhold {
-    font-family: fira sans, sans-serif;
-    font-size: 17px;
-    letter-spacing: 1px;
-    color: #3F3F3F;
+@media only screen and (max-width: 600px) {
+    h2{ font-size: 26px;
+    }
 }
 
-.rett_allergener {
-    font-family: fira sans, sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    color: #3F3F3F;
+
+h3{
+    line-height: 4rem;
+    overflow: hidden;
 }
 
-.boxFrokost {
-    width: 550px;
-    min-height: 200px;
-    float: left;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    text-align: left;
-    align-items: left;
-    line-height: 1.8;
+.allergener{
+    font-size: 14px;
+    padding-top: 0.6rem;
 }
 
-.boxLunsj {
-    width: 100%;
-    min-height: 200px;
-    float: left;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    text-align: left;
-    line-height: 1.8;
-    margin-right: 200px;
+.frokostmeny{
+    margin-top: 1.5rem;
+    padding: 3rem;
 }
 
-.boxDessert {
-    width: 550px;
+/*Hvordan fjerne at teksten wrappes under bildet?*/
+
+
+/*https://unsplash.com/photos/vLHzjRNFbEQ*/
+.frokostmeny img{
+    height: 30rem;
+    margin: 6rem 0rem 2rem 3rem;
+    border-radius: 2%;
     float: right;
-    height: auto;
-    padding-top: 0px;
-    padding-bottom: 100px;
-    margin-left: 300px;
-    margin-top: -20px;
-    text-align: left;
-    line-height: 1.8;   
- } 
 
-.frokost img {
-    width: 360px;
-    height: 550px;
-    float: right;
-    vertical-align: top;
-    margin-right: 0px;
-    margin-left: 740px;
-    margin-top: -685px;
-    margin-bottom: 100px;
+}
+ /*Hvordan få bilde midtstilt? */
+@media only screen and (max-width: 600px) {
+   .frokostmeny img{
+    margin-top: auto;
+   }
 }
 
-.frokost figcaption {
-    color:#3F3F3F;
-    margin-top: 680px;
-    font-style: italic;
-    text-align: right;
+.lunsjmeny{
+    padding: 3rem;
 }
 
-.dessert img {
-    width: 340px;
-    height: 480px;
+.dessertmeny{
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.dessertmeny img{
+    height: 30rem;
+    margin: 5rem 3rem 2rem 0rem;
+    border-radius: 2%;
     float: left;
-    vertical-align: top;
-    margin-top: -655px;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
 }
 
-.dessert figcaption {
-    color:#3F3F3F;
-    margin-top: 1695px;
-    font-style: italic;
-    text-align: left;
+@media only screen and (max-width: 600px) {
+    .dessertmeny img{
+     margin-top: auto;
+    }
+ }
+
+/*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
+.drikkemeny{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 3rem;
+    gap: 6rem 8rem;
 }
 
-.Smoothie {
-    width: 450px;
-    min-height: 200px;
-    vertical-align: top;
-    float: left;
-    text-align: left;
-    margin-top: -30px;
-    margin-bottom: 100px;
-    line-height: 1.8;
-}
+/*Flytter kolonnene under hverandre */
+@media screen and (max-width: 600px) {
+    .drikkemeny {
+    grid-template-columns: auto;
+    
+    }
+  }
 
-.Smoothie p {
-    margin-bottom: 20px;
-}
+  /* Footer */
 
-.Juices {
-    width: 450px;
-    min-height: 200px;
-    vertical-align: top;
-    float: right;
-    text-align: left;
-    margin-top: -30px;
-    margin-bottom: 100px;
-    line-height: 1.8;
-}
 
-.Juices p {
-    margin-bottom: 20px;
-}
 
-.Varm-drikke {
-    width: 450px;
-    min-height: 200px;
-    vertical-align: top;
-    float: right;
-    text-align: left;
-    margin-top: -30px;
-    margin-bottom: 80px;
-    line-height: 1.8;
-}
 
-.Varm-drikke h3 {
-    line-height: 2.8;
-}
 
-.Kald-drikke {
-    width: 450px;
-    min-height: 200px;
-    vertical-align: top;
-    float: left;
-    text-align: left;
-    margin-top: -30px;
-    margin-bottom: 80px;
-    line-height: 1.8;
-}
 
-.Kald-drikke h3 {
-    line-height: 2.8;
-}
-
-.footer {
-    background-color:#FAEBD7;
-    color:#3F3F3F;
-}
-
-.footer a {
-    text-decoration: underline;
-    color:#3F3F3F
-}
-
-.footer a:hover {
-    color: #c33535;
-}
-
-.footercolumn {
-    float: left;
-    width: 25%;
-    padding: 30px;
-    font-family: fira sans, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-}
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.footercolumn h3 {
-    line-height: 2.8;
-}
