@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #E6C9AD;
+    background-color: #f1ece8;
     color: #3F3F3F;
     font-family: "Courier New"; /* Legge inn fallback value? */
 }
@@ -111,10 +111,6 @@ nav a:hover {
 
 /* Footer */
 
-footer a:hover {
-    color: #E68B61;
-}
-
 .rad-footer {
     display: flex;
     justify-content: center;
@@ -129,6 +125,48 @@ footer a:hover {
 .overskrift-footer {
     font-weight: bold;
 }
+
+/* Font Awesome Icons er hentet fra:
+https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+*/
+
+.fa {
+    padding: 0.3rem;
+    margin: 0.3rem 0;
+    width: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+.fa-envelope {
+    color: Salmon;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+    margin-right: 0.3rem;
+  }
+
+  .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+  }
 
 /* Responsive navigation menu for tablets */
 
