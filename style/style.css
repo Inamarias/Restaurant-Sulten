@@ -9,18 +9,23 @@
 
 /* Header */
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 header img {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 20rem;
     padding: 1rem;
 }
 
 /* Navbar */
 
 nav {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2rem;
     margin: 2rem;
 }
 
@@ -36,7 +41,6 @@ nav a:hover {
 .nav-booking {
     background-color: #E68B61;
     border-radius: 2rem;
-    padding: 0.6rem 1rem;
 }
 
 .nav-booking:hover {
@@ -113,12 +117,12 @@ nav a:hover {
 
 .rad-footer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 2rem;
 }
 
-.footercolumn {
+.kolonne-footer {
     margin: 0.7rem 1rem;
 }
 
@@ -172,12 +176,30 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
 @media screen and (max-width: 768px) {
     
-}
-
-/*Responsive navigation menu for mobile devices */
-
-@media screen and (max-width: 480px) {
-    nav {
-
+    /* Header flyttes */
+    header {
+        justify-content: flex-start;
     }
+    
+    header img {
+        width: 10rem;
+    }
+
+    
+    /* Navbar gjemmes i toggle menu */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /* Info i footer går over til kolonne */
+    .rad-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
+
+/* Responsive navigation menu for mobile devices */
+/* Behov for å legge inn her? */

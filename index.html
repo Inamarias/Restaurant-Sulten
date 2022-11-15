@@ -12,6 +12,8 @@
     </head>
     <body>
 
+        <!-- Toggle meny istadenfor kolonna som brukast no? -->
+
         <header>
 
             <!--Lage logo i annen farge enn blå? Feks brun?-->
@@ -71,27 +73,30 @@
 
             <!--Åpningstider, kontaktinfo, adresse-->
             <div class="rad-footer">
-                <div class="footercolumn">
+                <div class="kolonne-footer">
                     <p class="overskrift-footer">Åpningstider</p>
-                    <p>Mandag-fredag 09:00-16:00</p>
-                    <p>Lørdag 09:00-15:00</p>
+                    <p>Man-fre 09-16</p>
+                    <p>Lørdag 09-15</p>
                     <p>Søndag stengt</p>
                 </div>
         
-                <div class="footercolumn">
+                <div class="kolonne-footer">
                     <p class="overskrift-footer">Kontaktinfo</p>
-                    <p>Telefonnummer (+47) 657 56 589</p>
+                    <a class="fa fa-phone"></a>
+                    <span>657 56 589</span>
+                    <br> <!--Denne skal vi jo helst unngå - kan legge inn span i css-->
                     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
                     <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg"></a>
                     <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg"></a>
                 </div>
             
-                <div class="footercolumn">
+                <div class="kolonne-footer">
                     <p class="overskrift-footer">Adresse</p>
                     <p>Skomværsgata 2</p>
                     <p>3921 Porsgrunn</p>
                 </div>
+
             </div>
         
         </footer>

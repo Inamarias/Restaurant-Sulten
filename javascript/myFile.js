@@ -1,5 +1,7 @@
 // Hentet fra: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
+// Slideshow forside:
+
 var slideIndex = 0;
 showSlides();
 var slides, dots;
