@@ -1,0 +1,1086 @@
+* {
+    margin: 0 auto;
+    /*outline: 1px solid red;
+    outline-offset: -1px;*/
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5fffa;
+    color:#382c20;
+    font-weight: 300;
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
+    position: relative;   
+}
+
+/*
+header {
+
+}
+
+main {
+    
+}
+*/
+
+h2 {
+    font-family: fresno, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-family: fresno, sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    letter-spacing: 0.2rem;
+    width: 50rem;
+}
+
+.tekst {
+    text-align: justify;
+    text-align-last: center;
+    width: 50rem;
+    margin-top: 3rem;
+}
+
+.booking-boks {
+    width: 50rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.booking-link {
+    font-family: fresno, sans-serif;
+    font-size: 1.3rem;
+    background-color: #5ca5ad;
+    padding: 0.6rem 3rem;
+    text-decoration: none;
+    color: #f5fffa;
+    border-radius: 0.8rem;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+}
+
+.booking-link:hover {
+    background-color: #38696f;
+}
+
+
+.kort-info {
+    font-family: fresno, sans-serif;
+    background-color: #d1eacd;
+    color: #382c20;
+    height: 13rem;
+    margin-top: 7rem;
+}
+
+.bredde1 {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.8rem;
+}
+
+.kapasitet {
+    text-align: center;
+    margin: 0rem;   
+}
+
+.kapasitet h3 {
+font-size: 2.2rem;
+padding-bottom: 0.5rem;
+letter-spacing: 0.1rem;
+}
+
+.kapasitet p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+#areal {
+    font-size: 1.2rem;
+    /*position: absolute;
+    margin-left: 0.1rem;*/
+}
+
+.mer-info {
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.column1 {
+    margin-top: 3rem;
+}
+
+.column1 h2 {
+    margin-bottom: 1rem;
+}
+
+.column1 ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.2rem;
+}
+
+.vertikal-linje {
+    border-left: 0.4rem dotted #5ca5ad;
+    height: 31rem;
+}
+
+#lokalet-passer-til {
+    text-align: right;
+}
+
+
+.lokasjon {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.kart {
+    filter: grayscale();
+    width: 65%;
+    height: 16rem;
+    border: 0;
+    margin: 0rem;
+    border-radius: 0.8rem;
+}
+
+.info-om-lokasjon {
+    margin: 0rem;
+}
+
+.info-om-lokasjon h2 {
+    text-align: right;
+}
+
+.info-om-lokasjon p {
+    text-align: right;
+    margin: 1.4rem 0rem;
+}
+
+
+
+.pris {
+    background-color: #d1eacd;
+    height: 22rem;
+    margin-top: 5rem;
+}
+
+.bredde2 {
+    width: 50rem;
+    line-height: 1.5rem;
+    padding-top: 3.5rem;
+}
+
+.pris h2 {
+    margin-bottom: 2rem;
+}
+
+.bokser {
+    display: flex;
+    justify-content: space-between;  
+    margin: 2rem 0rem; 
+}
+
+.boks {
+    font-weight: 600;
+    background-color: #f5fffa;
+    border-radius: 0.8rem;
+    width: 8rem;
+    padding: 1rem 1rem;
+    text-align: center;  
+    margin: 0;
+}
+
+
+
+
+
+
+.container {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	width: 50rem;
+    margin-top: 7rem;
+    position: relative;
+}
+ 
+.small {
+	width: 9.4rem;
+    height: 9.4rem;
+	object-fit: cover;
+	margin: 0;
+	border-radius: 0.8rem;
+}
+ 
+.small:hover {
+    -webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+}
+  
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+    width: 100%;
+    height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+a div {
+	position: relative;
+	margin: auto auto;
+	text-align: center;
+}
+ 
+.lightbox:target {
+    display: flexbox;
+	display: flex;
+}
+ 
+.container a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+.pekefinger img {
+    position: absolute;
+    width: 3.5rem;
+    transform: rotate(330deg);
+    top: 18rem;
+    left: 48.5rem;
+}
+
+.pekefinger p {
+    font-family: fresno, sans-serif;
+    position: absolute;
+    width: 10rem;
+    font-size: 1.2rem;
+    margin-top: 4.3rem;
+    top: 17.5rem;
+    left: 47rem;
+}
+ 
+
+
+
+
+  
+
+
+
+.booking {
+   width: 50rem;
+   margin-top: 7rem;
+   margin-bottom: 3rem;
+   text-align: center;
+}
+
+.booking h2 {
+    float: left;
+}
+
+.booking p {
+    margin: 2rem 0rem;
+    float: left;
+}
+
+.booking-input {
+    width: 22.3rem;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    outline: none;
+    border: solid #b4b4b4;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+}
+
+.booking-input:focus {
+    border: 0.15rem solid #5ca5ad;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mail {
+    width: 47.8rem;
+}
+
+#melding {
+    width: 47.8rem;
+    padding-bottom: 4rem;
+}
+
+.booking-button {
+    font-family: fresno, sans-serif;
+    font-size: 1.3rem;
+    width: 7rem;
+    background-color: #5ca5ad;
+    color: #f5fffa; 
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0rem;
+    border: none;
+    transition: 0.5s;
+}
+
+.booking-button:hover {
+    background-color: #38696f;
+}
+
+::placeholder {
+    color: #5ca5ad;
+}
+
+.footer {
+    background-color: #473a35;
+    height: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 51rem) {
+    * {
+        margin: 0 auto;
+        /*outline: 1px solid red;
+        outline-offset: -1px;*/
+    }
+    
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5fffa;
+        color:#382c20;
+        font-weight: 300;
+        line-height: 1.7rem;
+        letter-spacing: 0.02rem;
+        position: relative;   
+    }
+    
+    /*
+    header {
+    
+    }
+    
+    main {
+        
+    }
+    */
+    
+    h2 {
+        font-family: fresno, sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    
+    h1 {
+        font-family: fresno, sans-serif;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        text-align: center;
+        margin-top: 4rem;
+        letter-spacing: 0.1rem;
+        width: 90%;
+    }
+    
+    .tekst {
+        text-align: justify;
+        text-align-last: center;
+        width: 90%;
+        margin-top: 3rem;
+    }
+    
+    .booking-boks {
+        width: 50rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .booking-link {
+        font-family: fresno, sans-serif;
+        font-size: 1.3rem;
+        background-color: #5ca5ad;
+        padding: 0.6rem 3rem;
+        text-decoration: none;
+        color: #f5fffa;
+        border-radius: 0.8rem;
+        letter-spacing: 0.1rem;
+        transition: 0.5s;
+    }
+    
+    .booking-link:hover {
+        background-color: #38696f;
+    }
+    
+    
+    .kort-info {
+        font-family: fresno, sans-serif;
+        background-color: #d1eacd;
+        color: #382c20;
+        height: 13rem;
+        margin-top: 7rem;
+    }
+    
+    .bredde1 {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4.8rem;
+    }
+    
+    .kapasitet {
+        text-align: center;
+        margin: 0rem;   
+    }
+    
+    .kapasitet h3 {
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    }
+    
+    .kapasitet p {
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    #areal {
+        font-size: 1.2rem;
+        /*position: absolute;
+        margin-left: 0.1rem;*/
+    }
+    
+    .mer-info {
+        width: 35rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    
+    .column1 {
+        margin-top: 3rem;
+    }
+    
+    .column1 h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .column1 ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 2.2rem;
+    }
+    
+    .vertikal-linje {
+        border-left: 0.4rem dotted #5ca5ad;
+        height: 31rem;
+    }
+    
+    #lokalet-passer-til {
+        text-align: right;
+    }
+    
+    
+    .lokasjon {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    
+    .kart {
+        filter: grayscale();
+        width: 65%;
+        height: 16rem;
+        border: 0;
+        margin: 0rem;
+        border-radius: 0.8rem;
+    }
+    
+    .info-om-lokasjon {
+        margin: 0rem;
+    }
+    
+    .info-om-lokasjon h2 {
+        text-align: right;
+    }
+    
+    .info-om-lokasjon p {
+        text-align: right;
+        margin: 1.4rem 0rem;
+    }
+    
+    
+    
+    .pris {
+        background-color: #d1eacd;
+        height: 22rem;
+        margin-top: 5rem;
+    }
+    
+    .bredde2 {
+        width: 50rem;
+        line-height: 1.5rem;
+        padding-top: 3.5rem;
+    }
+    
+    .pris h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .bokser {
+        display: flex;
+        justify-content: space-between;  
+        margin: 2rem 0rem; 
+    }
+    
+    .boks {
+        font-weight: 600;
+        background-color: #f5fffa;
+        border-radius: 0.8rem;
+        width: 8rem;
+        padding: 1rem 1rem;
+        text-align: center;  
+        margin: 0;
+    }
+    
+    
+    
+    
+    
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 50rem;
+        margin-top: 7rem;
+        position: relative;
+    }
+     
+    .small {
+        width: 9.4rem;
+        height: 9.4rem;
+        object-fit: cover;
+        margin: 0;
+        border-radius: 0.8rem;
+    }
+     
+    .small:hover {
+        -webkit-transform: scale(1.03, 1.03);
+        transform: scale(1.03, 1.03);
+    }
+      
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    a div {
+        position: relative;
+        margin: auto auto;
+        text-align: center;
+    }
+     
+    .lightbox:target {
+        display: flexbox;
+        display: flex;
+    }
+     
+    .container a {
+        text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .pekefinger img {
+        display: none;
+    }
+    
+    .pekefinger p {
+        display: none;
+    }
+     
+    
+    
+    
+    
+      
+    
+    
+    
+    .booking {
+       width: 50rem;
+       margin-top: 7rem;
+       margin-bottom: 3rem;
+       text-align: center;
+    }
+    
+    .booking h2 {
+        float: left;
+    }
+    
+    .booking p {
+        margin: 2rem 0rem;
+        float: left;
+    }
+    
+    .booking-input {
+        width: 22.3rem;
+        padding: 1rem;
+        margin: 0.5rem 0rem;
+        outline: none;
+        border: solid #b4b4b4;
+        border-radius: 0.3rem;
+        transition: 0.5s;
+    }
+    
+    .booking-input:focus {
+        border: 0.15rem solid #5ca5ad;
+    }
+    
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #mail {
+        width: 47.8rem;
+    }
+    
+    #melding {
+        width: 47.8rem;
+        padding-bottom: 4rem;
+    }
+    
+    .booking-button {
+        font-family: fresno, sans-serif;
+        font-size: 1.3rem;
+        width: 7rem;
+        background-color: #5ca5ad;
+        color: #f5fffa; 
+        padding: 0.6rem;
+        border-radius: 0.8rem;
+        letter-spacing: 0.1rem;
+        margin: 1rem 0rem;
+        border: none;
+        transition: 0.5s;
+    }
+    
+    .booking-button:hover {
+        background-color: #38696f;
+    }
+    
+    ::placeholder {
+        color: #5ca5ad;
+    }
+    
+    .footer {
+        background-color: #473a35;
+        height: 15rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 30rem) {
+    * {
+        margin: 0 auto;
+        /*outline: 1px solid red;
+        outline-offset: -1px;*/
+    } 
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5fffa;
+        color:#382c20;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        letter-spacing: 0rem;
+        position: relative;   
+    }
+   
+    h2 {
+        font-family: fresno, sans-serif;
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+    }
+    
+    h1 {
+        font-family: fresno, sans-serif;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-top: 3rem;
+        letter-spacing: 0.08rem;
+        width: 90%;
+
+    }
+    
+    .tekst {
+        text-align: justify;
+        text-align-last: center;
+        width: 90%;
+        margin-top: 2rem;
+    }
+    
+    .booking-boks {
+        width: 22rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    .booking-link {
+        font-family: fresno, sans-serif;
+        font-size: 1.3rem;
+        background-color: #5ca5ad;
+        padding: 0.6rem 3rem;
+        text-decoration: none;
+        color: #f5fffa;
+        border-radius: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .booking-link:hover {
+        background-color: #5ca5ad;
+    }
+    
+    
+    .kort-info {
+        font-family: fresno, sans-serif;
+        background-color: #d1eacd;
+        color: #382c20;
+        height: 17rem;
+        margin-top: 3rem;
+    }
+    
+    .bredde1 {
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+    }
+    
+    .kapasitet {
+        text-align: center;
+        margin: 1.5rem 0rem;  
+        width: 9rem; 
+    }
+    
+    .kapasitet h3 {
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    }
+    
+    .kapasitet p {
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    #areal {
+        font-size: 1.2rem;
+        position: absolute;
+    }
+    
+
+
+
+    .mer-info {
+        width: 22rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    
+    .column1 {
+        width: 9rem;
+        margin-top: 0rem;
+    }
+    
+    .column1 h2 {
+        margin-bottom: 1rem;
+        line-height: 2.2rem;
+    }
+    
+    .column1 ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.8rem;
+    }
+    
+    .vertikal-linje {
+        display: none;
+    }
+    
+    #lokalet-passer-til {
+        text-align: right;
+    }
+    
+
+
+    
+    .lokasjon {
+        width: 22rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+    
+    .kart {
+        filter: grayscale();
+        width: 90%;
+        height: 16rem;
+        border: 0;
+        margin: 0rem;
+        border-radius: 0.8rem;
+        order: 1;
+    }
+    
+    .info-om-lokasjon {
+        margin: 0rem;
+
+    }
+    
+    .info-om-lokasjon h2 {
+        text-align: left;
+    }
+    
+    .info-om-lokasjon p {
+        text-align: left;
+        margin: 1.4rem 0rem;
+    }
+    
+    
+    
+    .pris {
+        background-color: #d1eacd;
+        height: 26.5rem;
+        margin-top: 3rem;
+    }
+    
+    .bredde2 {
+        width: 22rem;
+        line-height: 1.5rem;
+        padding-top: 3rem;
+    }
+    
+    .pris h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .bokser {
+        display: flex;
+        justify-content: space-between;  
+        flex-wrap: wrap;
+        margin: 1rem 0rem; 
+    }
+    
+    .boks {
+        font-weight: 600;
+        background-color: #f5fffa;
+        border-radius: 0.8rem;
+        width: 7rem;
+        padding: 1rem 1rem;
+        text-align: center;  
+        margin: 0.5rem 0.5rem;
+    }
+    
+    
+    
+    
+    
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-top: 3rem;
+        position: relative;
+    }
+     
+    .small {
+        width: 10.8rem;
+        height: 10.8rem;
+        object-fit: cover;
+        margin: 0;
+        border-radius: 0.8rem;
+    }
+     
+    .small:hover {
+        -webkit-transform: scale(1.03, 1.03);
+        transform: scale(1.03, 1.03);
+    }
+      
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    a div {
+        position: relative;
+        margin: auto auto;
+        text-align: center;
+    }
+     
+    .lightbox:target {
+        display: flexbox;
+        display: flex;
+    }
+     
+    .container a {
+        text-decoration: none;
+    }
+    
+    .pekefinger img {
+       display: none;
+    }
+    
+    .pekefinger p {
+        display: none;
+    }
+     
+    
+    
+    
+    
+      
+    
+    
+    
+    .booking {
+       width: 90%;
+       margin-top: 3rem;
+       margin-bottom: 3rem;
+       text-align: center;
+    }
+    
+    .booking h2 {
+        float: left;
+    }
+    
+    .booking p {
+        margin: 1rem 0rem;
+        width: 90%;
+        float: left;
+        text-align: left;
+    }
+    
+    .booking-input {
+        width: 90%;
+        padding: 1rem;
+        margin: 0.5rem 0rem;
+        outline: none;
+        border: solid #b4b4b4;
+        border-radius: 0.3rem;
+        transition: 0.5s;
+    }
+    
+    .booking-input:focus {
+        border: 0.15rem solid #5ca5ad;
+    }
+    
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #mail {
+        width: 90%;
+    }
+    
+    #melding {
+        width: 90%;
+        padding-bottom: 4rem;
+    }
+    
+    .booking-button {
+        font-family: fresno, sans-serif;
+        font-size: 1.3rem;
+        width: 7rem;
+        background-color: #5ca5ad;
+        color: #f5fffa; 
+        padding: 0.6rem;
+        border-radius: 0.8rem;
+        letter-spacing: 0.1rem;
+        margin: 1rem 0rem;
+        border: none;
+        transition: 0.5s;
+    }
+    
+    .booking-button:hover {
+        background-color: #38696f;
+    }
+    
+    ::placeholder {
+        color: #5ca5ad;
+    }
+    
+    .footer {
+        background-color: #473a35;
+        height: 15rem;
+    }
+  }
