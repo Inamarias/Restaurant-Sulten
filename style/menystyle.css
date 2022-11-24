@@ -5,7 +5,7 @@
     background-color: #f1ece8;
     color: #3F3F3F;
     font-family: "Courier New"; /* Legge inn fallback value? */
-    /*border: solid red 1px;*/
+    border: solid red 1px;
 }
 
 @font-face {
@@ -78,6 +78,7 @@ nav a:hover {
 }
 
 .meny{
+    width: 70%;
     margin: auto;
     padding-top: 5rem;
 }
@@ -143,28 +144,25 @@ h3{
 
 .lunsjmeny{
     padding: 3rem;
-    
 }
 
 .dessertmeny{
     padding: 3rem;
     margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .dessertmeny img{
     height: 30rem;
+    margin: 5rem 3rem 2rem 0rem;
     border-radius: 2%;
+    float: left;
 }
-@media only screen and (max-width: 850px) {
-    .dessertmeny {
-     flex-direction: column;
-     align-items: center;
+
+@media only screen and (max-width: 600px) {
+    .dessertmeny img{
+     margin-top: auto;
     }
  }
-
 
 /*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
 .drikkemeny{
