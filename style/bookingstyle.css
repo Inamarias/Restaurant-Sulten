@@ -372,12 +372,10 @@ a div {
     */
     
     h2 {
-        font-family: fresno, sans-serif;
         letter-spacing: 0.1rem;
     }
     
     h1 {
-        font-family: fresno, sans-serif;
         font-size: 3rem;
         line-height: 3.5rem;
         text-align: center;
@@ -400,7 +398,6 @@ a div {
     }
     
     .booking-link {
-        font-family: fresno, sans-serif;
         font-size: 1.3rem;
         background-color: #5ca5ad;
         padding: 0.6rem 3rem;
@@ -417,9 +414,6 @@ a div {
     
     
     .kort-info {
-        font-family: fresno, sans-serif;
-        background-color: #d1eacd;
-        color: #382c20;
         height: 13rem;
         margin-top: 7rem;
     }
@@ -668,11 +662,8 @@ a div {
     }
     
     .booking-button {
-        font-family: fresno, sans-serif;
         font-size: 1.3rem;
         width: 7rem;
-        background-color: #5ca5ad;
-        color: #f5fffa; 
         padding: 0.6rem;
         border-radius: 0.8rem;
         letter-spacing: 0.1rem;
@@ -713,9 +704,6 @@ a div {
     } 
     
     body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f5fffa;
-        color:#382c20;
         font-size: 0.9rem;
         font-weight: 300;
         line-height: 1.5rem;
@@ -724,13 +712,11 @@ a div {
     }
    
     h2 {
-        font-family: fresno, sans-serif;
         letter-spacing: 0.1rem;
         font-size: 1.4rem;
     }
     
     h1 {
-        font-family: fresno, sans-serif;
         font-size: 1.7rem;
         line-height: 2.5rem;
         text-align: center;
@@ -754,12 +740,9 @@ a div {
     }
     
     .booking-link {
-        font-family: fresno, sans-serif;
         font-size: 1.3rem;
-        background-color: #5ca5ad;
         padding: 0.6rem 3rem;
         text-decoration: none;
-        color: #f5fffa;
         border-radius: 0.8rem;
         letter-spacing: 0.1rem;
     }
@@ -770,7 +753,6 @@ a div {
     
     
     .kort-info {
-        font-family: fresno, sans-serif;
         background-color: #d1eacd;
         color: #382c20;
         height: 17rem;
@@ -1028,11 +1010,8 @@ a div {
     }
     
     .booking-button {
-        font-family: fresno, sans-serif;
         font-size: 1.3rem;
         width: 7rem;
-        background-color: #5ca5ad;
-        color: #f5fffa; 
         padding: 0.6rem;
         border-radius: 0.8rem;
         letter-spacing: 0.1rem;
