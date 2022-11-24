@@ -125,6 +125,7 @@ h3{
 
 .box-meny {
     padding: 1.5rem;
+    
 }
 
 .minitittel {
@@ -158,17 +159,35 @@ h3{
 }
 
 .lunsjmeny{
-    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
 }
+.box-meny-lunsj {
+    padding: 1.5rem;
+    flex-basis: 56rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .lunsjmeny {
+     flex-direction: column;
+     align-items: center;
+    }
+ }
 
 .dessertmeny{
-    padding: 3rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+.box-meny-dessert {
+    padding: 1.5rem;
+    flex-basis: 33rem;
+}
+
 
 .dessertmeny img{
     height: 30rem;
@@ -186,12 +205,13 @@ h3{
 .drikkemeny{
     display: grid;
     grid-template-columns: auto auto;
-    padding: 3rem;
+    justify-content: center;
+    grid-template-columns: 23rem 23rem;
     gap: 6rem 8rem;
 }
 
 /*Flytter kolonnene under hverandre */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     .drikkemeny {
     grid-template-columns: auto;
     
