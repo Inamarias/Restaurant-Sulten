@@ -1,3 +1,4 @@
+
 * {
     margin: 0 auto;
     /*outline: 1px solid red;
@@ -15,23 +16,15 @@ body {
     position: relative;   
 }
 
-/*
-header {
-
-}
-
-main {
-    
-}
-*/
-
 h2 {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
 h1 {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
     font-size: 3rem;
     line-height: 3.5rem;
     text-align: center;
@@ -54,7 +47,7 @@ h1 {
 }
 
 .booking-link {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
     background-color: #5ca5ad;
     padding: 0.6rem 3rem;
@@ -71,7 +64,7 @@ h1 {
 
 
 .kort-info {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     background-color: #d1eacd;
     color: #382c20;
     height: 13rem;
@@ -99,12 +92,6 @@ letter-spacing: 0.1rem;
 .kapasitet p {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-}
-
-#areal {
-    font-size: 1.2rem;
-    /*position: absolute;
-    margin-left: 0.1rem;*/
 }
 
 .mer-info {
@@ -207,51 +194,51 @@ letter-spacing: 0.1rem;
 
 
 .container {
-	display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-	width: 50rem;
+    width: 50rem;
     margin-top: 7rem;
     position: relative;
 }
  
 .small {
-	width: 9.4rem;
+    width: 9.4rem;
     height: 9.4rem;
-	object-fit: cover;
-	margin: 0;
-	border-radius: 0.8rem;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0.8rem;
 }
  
 .small:hover {
     -webkit-transform: scale(1.03, 1.03);
-	transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
 }
   
 .lightbox {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
-	background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 a div {
-	position: relative;
-	margin: auto auto;
-	text-align: center;
+    position: relative;
+    margin: auto auto;
+    text-align: center;
 }
  
 .lightbox:target {
     display: flexbox;
-	display: flex;
+    display: flex;
 }
  
 .container a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 
@@ -269,7 +256,7 @@ a div {
 }
 
 .pekefinger p {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     position: absolute;
     width: 10rem;
     font-size: 1.2rem;
@@ -303,6 +290,7 @@ a div {
 }
 
 .booking-input {
+    font-family: 'Roboto', sans-serif;
     width: 22.3rem;
     padding: 1rem;
     margin: 0.5rem 0rem;
@@ -332,7 +320,7 @@ a div {
 }
 
 .booking-button {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
     width: 7rem;
     background-color: #5ca5ad;
@@ -353,26 +341,14 @@ a div {
     color: #5ca5ad;
 }
 
-.footer {
-    background-color: #473a35;
-    height: 15rem;
-}
 
 
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 51rem) {
+@media only screen and (max-width: 850px) {
     * {
         margin: 0 auto;
-        /*outline: 1px solid red;
-        outline-offset: -1px;*/
+        outline: 1px solid red;
+        outline-offset: -1px;
     }
     
     
@@ -681,11 +657,6 @@ a div {
     ::placeholder {
         color: #5ca5ad;
     }
-    
-    .footer {
-        background-color: #473a35;
-        height: 15rem;
-    }
 
 }
 
@@ -703,7 +674,7 @@ a div {
 
 
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 480px) {
     * {
         margin: 0 auto;
         outline: 1px solid red;
@@ -1013,5 +984,4 @@ a div {
     ::placeholder {
         color: #5ca5ad;
     }
-
   }
