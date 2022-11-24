@@ -109,34 +109,35 @@ h2{
 
 
 h3{
-    line-height: 4rem;
     overflow: hidden;
 }
 
-.allergener{
-    font-size: 14px;
-    padding-top: 0.6rem;
+.tittel {
+    text-align: center;
+    margin-top: 5rem;
 }
 
 .frokostmeny {
-    margin-top: 1.5rem;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.tittel {
-    text-align: center;
-    margin-top: 3rem;
-}
-
 .box-meny {
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .minitittel {
-    width: 40vw;
+    padding-bottom: 1rem;
+}
+
+.matrett {
+    padding-bottom: 2rem;
+}
+
+.allergener{
+    font-size: 14px;
+    padding-top: 0.6rem;
 }
 
 
