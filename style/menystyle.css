@@ -2,16 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f1ece8;
-    color: #3F3F3F;
-    font-family: "Courier New"; /* Legge inn fallback value? */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5fffa;
+    color:#382c20; 
+    letter-spacing: 0.02rem;
     /*border: solid red 1px;*/
 }
 
-@font-face {
-    font-family: "fira sans";
-    src: url("https://use.typekit.net/vrz2vde.css");
-}
+
+
 /* Header */
 
 header img {
@@ -25,7 +24,10 @@ header img {
 /* Navbar */
 
 nav {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2rem;
     margin: 2rem;
 }
 
@@ -41,7 +43,6 @@ nav a:hover {
 .nav-booking {
     background-color: #E68B61;
     border-radius: 2rem;
-    padding: 0.6rem 1rem;
 }
 
 .nav-booking:hover {
@@ -76,6 +77,17 @@ nav a:hover {
         padding: 0rem;
 }
 }
+@media only screen and (min-width: 768px) {
+    .centered{ font-size: 20px;
+        padding: 0rem;
+}
+}
+
+@media only screen and (min-width: 850px) {
+    .centered{ font-size: 34px;
+        padding: 0rem;
+}
+}
 
 .meny{
     margin: auto;
@@ -88,8 +100,10 @@ nav a:hover {
 
 /*sjekk h kategori*/
 h1{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     text-align: center;
-    font-size: 28px;
     padding-bottom: 4rem;
     padding: 2rem;
     color: #5a3c3c;
@@ -97,18 +111,21 @@ h1{
 
 
 h2{
-    color: #db5a23;
-    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #5ca5ad;
+    font-size: 2.2rem;
     padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    h2{ font-size: 26px;
-    }
-}
+
 
 
 h3{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     overflow: hidden;
 }
 
@@ -125,7 +142,12 @@ h3{
 
 .box-meny {
     padding: 1.5rem;
-    
+    flex-basis: 33rem;
+
+}
+.box-meny-frokostbilde{
+    padding: 1.5rem;
+    flex-basis: 23rem;
 }
 
 .minitittel {
@@ -142,15 +164,11 @@ h3{
 }
 
 
-/*Hvordan fjerne at teksten wrappes under bildet?*/
-
-
 /*https://unsplash.com/photos/vLHzjRNFbEQ*/
 .frokostmeny img{
     height: 30rem;
     border-radius: 2%;
 }
- /*Hvordan få bilde midtstilt? */
 @media only screen and (max-width: 850px) {
    .frokostmeny {
     flex-direction: column;
@@ -183,9 +201,15 @@ h3{
     justify-content: center;
 }
 
+
 .box-meny-dessert {
     padding: 1.5rem;
     flex-basis: 33rem;
+}
+
+.box-meny-dessert-bilde {
+    padding: 1.5rem;
+    flex-basis: 23rem;
 }
 
 
@@ -206,16 +230,21 @@ h3{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    grid-template-columns: 23rem 23rem;
-    gap: 6rem 8rem;
+    grid-template-columns: 25rem 25rem;
+    gap: 5rem 6rem;
+}
+
+.drikke{
+    padding: 1.5rem;
 }
 
 /*Flytter kolonnene under hverandre */
 @media screen and (max-width: 850px) {
     .drikkemeny {
     grid-template-columns: auto;
-    
+    gap: 2rem;
     }
+    
   }
 
   /* Footer */
