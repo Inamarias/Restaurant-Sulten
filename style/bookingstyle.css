@@ -15,23 +15,15 @@ body {
     position: relative;   
 }
 
-/*
-header {
-
-}
-
-main {
-    
-}
-*/
-
 h2 {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
 h1 {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
     font-size: 3rem;
     line-height: 3.5rem;
     text-align: center;
@@ -54,7 +46,7 @@ h1 {
 }
 
 .booking-link {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
     background-color: #5ca5ad;
     padding: 0.6rem 3rem;
@@ -71,7 +63,7 @@ h1 {
 
 
 .kort-info {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     background-color: #d1eacd;
     color: #382c20;
     height: 13rem;
@@ -99,12 +91,6 @@ letter-spacing: 0.1rem;
 .kapasitet p {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-}
-
-#areal {
-    font-size: 1.2rem;
-    /*position: absolute;
-    margin-left: 0.1rem;*/
 }
 
 .mer-info {
@@ -269,7 +255,7 @@ a div {
 }
 
 .pekefinger p {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     position: absolute;
     width: 10rem;
     font-size: 1.2rem;
@@ -303,6 +289,7 @@ a div {
 }
 
 .booking-input {
+    font-family: 'Roboto', sans-serif;
     width: 22.3rem;
     padding: 1rem;
     margin: 0.5rem 0rem;
@@ -332,7 +319,7 @@ a div {
 }
 
 .booking-button {
-    font-family: fresno, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
     width: 7rem;
     background-color: #5ca5ad;
@@ -353,26 +340,14 @@ a div {
     color: #5ca5ad;
 }
 
-.footer {
-    background-color: #473a35;
-    height: 15rem;
-}
 
 
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 51rem) {
+@media only screen and (max-width: 850px) {
     * {
         margin: 0 auto;
-        /*outline: 1px solid red;
-        outline-offset: -1px;*/
+        outline: 1px solid red;
+        outline-offset: -1px;
     }
     
     
@@ -713,11 +688,6 @@ a div {
     ::placeholder {
         color: #5ca5ad;
     }
-    
-    .footer {
-        background-color: #473a35;
-        height: 15rem;
-    }
 
 }
 
@@ -735,7 +705,7 @@ a div {
 
 
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 480px) {
     * {
         margin: 0 auto;
         /*outline: 1px solid red;
@@ -1079,8 +1049,26 @@ a div {
         color: #5ca5ad;
     }
     
-    .footer {
-        background-color: #473a35;
-        height: 15rem;
+    /* Header flyttes */
+    header {
+        justify-content: flex-start;
+    }
+    
+    header img {
+        width: 10rem;
+    }
+
+    
+    /* Navbar gjemmes i toggle menu */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /* Info i footer går over til kolonne */
+    .rad-footer {
+        flex-direction: column;
+        align-items: center;
     }
   }
