@@ -5,25 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/bookingstyle.css">
-        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/ebj2ngt.css">
 
         <title>Booking</title>
     </head>
     <body>
+        <header>
+
+        </header>
 
         <main>
-        
             <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
             
             <div class="tekst">
-                <p>Sulten er ikke bare en restaurant, men et lokale du kan leie til din neste sammenkomst! Lokalet er perfekt til alt fra bryllup og middager til utstillinger eller møter. Atmosfæren i lokalet er avslappende, koselig og moderne. Du vil absolutt føle deg hjemme her! Lokalet rommer opp til 50 sitteplasser og 20 ståplasser så her er det masse plass! Om dere i tillegg kunne tenke dere å få servert mat, tilbyr vi servering av kjempedeilig mat til store eller små begivenheter. Vi har til og med en bar hvor det serveres all slags drikke på kveldene. Kontakt oss om du ønsker servering av mat. </p>
+                <p>Sulten er ikke bare en restaurant, men et lokale du kan leie til din neste sammenkomst! Lokalet er perfekt til alt fra bryllup og middager til utstillinger eller møter. Atmosfæren i lokalet er avslappende, koselig og moderne. Du vil absolutt føle deg hjemme her! Lokalet rommer opp til 50 sitteplasser og 20 ståplasser så her er det masse plass! Om dere i tillegg kunne tenke dere å få servert mat, tilbyr vi servering av kjempedeilig mat til store eller små begivenheter. Vi har til og med en bar hvor det serveres alle slags drikke på kveldene. Kontakt oss om du ønsker servering av mat. </p>
             </div>
 
             <div class="booking-boks">
@@ -39,7 +37,7 @@
                         <h3>50</h3><p>Sitteplasser</p>
                     </div>
                     <div class="kapasitet">
-                        <h3>50 m²</h3><p>Areal</p>
+                        <h3>50 m<span id="areal">2</span></h3><p>Areal</p>
                     </div>
                     <div class="kapasitet">
                         <h3>20</h3><p>Ståplasser</p>
@@ -224,7 +222,7 @@
 
                 <input class="booking-input" id="mail" type="text" placeholder="Epost" required>
                 <div class="column">
-                    <input class="booking-input" type="text" placeholder="Fornavn" required>
+                    <input class="booking-input" type="text" placeholder="Fornavn" aria-required>
                     <input class="booking-input" type="text" placeholder="Etternavn" required>
                     <input class="booking-input" type="text" placeholder="Telefonnummer" required>
                     <input class="booking-input" type="text" placeholder="Dato" required onfocus="(this.type='date')" onblur="(this.type='text')">
@@ -241,10 +239,8 @@
             
             <div class="footer">
 
-        <footer>
+            <footer>
 
-        
-        
-        </footer>
+            </footer>
     </body>
 </html> 
