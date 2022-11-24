@@ -5,7 +5,11 @@
     background-color: #f1ece8;
     color: #3F3F3F;
     font-family: "Courier New"; /* Legge inn fallback value? */
+<<<<<<< Updated upstream
     /*border: solid red 1px;*/
+=======
+    /* border: solid red 1px; */
+>>>>>>> Stashed changes
 }
 
 @font-face {
@@ -78,6 +82,10 @@ nav a:hover {
 }
 
 .meny{
+<<<<<<< Updated upstream
+=======
+    width: 50rem;
+>>>>>>> Stashed changes
     margin: auto;
     padding-top: 5rem;
 }
@@ -109,7 +117,6 @@ h2{
 
 
 h3{
-    line-height: 4rem;
     overflow: hidden;
 }
 
@@ -120,9 +127,37 @@ h3{
 
 .frokostmeny{
     margin-top: 1.5rem;
+<<<<<<< Updated upstream
     padding: 3rem;
 }
 
+=======
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tittel {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.box-meny {
+    padding: 1.5rem;
+}
+
+.minitittel {
+    width: 40vw;
+    padding-bottom: 1rem;
+}
+
+.matrett {
+    padding-bottom: 2rem;
+}
+
+
+>>>>>>> Stashed changes
 /*Hvordan fjerne at teksten wrappes under bildet?*/
 
 
