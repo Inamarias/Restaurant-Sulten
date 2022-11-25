@@ -120,8 +120,6 @@ h2{
 }
 
 
-
-
 h3{
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
@@ -131,7 +129,7 @@ h3{
 
 .tittel {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .frokostmeny {
