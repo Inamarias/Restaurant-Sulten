@@ -5,6 +5,9 @@
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <!--Alle må legge inn favicon-->
         <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
         <!--Alle må huske title i sin html-->
@@ -12,14 +15,23 @@
     </head>
     <body>
 
-        <!-- Toggle meny istadenfor kolonna som brukast no? -->
-
         <!-- Har vi lagt inn kilder på alt?? Bilder, kor vi har henta js frå osv??? -->
 
         <!-- Har alle brukt gode kommentarer underveis slik at en annen lett kan komme inn og ta over koden? -->
 
         <!-- Sjekk grading sheet -->
 
+        <!-- Legge til "hjem" i toggle menu på alle sider bortsett fra "hjem"? -->
+
+        <!-- På topical page: bytte til "URL" (frå "URI") + to stk .knapp-intro classes + brukes nav-booking i menyen? + .nav . closebtn? -->
+
+        <!-- <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a>  (brukes text-white-klassen?) -->
+
+        <!-- Booking: id og class heter begge "booking" - id er unik!! -->
+
+        <!-- Kommentere meir i myFile.js? -->
+
+        
         <header>
 
             <!--Lage logo i annen farge enn blå? Feks brun?-->
@@ -30,14 +42,18 @@
 
         </header>
 
-        <nav>
-
+        <!-- Legge inn kilde på js under -->
+        <nav id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a> 
             <a href="meny.html">MENY</a>
             <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
             <a href="aktuelt.html">TOPICAL PAGE</a>
-            <a href="booking.html" class="nav-booking">BOOKING</a>
-
+            <a href="booking.html" class="nav-booking">BOOKING</a>  
         </nav>
+        
+        <div id="main">
+            <button class="openbtn" onclick="OpenOrClose()">☰</button>
+        </div>
 
         <main>
 
@@ -70,27 +86,24 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
 
-                <!--JavaScript for slideshow-->
-                <script src="javascript/myFile.js"></script>
-
-        </main>
+            </main>
 
         <footer>
 
             <!--Åpningstider, kontaktinfo, adresse-->
             <div class="rad-footer">
                 <div class="kolonne-footer">
-                    <p class="overskrift-footer">Åpningstider</p>
+                    <h2>Åpningstider</h2>
                     <p>Man-fre 09-16</p>
                     <p>Lørdag 09-15</p>
                     <p>Søndag stengt</p>
                 </div>
         
                 <div class="kolonne-footer">
-                    <p class="overskrift-footer">Kontaktinfo</p>
-                    <a class="fa fa-phone"></a>
-                    <span>657 56 589</span>
-                    <br> <!--Denne skal vi jo helst unngå - kan legge inn span i css-->
+                    <h2>Kontaktinfo</h2>
+                    <a href="tel:657 56 589" class="fa fa-phone"></a>
+                    <a href="tel:657 56 589" class="telefonnr">657 56 589</a>
+                    <br>
                     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
                     <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg"></a>
@@ -98,7 +111,7 @@
                 </div>
             
                 <div class="kolonne-footer">
-                    <p class="overskrift-footer">Adresse</p>
+                    <h2>Adresse</h2>
                     <p>Skomværsgata 2</p>
                     <p>3921 Porsgrunn</p>
                 </div>
@@ -106,6 +119,9 @@
             </div>
         
         </footer>
+
+        <!-- JavaScript for toggle menu og slideshow -->
+        <script src="javascript/myFile.js"></script>
 
     </body>
 </html>

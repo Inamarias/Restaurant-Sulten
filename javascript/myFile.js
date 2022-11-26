@@ -1,7 +1,6 @@
 // Hentet fra: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
-// Slideshow forside:
-
+// Slideshow på forsiden:
 var slideIndex = 0;
 showSlides();
 var slides, dots;
@@ -20,7 +19,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 8000); // Change image every 8 seconds
+    setTimeout(showSlides, 8000); // Går til neste bilde hvert 8. sekund
 }
 
 function plusSlides(position) {
@@ -49,3 +48,9 @@ function currentSlide(index) {
   slides[index-1].style.display = "block";  
   dots[index-1].className += " active";
 }
+
+// Toggle meny:
+function OpenOrClose() {
+  document.getElementById("mySidebar").classList.toggle("open");
+  document.getElementById("main").classList.toggle("open");
+  }

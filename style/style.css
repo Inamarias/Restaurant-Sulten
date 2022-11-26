@@ -1,13 +1,22 @@
-*, body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f1ece8;
-    color:#382c20;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f5fffa;
+    color: #382c20;
     font-weight: 300;
     line-height: 1.7rem;
     letter-spacing: 0.02rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 /* Header */
@@ -19,36 +28,65 @@ header {
 
 header img {
     width: 20rem;
-    padding: 1rem;
+    padding-top: 3rem;
 }
 
 /* Navbar */
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.2rem;
-    margin: 2rem;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #869e86;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 nav a {
-    text-decoration: none;
     padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fbf8f8;
+    display: block;
 }
 
 nav a:hover {
-    color: #E68B61;
+    color: #cfd8cf;
+    transition: 0.3s;
+}
+  
+.openbtn {
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #869e86;
+    padding: 0.3rem 1rem;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #9ebb9ebf;
+    color: #ffffff;
+    transition: 0.3s;
 }
 
-.nav-booking {
-    background-color: #E68B61;
-    border-radius: 2rem;
+#main {
+    transition: 0.5s;
+    margin-left: 1rem;
 }
 
-.nav-booking:hover {
-    background-color: #663D0A;
+#mySidebar.open {
+    width: 13rem;
 }
+
+#main.open {
+    margin-left: 14rem;
+}
+
 
 /* Slideshow bilder*/
 
@@ -72,9 +110,13 @@ nav a:hover {
     transition: 0.5s ease;
     padding: 1rem;
     user-select: none;
-    color: white;
+    background-color: #869e86;
+    opacity: 0.8;
+    color: #f1ece8;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
 }
 
 .knapp-tilbake:hover, .knapp-neste:hover {
@@ -126,11 +168,11 @@ nav a:hover {
 }
 
 .kolonne-footer {
-    margin: 0.7rem 1rem;
+    margin: 0 3rem;
 }
 
-.overskrift-footer {
-    font-weight: bold;
+.kolonne-footer h2 {
+    margin-bottom: 0.5rem;
 }
 
 /* Font Awesome Icons er hentet fra:
@@ -146,7 +188,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     text-decoration: none;
 }
 
-.fa:hover {
+.fa:hover, .telefonnr:hover {
     opacity: 0.4;
 }
 
@@ -175,6 +217,15 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     border-radius: 50%;
   }
 
+  .fa-phone {
+    color: #382c20;
+  }
+
+  .telefonnr {
+    text-decoration: none;
+    color: #382c20;
+  }
+
 /* Responsive navigation menu for tablets */
 
 @media screen and (max-width: 768px) {
@@ -182,17 +233,19 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     /* Header flyttes */
     header {
         justify-content: flex-start;
+        margin-left: 1rem;
     }
     
     header img {
         width: 10rem;
+        margin-bottom: 1rem;
     }
 
     
-    /* Navbar gjemmes i toggle menu */
-    nav {
-        flex-direction: column;
-        align-items: center;
+    /* Toggle menu */
+    .openbtn {
+        font-size: 2.5rem;
+        padding: 0.3rem 0.5rem;
     }
 
     
@@ -205,4 +258,26 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 /* Responsive navigation menu for mobile devices */
-/* Behov for å legge inn her? */
+
+@media screen and (max-width: 480px) {
+    
+    /* Mindre header image */
+    header img {
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    
+    /* Toggle menu */
+    .openbtn {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    
+    /* Footer */
+    .kolonne-footer {
+        margin: 1rem;
+    }
+    
+}
