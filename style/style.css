@@ -43,7 +43,7 @@ nav {
     background-color: #869e86;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 5rem;
 }
 
 nav a {
@@ -168,7 +168,7 @@ nav a:hover {
 }
 
 .kolonne-footer {
-    margin: 0 3rem;
+    margin: 1rem 3rem;
 }
 
 .kolonne-footer h2 {
@@ -201,30 +201,30 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     color: white;
     border-radius: 20%;
     margin-right: 0.3rem;
-  }
+}
 
-  .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-            /* Also define standard property for compatibility */
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.fa-instagram {
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+-webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    border-radius: 50%;
-  }
+.fa-twitter {
+background: #55ACEE;
+color: white;
+border-radius: 50%;
+}
 
-  .fa-phone {
-    color: #382c20;
-  }
+.fa-phone {
+color: #382c20;
+}
 
-  .telefonnr {
-    text-decoration: none;
-    color: #382c20;
-  }
+.telefonnr {
+text-decoration: none;
+color: #382c20;
+}
 
 /* Responsive navigation menu for tablets */
 
@@ -240,15 +240,15 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         width: 10rem;
         margin-bottom: 1rem;
     }
-
     
     /* Toggle menu */
     .openbtn {
         font-size: 2.5rem;
         padding: 0.3rem 0.5rem;
     }
-
     
+    /* Skal eg heller sette visibility til hidden under enn å ha det i kolonne? */
+
     /* Info i footer går over til kolonne */
     .rad-footer {
         flex-direction: column;
@@ -266,7 +266,6 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         width: 5rem;
         margin-bottom: 1rem;
     }
-
     
     /* Toggle menu */
     .openbtn {
@@ -274,10 +273,17 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         padding: 0.3rem 0.5rem;
     }
 
-    
+    /* Dobbeltsjekk slideshow og footer ved nye bilder */
+
+    /* Neste- og tilbakeknapper */
+    .knapp-tilbake, .knapp-neste {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
     /* Footer */
-    .kolonne-footer {
-        margin: 1rem;
+    .rad-footer {
+        visibility: hidden;
     }
     
 }
