@@ -4,13 +4,7 @@
     box-sizing: border-box;
     --white: #ffffff;
     --green: #839d83;
-    
 }
-@font-face {
-    font-family:adobe-caslon-pro, newbery-sans-pro, 'Roboto', 'Bebas Neue' ;
-    src: url("https://use.typekit.net/crr0pqh.css");
-  }
-
 
 /* flexbox */
 .container {
