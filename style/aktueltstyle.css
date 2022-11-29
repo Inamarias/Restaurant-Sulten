@@ -285,7 +285,7 @@ tittel {
   }
 
   .boxP4 {
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -364,6 +364,10 @@ tittel {
 
     .boxP2 {
       margin-bottom: 2rem;
+    }
+
+    .boxP4 {
+      width: 100%;
     }
 
 
@@ -468,13 +472,27 @@ tittel {
       font-size: smaller;
       line-height: 1.3rem;
       margin-top: -3rem;
-    } 
-  
+    }
+
+   .boxP3 {
+    margin-top: 2.5rem;
+   } 
+
+  .boxP4 {
+    width: 100%;
+  }
 
 }
 @media screen and (min-width: 768px){
+  /*Gjemme logo i navbar*/
     .logoSpinning2{
         visibility: hidden;
+    }
+
+
+    /*Gjøre graf lenger*/
+    .graf2 {
+      height: 22rem;
     }
 }
 
