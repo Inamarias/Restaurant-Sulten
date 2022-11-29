@@ -1,58 +1,89 @@
 *, body {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #f5fffa;
     color:#382c20; 
     letter-spacing: 0.02rem;
-    /*border: solid red 1px;*/
+    /*border: solid red 1px*/
 }
 
 
 
 /* Header */
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 header img {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+    width: 20rem;
+    padding-top: 3rem;
 }
 
 /* Navbar */
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.2rem;
-    margin: 2rem;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #869e86;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5rem;
 }
 
 nav a {
-    text-decoration: none;
     padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fbf8f8;
+    display: block;
 }
 
 nav a:hover {
-    color: #E68B61;
+    color: #cfd8cf;
+    transition: 0.3s;
+}
+  
+.openbtn {
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #869e86;
+    padding: 0.3rem 1rem;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #9ebb9ebf;
+    color: #ffffff;
+    transition: 0.3s;
 }
 
-.nav-booking {
-    background-color: #E68B61;
-    border-radius: 2rem;
+#main {
+    transition: 0.5s;
+    margin-left: 1rem;
 }
 
-.nav-booking:hover {
-    background-color: #663D0A;
+#mySidebar.open {
+    width: 13rem;
 }
-/* lagt inn bredden for selve menyen under class meny. Padding for avstand fra nav bar*/
 
-/* https://unsplash.com/photos/Ww8eQWjMJWk */
+#main.open {
+    margin-left: 14rem;
+}
 
-/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+
+/* Bildekilde header: https://unsplash.com/photos/Ww8eQWjMJWk */
+
+/*Hovedbilde med tekst. Kode hentet fra: https://www.w3schools.com/howto/howto_css_image_text.asp */
+
 .container {
     position: relative;    
 }
@@ -60,7 +91,6 @@ nav a:hover {
 .centered {
     position: absolute;
     background: none;
-    color: #5a3c3c;
     width: 40%;
     top: 80%;
     left: 50%;
@@ -71,23 +101,6 @@ nav a:hover {
     width: 100%;
 }
 
-/*minsker tekst i header slik at teksten passer til bilde*/
-@media only screen and (max-width: 600px) {
-    .centered{ font-size: 14px;
-        padding: 0rem;
-}
-}
-@media only screen and (min-width: 768px) {
-    .centered{ font-size: 20px;
-        padding: 0rem;
-}
-}
-
-@media only screen and (min-width: 850px) {
-    .centered{ font-size: 34px;
-        padding: 0rem;
-}
-}
 
 .meny{
     margin: auto;
@@ -98,7 +111,7 @@ nav a:hover {
     text-align: center;
 }
 
-/*sjekk h kategori*/
+
 h1{
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
@@ -106,7 +119,7 @@ h1{
     text-align: center;
     padding-bottom: 4rem;
     padding: 2rem;
-    color: #5a3c3c;
+    
 }
 
 
@@ -132,6 +145,20 @@ h3{
     margin-top: 3rem;
 }
 
+.matrett-innhold {
+    padding-bottom: 1rem;
+}
+
+.matrett {
+    padding-bottom: 2rem;
+}
+
+.allergener{
+    font-size: 14px;
+    padding-top: 0.6rem;
+}
+
+/*Frokostmeny*/
 .frokostmeny {
     display: flex;
     flex-direction: row;
@@ -148,32 +175,13 @@ h3{
     flex-basis: 23rem;
 }
 
-.minitittel {
-    padding-bottom: 1rem;
-}
-
-.matrett {
-    padding-bottom: 2rem;
-}
-
-.allergener{
-    font-size: 14px;
-    padding-top: 0.6rem;
-}
-
-
-/*https://unsplash.com/photos/vLHzjRNFbEQ*/
+/*Bildekilde frokostbilde: https://unsplash.com/photos/vLHzjRNFbEQ*/
 .frokostmeny img{
     height: 30rem;
     border-radius: 2%;
 }
-@media only screen and (max-width: 850px) {
-   .frokostmeny {
-    flex-direction: column;
-    align-items: center;
-   }
-}
 
+/*Lunsjmeny*/
 .lunsjmeny{
     display: flex;
     flex-direction: row;
@@ -185,13 +193,7 @@ h3{
     flex-basis: 56rem;
 }
 
-@media only screen and (max-width: 850px) {
-    .lunsjmeny {
-     flex-direction: column;
-     align-items: center;
-    }
- }
-
+/*Dessertmeny*/
 .dessertmeny{
     margin-bottom: 2rem;
     display: flex;
@@ -210,45 +212,164 @@ h3{
     flex-basis: 23rem;
 }
 
-
+/*Bildekilde dessertbilde: https://unsplash.com/photos/wRU27yGfSLQ*/
 .dessertmeny img{
     height: 30rem;
     border-radius: 2%;
 }
-@media only screen and (max-width: 850px) {
-    .dessertmeny {
-     flex-direction: column;
-     align-items: center;
-    }
- }
 
 
+/*Drikkemeny*/
 /*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
 .drikkemeny{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     grid-template-columns: 25rem 25rem;
-    gap: 5rem 6rem;
+    gap: 1rem 6rem;
 }
 
 .drikke{
     padding: 1.5rem;
 }
 
+
+ /* Footer */
+.rad-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.kolonne-footer {
+    margin: 1rem 3rem;
+}
+
+.kolonne-footer h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Font Awesome Icons er hentet fra:
+https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+*/
+
+.fa {
+    padding: 0.3rem;
+    margin: 0.3rem 0;
+    width: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover, .telefonnr:hover {
+    opacity: 0.4;
+}
+
+.fa-envelope {
+    color: Salmon;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+    margin-right: 0.3rem;
+}
+
+.fa-instagram {
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+-webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+border-radius: 50%;
+}
+
+.fa-phone {
+color: #382c20;
+}
+
+.telefonnr {
+text-decoration: none;
+color: #382c20;
+}
+
 /*Flytter kolonnene under hverandre */
 @media screen and (max-width: 850px) {
     .drikkemeny {
     grid-template-columns: auto;
-    gap: 2rem;
+    grid-template-columns: 100%;
+
+    }
+
+    .centered{ 
+        font-size: 34px;
+        padding: 0rem;
+    }
+
+    .frokostmeny {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;    }
+
+    .lunsjmeny {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
-  }
+    .dessertmeny {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;    
+    }
 
-  /* Footer */
+    .centered{ font-size: 34px;
+        padding: 0rem;
+    }
+    .box-meny-frokostbilde{
+        display: flex;
+        justify-content: center;
+    }
 
+    .box-meny-dessert-bilde{
+        display: flex;
+        justify-content: center;
+    }
+    .rad-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
 
+@media only screen and (max-width: 800px) {
+    .centered{ font-size: 18px;
+        padding: 0rem;
+    }
+}
+@media only screen and (max-width: 480px) {
 
+    .centered{ font-size: 12px;
+        padding: 0rem;
+    }
+
+    /* Footer */
+    .rad-footer {
+        visibility: hidden;
+    }
+}
+
+ 
+
+  
 
 
 
