@@ -6,6 +6,8 @@
     --green: #839d83;
 }
 
+
+
 /* flexbox */
 .container {
   display: flex;
@@ -32,6 +34,7 @@ header img {
     padding: 1rem;
     margin-top: 1rem;
 }
+
 
 
 /* Navbar */
@@ -91,6 +94,7 @@ header img {
   #main.open{ margin-left:250px; }
 
 
+
 /* main og tittel sections*/
 main {
     font-family: 'Roboto', sans-serif;
@@ -106,6 +110,7 @@ tittel {
     margin-left: 2rem;
     margin-right: 6rem;
 }
+
 
 
 /* boks til tittel*/
@@ -124,6 +129,8 @@ tittel {
     box-shadow: 1rem 1rem #93939323;
     margin-bottom: -3rem;
 }
+
+
 
 /*spinning logo */
 .logoSpinning img {
@@ -152,145 +159,169 @@ tittel {
   }
 
 
+
   /* ting til intro*/
-  .boxIntro {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    line-height: 2rem;
-    padding-top: 3rem;
-    position: relative;
-  }
+.boxIntro {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  line-height: 2rem;
+  padding-top: 3rem;
+  position: relative;
+}
 
-  img {
-    width: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } 
+img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
 
-  .bildeIntro {
-    margin: 0 auto;
-    position: relative;
-  }
+.bildeIntro {
+  margin: 0 auto;
+  position: relative;
+}
 
-  .bildeIntro img {
-    border-radius: 50%;
-  }
- 
-  .bildeTekst-intro{
-    width: 50%;
-    margin: 1rem auto 0 auto;
-  }
+.bildeIntro img {
+  border-radius: 50%;
+}
 
-  .bildeTekst-intro h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+.bildeTekst-intro{
+  width: 50%;
+  margin: 1rem auto 0 auto;
+}
 
-  .bildeTekst-intro p {
-    line-height: 2rem;
-    font-size: smaller;
-  }
+.bildeTekst-intro h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-  .knapp-intro {
-    width: 15rem;
-    height: 5rem;
-    padding: 1rem;
-    margin: 3rem auto -2rem auto;
-    border:2px solid #869e86;
-    background-color: white;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    text-align:center;
-  }
+.bildeTekst-intro p {
+  line-height: 2rem;
+  font-size: smaller;
+}
 
-  .knapp-intro:hover {
-    background-color: #869e86;
-    color:white;
-  }
+.knapp-intro {
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem;
+  margin: 3rem auto -2rem auto;
+  border:2px solid #869e86;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+}
+
+.knapp-intro:hover {
+  background-color: #869e86;
+  color:white;
+}
+
 
 
 /* ting til grafer*/
-  .tekstGraf {
-    width: 100%;
-    margin-top: 0.5rem;
-    text-align: left;
-    margin-left: 1.5rem;
-  }
+.tekstGraf {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-left: 1.5rem;
+}
 
-  .tekstGraf p{
-    font-size: 0.8rem;
-  }
+.tekstGraf p{
+  font-size: 0.8rem;
+}
 
-  .graf1 {
-    width: 90%;
-    height: 20rem;
-    margin: -4.5rem auto 3rem auto;
-  }
+.graf1 {
+  width: 90%;
+  height: 20rem;
+  margin: -4.5rem auto 3rem auto;
+}
 
-  .graf h1{
-    font-size:0.9rem;
-    text-align: center;
-  }
+.graf h1{
+  font-size:0.9rem;
+  text-align: center;
+}
 
-  .graf2 {
-    width: 90%;
-    height: 20rem;
-    margin: -3.5rem auto 0 auto;
-   }
-
-
-  /*Grønn section*/
-  .grønn-section {
-    margin: 3rem auto 3rem auto;
-    padding: 4rem;
-    padding-bottom: 6.5rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--green);
-    color: var(--white);
+.graf2 {
+  width: 90%;
+  height: 20rem;
+  margin: -3.5rem auto 0 auto;
   }
 
 
-  /* bokser til paragrafer*/
-  .boxP1 {
-      width: 100%;
-      height: auto;
-      text-align: left;
-    }
 
- .boxP2 {
+/*Grønn section*/
+.grønn-section {
+  margin: 3rem auto 3rem auto;
+  padding: 4rem;
+  padding-bottom: 6.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+
+
+/* bokser til paragrafer*/
+.boxP1 {
     width: 100%;
     height: auto;
     text-align: left;
-    margin-top: -4rem;
-    line-height: 2rem;
   }
 
-  .boxP3 {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    margin-top: 1rem;
-    line-height: 2rem;
-  }
+.boxP2 {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: -4rem;
+  line-height: 2rem;
+}
 
-  .boxP4 {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    text-align: left;
-    line-height: 2rem;
-    margin-top: 1rem;
-  }
+.boxP3 {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+.boxP3 p {
+  margin-bottom: 1rem;
+}
 
-  .boxP4 p {
-    margin-bottom: 1rem;
-  }
+.boxP4 {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  text-align: left;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.boxP4 p {
+  margin-bottom: 1rem;
+}
+
+
+
+/*Kildeboks*/
+.utenBullets {
+  list-style-type: none;
+  padding-bottom: 1.5rem;
+}
+
+.kilder1{
+  font-size: smaller;
+}
+
+.kilder2 {
+  visibility: hidden;
+}
+
 
 
 /*Media for header og navbar*/
@@ -365,11 +396,24 @@ tittel {
     }
 
 
+
+    /*Kilder*/
+    .kilder1 {
+      display: none;
+    }
+    .kilder2 {
+      font-size: smaller;
+      visibility: visible;
+    }
+
+
+
     /*Gir grønn section full bredde*/
     .grønn-section {
       width: 105%;
       padding-bottom: 2.9rem;
     }
+
 
 
     /*Endre størrelse på grafer*/
@@ -394,9 +438,12 @@ tittel {
   }
 
   header img {
-      width: 5rem;
+      width: 6rem;
       padding: 0.5rem;
   } 
+
+
+
   /*Flexbox + main - små endringer*/
   .container {
     display: flex;
@@ -414,26 +461,33 @@ tittel {
     margin: 1rem;
   }
 
+
+
   /*Gjør nav-knapp og img inni nav mindre*/
   .nav a{
     font-size: medium;
   }
 
   .logoSpinning2 img{
-    width: 4.5rem;
+    width: 5.5rem;
   }
  
  
+
  /*Tekst i tittelboks blir mindre*/
   .boxTittel {
     font-size: small;
   }
+
+
 
   /*Knapp midtstilt og større*/
   .knapp-intro {
     width: 90%;
     margin-bottom: 3rem;
   }
+
+
 
   /*Endrer størrelse på grafer*/
   .graf1{
@@ -449,15 +503,20 @@ tittel {
       font-size: 0.85rem ;
       text-align: center;
     }
+
   .graf p {
       font-size: 0.7rem;
     }
 
 
-  /*Gir grønn section nok lengde*/
+
+  /*Gir grønn section nok lengde og bredde*/
   .grønn-section {
     padding-bottom: 9rem;
+    width: 105%;
   }
+
+
 
   /*Paragraf endres - mindre tekst*/
   .boxP1 {
@@ -476,6 +535,18 @@ tittel {
     width: 100%;
   }
 
+
+
+  /*Kilder*/
+  .kilder1 {
+    display: none;
+  }
+
+  .kilder2 {
+    font-size: smaller;
+    visibility: visible;
+  }
+
 }
 @media screen and (min-width: 768px){
   /*Gjemme logo i navbar*/
@@ -489,6 +560,9 @@ tittel {
       height: 22rem;
     }
 }
-
-/* Responsive navigation menu for mobile devices */
-/* Behov for å legge inn her? */
+@media screen and (min-width: 1370px){
+  /*Flytte tekst for å unngå overlapping med graf2*/
+  .boxP4 {
+    margin-top: 4rem;
+  }
+}
