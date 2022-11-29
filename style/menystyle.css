@@ -80,7 +80,7 @@ nav a:hover {
 
 
 
-/* Bildekilde header: https://unsplash.com/photos/Ww8eQWjMJWk */
+/* Bildekilde header: https://unsplash.com/photos/0uAVsDcyD0M */
 
 /*Hovedbilde med tekst. Kode hentet fra: https://www.w3schools.com/howto/howto_css_image_text.asp */
 
@@ -92,9 +92,12 @@ nav a:hover {
     position: absolute;
     background: none;
     width: 40%;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+ 
+    
+    background: rgba(250, 249, 249, 0.5); /* background with 0.5 opacity */
   }
 
 .container img{
@@ -331,7 +334,7 @@ color: #382c20;
         flex-direction: column;    
     }
 
-    .centered{ font-size: 34px;
+    .centered{ font-size: 24px;
         padding: 0rem;
     }
     .box-meny-frokostbilde{
@@ -351,7 +354,7 @@ color: #382c20;
 }
 
 @media only screen and (max-width: 800px) {
-    .centered{ font-size: 18px;
+    .centered{ font-size: 16px;
         padding: 0rem;
     }
 }
