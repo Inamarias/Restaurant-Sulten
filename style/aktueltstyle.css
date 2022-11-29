@@ -5,6 +5,10 @@
     --white: #ffffff;
     --green: #839d83;
 }
+
+
+
+/* flexbox */
 .container {
   display: flex;
   flex-direction: row;
@@ -16,17 +20,10 @@
   flex-grow: 1;
   height: auto;
   margin: 1rem;
- 
 }
 
 
-@font-face {
-    font-family:adobe-caslon-pro, newbery-sans-pro ;
-    src: url("https://use.typekit.net/crr0pqh.css");
-  }
-
 /* Header */
-
 header {
     display: flex;
     justify-content: center;
@@ -38,8 +35,9 @@ header img {
     margin-top: 1rem;
 }
 
-/* Navbar */
 
+
+/* Navbar */
 .nav {
     height: 100%;
     width: 0;
@@ -51,7 +49,7 @@ header img {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    font-family: newbery-sans-pro, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav a {
@@ -66,6 +64,7 @@ header img {
 .nav a:hover {
     color: #cfd8cf;
 }
+
 .nav .closebtn {
     position: absolute;
     top: 0;
@@ -77,57 +76,41 @@ header img {
 .openbtn {
     font-size: 40px;
     cursor: pointer;
-    background-color:rgba(253, 251, 251, 0.539);
-    color: #869e86;
+    background-color: var(--white);
+    color: var(--green);
     padding: 10px 15px;
     border: none;
 }
   
 .openbtn:hover {
-    background-color: #9ebb9ebf;
-    color: #ffffff;
+    background-color: var(--white);
+    color: var(--green);
 }
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 1rem;
   }
   #mySidebar.open{ width:250px; }
   #main.open{ margin-left:250px; }
 
 
+
+/* main og tittel sections*/
 main {
-    font-family: adobe-caslon-pro, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 3rem;
     display: table;
     width: 95%;
     border: 0.5rem solid white;
     padding: 2rem;
-   
 }
+
 tittel {
     display: flex;
     margin-left: 2rem;
     margin-right: 6rem;
 }
 
-
-h2 {
-    line-height: 1.5rem;
-    padding-bottom: 1rem;
-}
-/* Kolonner for å dele inn side */
-.column {
-    float: left;
-    width: 50%;
-    padding: 1rem;
-  }
-
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
 /* boks til tittel*/
@@ -139,27 +122,33 @@ h2 {
     height: auto;
     border: 1px solid;
     background-color: var(--green);
-    font-family: newbery-sans-pro, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: var(--white);
     font-size: 1.5rem;
+    letter-spacing: 0.19rem;
     box-shadow: 1rem 1rem #93939323;
     margin-bottom: -3rem;
 }
+
+
+
+/*spinning logo */
 .logoSpinning img {
     animation-name: spin;
     animation-duration: 7.5s;
     animation-iteration-count: infinite;
 }
+
 .logoSpinning2 img {
-   
     margin-left: 1.7rem;
     margin-top: -2rem;
-    width: 5.5rem;
+    width: 6.3rem;
     margin-bottom: 3rem;
     animation-name: spin;
     animation-duration: 7.5s;
     animation-iteration-count: infinite;
 }
+
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -168,138 +157,143 @@ h2 {
       transform: rotate(360deg);
     }
   }
-/* boks til grafer*/
 
-  .graf h1{
-    font-size:0.9rem;
-    text-align: center;
-    
-  }
-  .tekstGraf {
-    width: 100%;
-    
-    margin-top: 0.5rem;
-    text-align: left;
-    margin-left: 1.5rem;
-  }
-  .tekstGraf p{
-    font-size: 0.8rem;
-  }
-  .graf1 {
-    width: 90%;
-    height: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -3.5rem;
-  }
-  .graf2 {
-     width: 90%;
-     height: 20rem;
-     margin-left: auto;
-    margin-right: auto;
-     
-     
-   }
+
 
   /* ting til intro*/
-  .boxIntro {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    line-height: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    position: relative;
-  }
-  img {
-    width: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-  .bildeIntro img {
-    border-radius: 50%;
-  }
-  .bildeIntro {
-    margin: 0 auto;
-    position: relative;
-  }
-  .bildeTekst-intro{
-    width: 50%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: newbery-sans-pro, sans-serif;
-  }
-  .bildeTekst-intro h3 {
-    font-size: 1.1rem;
-    font-weight: 500;;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .bildeTekst-intro p {
-    line-height: 2rem;
-    font-size: smaller;
-  }
-
-  .knapp-intro {
-    width: 15rem;
-    height: 5rem;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom: -2rem;
-    margin-left: auto;
-    margin-right: auto;
-    border:2px solid #869e86;
-    background-color: white;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: adobe-caslon-pro, sans-serif;
-    color: black;
-    text-align:center;
-  }
-  .knapp-intro:hover {
-    background-color: #869e86;
-    color:white;
-  }
-
-/* boks til paragrafer*/
-
-
-.P1 {
+.boxIntro {
   width: 100%;
+  height: auto;
+  text-align: left;
+  line-height: 2rem;
+  padding-top: 3rem;
+  position: relative;
+}
+
+img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.bildeIntro {
+  margin: 0 auto;
+  position: relative;
+}
+
+.bildeIntro img {
+  border-radius: 50%;
+}
+
+.bildeTekst-intro{
+  width: 50%;
+  margin: 1rem auto 0 auto;
+}
+
+.bildeTekst-intro h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bildeTekst-intro p {
+  line-height: 2rem;
+  font-size: smaller;
+}
+
+.knapp-intro {
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem;
+  margin: 3rem auto -2rem auto;
+  border:2px solid #869e86;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+}
+
+.knapp-intro:hover {
+  background-color: #869e86;
+  color:white;
+}
+
+
+
+/* ting til grafer*/
+.tekstGraf {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.tekstGraf p{
+  font-size: 0.8rem;
+}
+
+.graf1 {
+  width: 90%;
+  height: 20rem;
+  margin: -4.5rem auto 3rem auto;
+}
+
+.graf h1{
+  font-size:0.9rem;
+  text-align: center;
+}
+
+.graf2 {
+  width: 90%;
+  height: 20rem;
+  margin: -3.5rem auto 0 auto;
+  }
+
+
+
+/*Grønn section*/
+.grønn-section {
+  margin: 3rem auto 3rem auto;
+  padding: 4rem;
+  padding-bottom: 6.5rem;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--green);
   color: var(--white);
-  padding: 5rem;
- 
 }
 
+
+
+/* bokser til paragrafer*/
 .boxP1 {
     width: 100%;
-    height: 20rem;
-    text-align: left;
-    margin-bottom: 3rem;
-    line-height: 2rem;
-    margin-top: -3rem;
-}
- .boxP2 {
-    width: 100%;
     height: auto;
     text-align: left;
-    margin-top: -4rem;
-    line-height: 2rem;
+  }
+
+.boxP2 {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: -4rem;
+  line-height: 2rem;
 }
+
 .boxP3 {
-    width: 90;
-    height: auto;
-    text-align: left;
-    margin-top: 10rem;
-    line-height: 2rem;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+.boxP3 p {
+  margin-bottom: 1rem;
 }
 
 .boxP4 {
-  width: 100%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -307,101 +301,268 @@ h2 {
   line-height: 2rem;
   margin-top: 1rem;
 }
+
 .boxP4 p {
   margin-bottom: 1rem;
 }
 
 
-/* media for header og navbar*/
 
-/* tablet*/
+/*Kildeboks*/
+.utenBullets {
+  list-style-type: none;
+  padding-bottom: 1.5rem;
+}
 
-@media screen and (max-width: 768px) and (min-width: 400px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .item {
-    width: 90%;
-    flex-grow: 1;
-    height: auto;
-    margin: 1rem;
-   
-  }
-  
-    /* Header flyttes */
+.kilder1{
+  font-size: smaller;
+}
+
+.kilder2 {
+  visibility: hidden;
+}
+
+
+
+/*Media for header og navbar*/
+
+  /* tablet*/
+@media screen and (max-width: 768px) and (min-width: 450px) {
+
+  /*Flexbox + main - små endringer*/
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .item {
+      width: 100%;
+      flex-grow: 1;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    main {
+        width: 100%;
+        margin: 1rem;
+      }
+
+
+    /*Header flyttes */
     header {
         justify-content: flex-start;
     }
     
     header img {
         width: 7rem;
-        padding: 0.5rem;
-    }
-    main {
-      width: 90%;
+        padding: 1rem;
     }
 
+
+    /*Nav-knapp blir mindre*/
+    .openbtn {
+      font-size: 2rem;
+    }
+
+
+    /* Tittelboks minskes*/
     .boxTittel {
       font-size: medium;
       margin-left: 4rem;
       width: 110%;
     }
+
+
+    /*Knapp blir større og  midtstilles*/
     .knapp-intro {
       width: 90%;
       margin-bottom: 3rem;
     }
-    .boxIntro {
-      width: 95%;
+
+
+    /*Bokser til paragrafer - små endringer*/
+    .boxP1 {
+      width: 100%;
+      margin-top: -1rem;
+    }
+
+    .boxP2 {
+      margin-bottom: 2rem;
     }
 
     .boxP4 {
       width: 100%;
-      margin-top: 8rem;
+    }
+
+
+
+    /*Kilder*/
+    .kilder1 {
+      display: none;
+    }
+    .kilder2 {
+      font-size: smaller;
+      visibility: visible;
+    }
+
+
+
+    /*Gir grønn section full bredde*/
+    .grønn-section {
+      width: 105%;
+      padding-bottom: 2.9rem;
+    }
+
+
+
+    /*Endre størrelse på grafer*/
+    .graf1 {
+      width: 95%;
+      margin: 0 auto 7rem auto;
     }
     
-    .graf1 {
-      margin-bottom: 1.5rem;
-      width: 90%;
-      
-    }
     .graf2 {
       width: 95%;
-      margin-top: 1rem;
+      margin: 1rem auto 9rem auto;
     }
     
-    /*Kolonner stackes når skjermen minsker*/
-     .column {
-      width: 100%;
-    }
 }
 
 /* mobile */
+@media screen and (max-width: 450px){
 
-@media only screen and (max-width: 400px) and (min-width: 200px){
- 
-  main {
-    width: 90%;
+  /* header flyttes*/
+  header {
+      justify-content: flex-start;
   }
 
-  .boxP1 {
+  header img {
+      width: 6rem;
+      padding: 0.5rem;
+  } 
+
+
+
+  /*Flexbox + main - små endringer*/
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
     width: 100%;
-    font-size: smaller;
+    height: auto;
+    margin: 1rem auto;
   }
+
+  main {
+    width: 100%;
+    margin: 1rem;
+  }
+
+
+
+  /*Gjør nav-knapp og img inni nav mindre*/
+  .nav a{
+    font-size: medium;
+  }
+
+  .logoSpinning2 img{
+    width: 5.5rem;
+  }
+ 
+ 
+
+ /*Tekst i tittelboks blir mindre*/
+  .boxTittel {
+    font-size: small;
+  }
+
+
+
+  /*Knapp midtstilt og større*/
+  .knapp-intro {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+
+
+  /*Endrer størrelse på grafer*/
   .graf1{
     width: 80%;
- 
   }
 
-  
+  .graf2 {
+    margin-top: 0.1rem;
+    margin: 0.1rem auto 5rem auto
+  }
+
+  .graf h1{
+      font-size: 0.85rem ;
+      text-align: center;
+    }
+
+  .graf p {
+      font-size: 0.7rem;
+    }
+
+
+
+  /*Gir grønn section nok lengde og bredde*/
+  .grønn-section {
+    padding-bottom: 9rem;
+    width: 105%;
+  }
+
+
+
+  /*Paragraf endres - mindre tekst*/
+  .boxP1 {
+      padding: 1rem;
+      width: 100%;
+      font-size: smaller;
+      line-height: 1.3rem;
+      margin-top: -3rem;
+    }
+
+   .boxP3 {
+    margin-top: 2.5rem;
+   } 
+
+  .boxP4 {
+    width: 100%;
+  }
+
+
+
+  /*Kilder*/
+  .kilder1 {
+    display: none;
+  }
+
+  .kilder2 {
+    font-size: smaller;
+    visibility: visible;
+  }
 
 }
 @media screen and (min-width: 768px){
+  /*Gjemme logo i navbar*/
     .logoSpinning2{
         visibility: hidden;
     }
-}
 
-/* Responsive navigation menu for mobile devices */
-/* Behov for å legge inn her? */
+
+    /*Gjøre graf lenger*/
+    .graf2 {
+      height: 22rem;
+    }
+}
+@media screen and (min-width: 1370px){
+  /*Flytte tekst for å unngå overlapping med graf2*/
+  .boxP4 {
+    margin-top: 4rem;
+  }
+}

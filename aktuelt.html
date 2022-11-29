@@ -5,43 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/aktueltstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/crr0pqh.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!--Skal vi bruke favicon?-->
+    
     <link rel="icon" href="images/IoT.png" type="image/x-icon">
-    <!--Alle må huske title i sin html-->
+    
     <title>Topical page</title>
 </head>
 <body>
     <header>
-
-        <!--Lage logo i annen farge enn blå? Feks brun?-->
-        <!--Legge inn bildekilde-->
         <a href="index.html">
             <div class="logoSpinning">
                       <img src="images/IoT.png" alt="Internet of things icon spinning">  
             </div>
         </a>
-
     </header>
 
-    
+    <!--Her legges sidebar-->
         <div id="mySidebar" class="nav">
             <div class="logoSpinning2">
-                <img src="images/IoT.png" alt="Internet of things icon spinning">  
-      </div>
+                <img src="images/IoT-white.png" alt="Internet of things icon spinning">  
+             </div>
             <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a> 
             <a href="meny.html">MENY</a>
             <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
             <a href="aktuelt.html">TOPICAL PAGE</a>
             <a href="booking.html" class="nav-booking">BOOKING</a>  
         </div>
-        
+        <!--Javascript for å åpne og lukke sidebaren-->
         <div id="main">
             <button class="openbtn" onclick="OpenOrClose()">☰</button>
-          </div>
+        </div>
         <script>
             function OpenOrClose() {
             document.getElementById("mySidebar").classList.toggle("open");
@@ -52,11 +54,10 @@
     
     <!--Her legges tittelboks-->
     <tittel>
-       <div class="boxTittel">
-                <h1>Opinions of the development of the smart 
-                    society and the Internet of things</h1>    
+        <div class="boxTittel">
+            <h1>Opinions of the development of the smart 
+                society and the Internet of things</h1>    
         </div>
-    
     </tittel>
             
 
@@ -74,156 +75,172 @@
                         
                     <p style="padding-top: 1.5rem;">As Oracle states: "The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, 
                         software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet. 
-                        These devices range from ordinary household objects to sophisticated industrial tools."(Oracle, 2021). You can read more about IoT at 
-                        <a href="https://www.oracle.com/internet-of-things/what-is-iot/">Oracle.com</a>.
-                    </p>
+                        These devices range from ordinary household objects to sophisticated industrial tools."(Oracle, 2021). </p>
                     <button class="knapp-intro" onclick=" window.open(' https://www.oracle.com/internet-of-things/what-is-iot/',' _blank' )"> Read more about IoT here! </button> 
                 </div>
                 <div class="item">
                     <div class="bildeIntro">
                         <img src="images/dag.jpeg">
                    
-                   <div class="bildeTekst-intro">
-                    <h3>Smart technologies in connected homes – A 2019 Norwegian consumer survey</h3>
-                    <p><b>Author</b> Dag Slettemeås</p>
-                    <p><b>Publisher</b> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University</p>
-                    <p><b>Published</b> 2019</p>
-                    <p><b>URI</b> <a href="https://hdl.handle.net/10642/9066">https://hdl.handle.net/10642/9066</a></p>
-                   </div>
-                </div>
+                        <div class="bildeTekst-intro">
+                            <h3>Smart technologies in connected homes – A 2019 Norwegian consumer survey</h3>
+                            <p><b>Author</b> Dag Slettemeås</p>
+                            <p><b>Publisher</b> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University</p>
+                            <p><b>Published</b> 2019</p>
+                            <p><b>URI</b> <a href="https://hdl.handle.net/10642/9066">https://hdl.handle.net/10642/9066</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-              
-            
-    </main> 
-     <section class="P1">
+   </main> 
+
+        <!--Her legges section med grønn bakgrunn-->   
+        <section class="grønn-section">
             <div class="container">
                 <div class="item">
                     <div class="boxP1">
-                        <h2>Development where things and homes become smart 
-                            and connected</h2>
+                     <h2>Development where things and homes become smart 
+                        and connected</h2>
                         <p>In Figure 4-1, we see that around half of the respondents (52%) are positive 
                             (12% very positive) to a development where ordinary products and homes become 
                             smarter and more connected. On the other hand, 20% are negative to this 
                             development, while 26% say either/or, while 4% are undecided4.  
                             In terms of gender, men seem to be slightly more positive (56%) than women (46%), 
                             while the younger generation are more favorable to this development than the elderly. 
-                            </p>  
-                    </div> 
+                            </p>     
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="graf">
+                    <div class="graf" style="margin-top: 2rem; margin-bottom: 2rem;">
                         <div class="graf1">
                            <h1>What do you think of a development where more and more products and homes become smart and connected? - 2019</h1>
                            <canvas id="topicalPage" height="400" width="500"></canvas>
                            <script src="javascript/figure1.js"></script>   
-                       <div class="tekstGraf">
+                        <div class="tekstGraf">
                            <p><b>Figure 4-1</b>: Question – what do you think of a development where ordinary products and homes
                                become more and more connected (to the internet) and “smart” (more autonomous)? Among all.
                                Total, and by gender and age. Percentages, 2019 (N=1001). </p>
                        </div>
                        </div>     
-                       </div> 
+                    </div> 
                 </div>
             </div>
-        </section> 
-    <!--Her legges kolonner med paragraf og grafer-->
-      <main>
-
+        </section>
+    
+    <main>
+        <!--Her legges kolonner med paragraf og grafer-->
         <div class="container">
            <div class="item">
             <div class="boxP2">
-                    <h2>Sensibility of ordinary products becoming smart and 
-                        connected </h2>
-                    <p>Above, we seek to find out whether consumers find it sensible that more products, also 
-                        regular products that previously were not smart or connected, now become so. There 
-                        are still more respondents that find this to be a reasonable/sensible development (42%) 
-                        compared to those that find it unreasonable/unsensible (30%). In addition, 25% answer 
-                        either/or, while 3% are undecided.  
-                        There is a slight gender difference, where 46% among men find this development 
-                        reasonable/sensible, compared to 38% among women. Again, there is an age 
-                        difference. The younger tend to find the increased tendency of dumb products 
-                        becoming smart a reasonable thing, compared to the older generation (51% among 18-
-                        29 years old find it reasonable/very reasonable, compared to 37% among 60-80 years 
-                        old). 
-                        </p>
-                </div> 
+                <h2>Sensibility of ordinary products becoming smart and 
+                    connected </h2>
+                <p>Above, we seek to find out whether consumers find it sensible that more products, also 
+                    regular products that previously were not smart or connected, now become so. There 
+                    are still more respondents that find this to be a reasonable/sensible development (42%) 
+                    compared to those that find it unreasonable/unsensible (30%). In addition, 25% answer 
+                    either/or, while 3% are undecided.  
+                    There is a slight gender difference, where 46% among men find this development 
+                    reasonable/sensible, compared to 38% among women. Again, there is an age 
+                    difference. The younger tend to find the increased tendency of dumb products 
+                    becoming smart a reasonable thing, compared to the older generation (51% among 18-
+                    29 years old find it reasonable/very reasonable, compared to 37% among 60-80 years 
+                    old). 
+                    </p>
+            </div> 
            </div>
            <div class="item">
              <div class="graf">
-                   <div class="graf2">
+                <div class="graf2">
                     <h1>To what extent do you think it is reasonable/sensible that more and more ordinary
                         products become smart and connected to the internet? - 2019</h1>
                     <canvas id="topicalPage1" height="300" width="400"></canvas>
                     <script src="javascript/figure2.js"></script>
-                <div class="tekstGraf">
-                    <p><b>Figure 4-2</b>: Question – to what extent do you find it reasonable/sensible (fornuftig) that more and 
-                        more “regular” products become smart and connected to the internet. Among all. Total, and by 
-                        gender and age. Percentage, 2019 (N=1001). </p>
-                </div>
-                </div>  
-                
-                </div>
+                    <div class="tekstGraf">
+                        <p><b>Figure 4-2</b>: Question – to what extent do you find it reasonable/sensible (fornuftig) that more and 
+                            more “regular” products become smart and connected to the internet. Among all. Total, and by 
+                            gender and age. Percentage, 2019 (N=1001). </p>
+                    </div>
+                </div> 
+            </div>
            </div>
         </div>
-           <div class="container">
-            <div class="item">
-                <div class="boxP4">
-                    <h2>Readiness to participate in a smart/connected world </h2>
-                    <p>Finally, we wanted to know how well equipped Norwegian consumers feel in terms of 
-                        participating in a world where things, homes and environments gradually become 
-                        “smarter” and more connected to the internet. The question looks similar to the one in 
-                        the previous chapter, but there we only asked people with IoT-things at home – and 
-                        their present-day evaluation. Here, we ask all respondents and attempt to make them 
-                        evaluate their future IoT-readiness.  
-                        From the figure above, we see that most consumers feel well equipped to participate in 
-                        an increasingly smart/connected society. Almost 6 out of 10 feel well/very well 
-                        equipped, 23% moderately equipped, while 16% feel do not feel well equipped. Around 
-                        3% are undecided.</p> 
-                    <p>If we look at gender, there are some differences. A higher percentage among men 
-                        (63%) than among women (53%) feel competent enough to participate in the IoT-
-                        society. There are also 23% among men who feel “very well” equipped to paritcipate. 
-                        For age, the differences are even more prominent. The sense of competence is 
-                        reduced with increasing age; 79% among 18-29 years old feel well/very well equipped 
-                        to participate in a smart/connected society, compared to 68% for the 30-39 years old, 
-                        59% for the 40-49 years old, 52% for the 50-59 years old, and finally 38% for the 60-80 
-                        years old. If we compare those that feel “very well” equipped, they account for 40% in 
-                        the youngest group and only 4% in the oldest group. In the latter age group, 32% do 
-                        not feel well equipped to participate in this development.</p>
-                    </div> 
-                    
-                
-            </div>
+
+        <div class="container">
             <div class="item">
              <div class="boxP3">
-                    <h2>Primary drivers of the smart/connected development</h2>
-                    <p>We often hear that new products supplied to the market are driven by consumer 
-                        demand. We wanted to check with consumers themselves what they thought where the 
-                        primary drivers of mass market IoT-products. From the figure above, we see that most 
-                        consumers (60%) believe that this development is primarily driven by the industry. 
-                        There are quite a few that state both consumer and the industry as primary drivers 
-                        (30%), while only 6% see consumers as the primary drivers of this development.  
-                        There are no gender differences here, but we see that age differentiates. While “only” 
-                        45% of the youngest (18-29 years old) see the industry as the primary driver of 
-                        development, as many as 71% among the oldest (60-80 years) claim the industry to be 
-                        the primary driver. For the youngest group, there is a total of 48% that consider 
-                        consumers to be somewhat involved in IoT development. This could be explained by a 
-                        generational effect, as the younger generation are considered to be “digital natives”. 
-                        They only have experience with a life that includes the social, participatory and 
-                        collaborative internet (web 2.0 and web 3.0).  
-                        </p>  
-                    </div>
+                <h2>Primary drivers of the smart/connected development</h2>
+                <p>We often hear that new products supplied to the market are driven by consumer 
+                    demand. We wanted to check with consumers themselves what they thought where the 
+                    primary drivers of mass market IoT-products. From the figure above, we see that most 
+                    consumers (60%) believe that this development is primarily driven by the industry. 
+                    There are quite a few that state both consumer and the industry as primary drivers 
+                    (30%), while only 6% see consumers as the primary drivers of this development.  
+                    There are no gender differences here, but we see that age differentiates. While “only” 
+                    45% of the youngest (18-29 years old) see the industry as the primary driver of 
+                    development, as many as 71% among the oldest (60-80 years) claim the industry to be 
+                    the primary driver. For the youngest group, there is a total of 48% that consider 
+                    consumers to be somewhat involved in IoT development. This could be explained by a 
+                    generational effect, as the younger generation are considered to be “digital natives”. 
+                    They only have experience with a life that includes the social, participatory and 
+                    collaborative internet (web 2.0 and web 3.0).  
+                    </p> 
+                <div class="kilder1">
+                    <h2>Sources</h2>
+                    <ul class="utenBullets">
+                        <li>Oracle. (2021). <i>What is the Internet of Things (IoT)?</i> Oracle. <a href="https://www.oracle.com/internet-of-things/what-is-iot/">https://www.oracle.com/internet-of-things/what-is-iot/</a> </li>
+                    </ul>
+                    <ul class="utenBullets">
+                        <li>OsloMet, (u.å.) <i> Dag Slettemeås</i> [Fotografi]. OsloMet. <a href="https://www.oslomet.no/om/ansatt/dags/">https://www.oslomet.no/om/ansatt/dags/</a> </li>
+                    </ul>    
+                    <ul class="utenBullets">
+                        <li>Slettemeås, D. (2019). <i>Smart technologies in connected homes – A 2019 Norwegian consumer survey.</i> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University.</li>
+                    </ul> 
+                </div>
+                    
+            </div>
            </div>
+           <div class="item">
+            <div class="boxP4">
+                <h2>Readiness to participate in a smart/connected world </h2>
+                <p>Finally, we wanted to know how well equipped Norwegian consumers feel in terms of 
+                    participating in a world where things, homes and environments gradually become 
+                    “smarter” and more connected to the internet. The question looks similar to the one in 
+                    the previous chapter, but there we only asked people with IoT-things at home – and 
+                    their present-day evaluation. Here, we ask all respondents and attempt to make them 
+                    evaluate their future IoT-readiness.  
+                    From the figure above, we see that most consumers feel well equipped to participate in 
+                    an increasingly smart/connected society. Almost 6 out of 10 feel well/very well 
+                    equipped, 23% moderately equipped, while 16% feel do not feel well equipped. Around 
+                    3% are undecided.</p> 
+                <p>If we look at gender, there are some differences. A higher percentage among men 
+                    (63%) than among women (53%) feel competent enough to participate in the IoT-
+                    society. There are also 23% among men who feel “very well” equipped to paritcipate. 
+                    For age, the differences are even more prominent. The sense of competence is 
+                    reduced with increasing age; 79% among 18-29 years old feel well/very well equipped 
+                    to participate in a smart/connected society, compared to 68% for the 30-39 years old, 
+                    59% for the 40-49 years old, 52% for the 50-59 years old, and finally 38% for the 60-80 
+                    years old. If we compare those that feel “very well” equipped, they account for 40% in 
+                    the youngest group and only 4% in the oldest group. In the latter age group, 32% do 
+                    not feel well equipped to participate in this development.</p>
+                <div class="kilder2">
+                    <h2>Sources</h2>
+                    <ul class="utenBullets">
+                        <li>Oracle. (2021). <i>What is the Internet of Things (IoT)?</i> Oracle. <a href="https://www.oracle.com/internet-of-things/what-is-iot/">https://www.oracle.com/internet-of-things/what-is-iot/</a> </li>
+                    </ul>
+                    <ul class="utenBullets">
+                        <li>OsloMet, (u.å.) <i> Dag Slettemeås</i> [Fotografi]. OsloMet. <a href="https://www.oslomet.no/om/ansatt/dags/">https://www.oslomet.no/om/ansatt/dags/</a> </li>
+                    </ul>    
+                    <ul class="utenBullets">
+                        <li>Slettemeås, D. (2019). <i>Smart technologies in connected homes – A 2019 Norwegian consumer survey.</i> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University.</li>
+                    </ul> 
+                </div>
+                    
+                    
                 
-            
-         
-        
-        
-        
-        
-
-    </main>
-    
+                </div>
+            </div>
+        </div>   
+    </main>  
 </body>
 </html>
