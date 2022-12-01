@@ -1,4 +1,3 @@
-
 * {
     margin: 0 auto;
     /*outline: 1px solid red;
@@ -8,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5fffa;
+    background-color: #f5fffa; /*#fffbf5*/
     color:#382c20;
     font-weight: 300;
     line-height: 1.7rem;
@@ -129,6 +128,7 @@ letter-spacing: 0.1rem;
     width: 50rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 5rem;
 }
 
@@ -143,6 +143,10 @@ letter-spacing: 0.1rem;
 
 .info-om-lokasjon {
     margin: 0rem;
+}
+
+span {
+    display: block;
 }
 
 .info-om-lokasjon h2 {
@@ -190,393 +194,198 @@ letter-spacing: 0.1rem;
 
 
 
-
-
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.bilder {
     width: 50rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     position: relative;
 }
- 
-.small {
-    width: 9.4rem;
-    height: 9.4rem;
+
+.scroll {
+    overflow: auto;
+    white-space: nowrap;
+    background: transparent;
+    height: 30rem;
+    margin-top: 2rem;
     object-fit: cover;
-    margin: 0;
     border-radius: 0.8rem;
-}
- 
-.small:hover {
-    -webkit-transform: scale(1.03, 1.03);
-    transform: scale(1.03, 1.03);
-}
+  }
   
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
+  .scroll img {
+    margin-right: 1rem;
+    height: 30rem;
+  }
 
-a div {
-    position: relative;
-    margin: auto auto;
-    text-align: center;
-}
- 
-.lightbox:target {
-    display: flexbox;
-    display: flex;
-}
- 
-.container a {
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-.pekefinger img {
+  .pekefinger img {
     position: absolute;
     width: 3.5rem;
     transform: rotate(330deg);
-    top: 18rem;
+    top: 32rem;
     left: 48.5rem;
 }
 
 .pekefinger p {
     font-family: 'Bebas Neue', cursive;
     position: absolute;
-    width: 10rem;
+    width: 11rem;
     font-size: 1.2rem;
     margin-top: 4.3rem;
-    top: 17.5rem;
-    left: 47rem;
+    top: 31.5rem;
+    left: 46rem;
 }
- 
 
-
-
-
-  
 
 
 
 .booking {
-   width: 50rem;
-   margin-top: 7rem;
-   margin-bottom: 3rem;
-   text-align: center;
-}
+    width: 50rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+ }
+ 
+ .booking h2 {
+     float: left;
+ }
+ 
+ .booking p {
+     margin: 2rem 0rem;
+     float: left;
+ }
 
-.booking h2 {
-    float: left;
-}
-
-.booking p {
-    margin: 2rem 0rem;
-    float: left;
-}
-
-.booking-input {
-    font-family: 'Roboto', sans-serif;
-    width: 22.3rem;
-    padding: 1rem;
-    margin: 0.5rem 0rem;
-    outline: none;
-    border: solid #b4b4b4;
-    border-radius: 0.3rem;
-    transition: 0.5s;
-}
-
-.booking-input:focus {
-    border: 0.15rem solid #5ca5ad;
-}
-
-.column {
+ .booking-input {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#mail {
-    width: 47.8rem;
-}
-
-#melding {
-    width: 47.8rem;
-    padding-bottom: 4rem;
-}
-
-.booking-button {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.3rem;
-    width: 7rem;
-    background-color: #5ca5ad;
-    color: #f5fffa; 
-    padding: 0.6rem;
-    border-radius: 0.8rem;
-    letter-spacing: 0.1rem;
-    margin: 1rem 0rem;
-    border: none;
-    transition: 0.5s;
-}
-
-.booking-button:hover {
-    background-color: #38696f;
-}
-
-::placeholder {
-    color: #5ca5ad;
-}
-
-
+ }
+ 
+ .input {
+     font-family: 'Roboto', sans-serif;
+     width: 22.3rem;
+     padding: 1rem;
+     margin: 0.5rem 0rem;
+     outline: none;
+     border: solid #b4b4b4;
+     border-radius: 0.3rem;
+     transition: 0.5s;
+ }
+ 
+ .input:focus {
+     border: 0.15rem solid #5ca5ad;
+ }
+ 
+ #mail {
+     width: 100%;
+ }
+ 
+ #melding {
+     width: 100%;
+     padding-bottom: 4rem;
+ }
+ 
+ .booking-button {
+     font-family: 'Bebas Neue', cursive;
+     font-size: 1.3rem;
+     width: 7rem;
+     background-color: #5ca5ad;
+     color: #f5fffa; 
+     padding: 0.6rem;
+     border-radius: 0.8rem;
+     letter-spacing: 0.1rem;
+     margin: 1rem 0rem;
+     border: none;
+     transition: 0.5s;
+ }
+ 
+ .booking-button:hover {
+     background-color: #38696f;
+ }
+ 
+ ::placeholder {
+     color: #5ca5ad;
+ }
 
 
 @media only screen and (max-width: 850px) {
-    * {
-        margin: 0 auto;
-        outline: 1px solid red;
-        outline-offset: -1px;
-    }
-    
-    
     body {
-        font-weight: 300;
-        line-height: 1.7rem;
-        letter-spacing: 0.02rem;
-        position: relative;   
+        font-size: 0.9rem;
     }
-    
-    h2 {
-        letter-spacing: 0.1rem;
-    }
-    
+ 
     h1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
-        text-align: center;
-        margin-top: 4rem;
-        letter-spacing: 0.1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.08rem;
         width: 90%;
     }
     
     .tekst {
-        text-align: justify;
-        text-align-last: center;
         width: 90%;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     
     .booking-boks {
         width: 90%;
-        text-align: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     
     .booking-link {
         font-size: 1.3rem;
-        padding: 0.6rem 3rem;
-        border-radius: 0.8rem;
-        letter-spacing: 0.1rem;
     }
     
     .kort-info {
-        height: 13rem;
-        margin-top: 7rem;
+        margin-top: 4rem;
     }
     
     .bredde1 {
         width: 90%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 4.8rem;
-    }
-    
-    .kapasitet {
-        text-align: center;
-        margin: 0rem;   
-    }
-    
-    .kapasitet h3 {
-    font-size: 2.2rem;
-    padding-bottom: 0.5rem;
-    letter-spacing: 0.1rem;
-    }
-    
-    .kapasitet p {
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
     }
 
     .mer-info {
         width: 80%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
-    
-    .column1 {
-        margin-top: 3rem;
-    }
-    
-    .column1 h2 {
-        margin-bottom: 1rem;
-    }
-    
-    .column1 ul {
-        list-style-type: none;
-        padding: 0;
-        line-height: 2.2rem;
-    }
-    
-    .vertikal-linje {
-        border-left: 0.4rem dotted #5ca5ad;
-        height: 31rem;
-    }
-    
-    #lokalet-passer-til {
-        text-align: right;
-    }
-    
 
-
-    
     .lokasjon {
         width: 90%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5rem;
     }
     
     .kart {
-        filter: grayscale();
-        width: 65%;
-        height: 16rem;
-        border: 0;
-        margin: 0rem;
-        border-radius: 0.8rem;
+        width: 100%;
+        order: 1;
     }
-    
-    .info-om-lokasjon {
-        margin: 0rem;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
+
+    span {
+        display: contents;
     }
     
     .info-om-lokasjon h2 {
-        text-align: right;
+        text-align: left;
     }
     
     .info-om-lokasjon p {
-        text-align: right;
-        margin: 1.4rem 0rem;
-    }
-    
-    
-    
-    .pris {
-        background-color: #d1eacd;
-        height: 22rem;
-        margin-top: 5rem;
+        text-align: left;
     }
     
     .bredde2 {
-        width: 50rem;
-        line-height: 1.5rem;
-        padding-top: 3.5rem;
-    }
-    
-    .pris h2 {
-        margin-bottom: 2rem;
-    }
-    
-    .bokser {
-        display: flex;
-        justify-content: space-between;  
-        margin: 2rem 0rem; 
+        width: 90%;
     }
     
     .boks {
-        font-weight: 600;
-        background-color: #f5fffa;
-        border-radius: 0.8rem;
-        width: 8rem;
-        padding: 1rem 1rem;
-        text-align: center;  
-        margin: 0;
+        width: 15%;
     }
     
-    
-    
-    
-    
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 50rem;
-        margin-top: 7rem;
-        position: relative;
+    .bilder {
+        width: 90%;
+        margin-top: 4rem;
     }
-     
-    .small {
-        width: 9.4rem;
-        height: 9.4rem;
-        object-fit: cover;
-        margin: 0;
-        border-radius: 0.8rem;
+
+    .scroll {
+        height: 25rem;
     }
-     
-    .small:hover {
-        -webkit-transform: scale(1.03, 1.03);
-        transform: scale(1.03, 1.03);
+  
+    .scroll img {
+        height: 25rem;
     }
-      
-    .lightbox {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-    }
-    
-    a div {
-        position: relative;
-        margin: auto auto;
-        text-align: center;
-    }
-     
-    .lightbox:target {
-        display: flexbox;
-        display: flex;
-    }
-     
-    .container a {
-        text-decoration: none;
-    }
-    
-    
-    
-    
-    
-    
     
     .pekefinger img {
         display: none;
@@ -585,107 +394,32 @@ a div {
     .pekefinger p {
         display: none;
     }
-     
-    
-    
-    
-    
-      
-    
-    
     
     .booking {
-       width: 50rem;
-       margin-top: 7rem;
-       margin-bottom: 3rem;
-       text-align: center;
+       width: 90%;
     }
-    
-    .booking h2 {
-        float: left;
-    }
-    
+     /*få teksten til venstre*/
     .booking p {
-        margin: 2rem 0rem;
         float: left;
     }
     
-    .booking-input {
-        width: 22.3rem;
-        padding: 1rem;
-        margin: 0.5rem 0rem;
-        outline: none;
-        border: solid #b4b4b4;
-        border-radius: 0.3rem;
-        transition: 0.5s;
+    .input {
+        width: 90%;
+        flex-grow: 1;
     }
     
-    .booking-input:focus {
+    .input:focus {
         border: 0.15rem solid #5ca5ad;
-    }
-    
-    .column {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    #mail {
-        width: 47.8rem;
-    }
-    
-    #melding {
-        width: 47.8rem;
-        padding-bottom: 4rem;
-    }
-    
-    .booking-button {
-        font-size: 1.3rem;
-        width: 7rem;
-        padding: 0.6rem;
-        border-radius: 0.8rem;
-        letter-spacing: 0.1rem;
-        margin: 1rem 0rem;
-        border: none;
-        transition: 0.5s;
-    }
-    
-    .booking-button:hover {
-        background-color: #38696f;
-    }
-    
-    ::placeholder {
-        color: #5ca5ad;
-    }
-
+    }   
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 480px) {
-    * {
-        margin: 0 auto;
-        outline: 1px solid red;
-        outline-offset: -1px;
-    } 
-    
+
     body {
         font-size: 0.9rem;
         line-height: 1.5rem;
         letter-spacing: 0rem;
-        position: relative;   
     }
    
     h2 {
@@ -696,36 +430,11 @@ a div {
     h1 {
         font-size: 1.8rem;
         line-height: 2.5rem;
-        text-align: center;
-        margin-top: 3rem;
-        letter-spacing: 0.08rem;
-        width: 90%;
-
-    }
-    
-    .tekst {
-        text-align: justify;
-        text-align-last: center;
-        width: 90%;
-        margin-top: 2rem;
-    }
-    
-    .booking-boks {
-        width: 90%;
-        text-align: center;
         margin-top: 3rem;
     }
     
-    .booking-link {
-        font-size: 1.2rem;
-        padding: 0.5rem 2rem;
-        border-radius: 0.8rem;
-        letter-spacing: 0.1rem;
-    }
-
     .kort-info {
         height: 17rem;
-        margin-top: 3rem;
     }
     
     .bredde1 {
@@ -783,9 +492,6 @@ a div {
     #lokalet-passer-til {
         text-align: right;
     }
-    
-
-
     
     .lokasjon {
         width: 90%;
@@ -875,11 +581,7 @@ a div {
         margin: 0;
         border-radius: 0.8rem;
     }
-     
-    .small:hover {
-        -webkit-transform: scale(1.03, 1.03);
-        transform: scale(1.03, 1.03);
-    }
+
       
     .lightbox {
         display: none;
@@ -925,7 +627,7 @@ a div {
     
     .booking {
        width: 90%;
-       margin-top: 3rem;
+       margin-top: rem;
        margin-bottom: 3rem;
        text-align: center;
     }
@@ -942,7 +644,6 @@ a div {
     }
     
     .booking-input {
-        width: 90%;
         padding: 1rem;
         margin: 0.5rem 0rem;
         outline: none;
