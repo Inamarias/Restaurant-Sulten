@@ -30,31 +30,37 @@
 
         <!-- Når alle bilder på forside er lagt inn, så må eg sjekke at høyden ikkje forandres i tablet- og mobilversjon -->
 
-        
+        <!-- Like breakpoints på alle sidene -->
+
+        <!-- Letter spacing -->
+
         <header>
 
-            <!-- Legge inn kilde på js under -->
+            <div class="bildeseksjon">
+
+                <!-- Legge inn kilde på js under -->
+
+                <div>            
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="Sulten hjemlogo">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="OpenOrClose()">☰</button>
+            </div>
+
             <nav id="mySidebar">
-                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a> 
+                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
                 <a href="index.html">HJEM</a>
                 <a href="meny.html">MENY</a>
                 <a href="booking.html" class="nav-booking">BOOKING</a>
                 <a href="aktuelt.html">TOPICAL PAGE</a>
                 <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
             </nav>
-            
-            <div id="main">
-                <button class="openbtn" onclick="OpenOrClose()">☰</button>
-            </div>
-
-                        <!--Lage logo i annen farge enn blå? Feks brun?-->
-            <!--Legge inn bildekilde-->
-            <div>            
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Sulten hjemlogo">
-                </a>
-            </div>
-
+        
         </header>
 
         <main>
@@ -64,15 +70,15 @@
             <div class="slideshow">
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/4.jpg" alt="Kaffe, juice, smoothie, diverse retter som toast, avocado, omelett, dessert">
+                    <img src="images/4.jpg" alt="Kaffebar med ulike kaffetyper bak en disk">
                 </div>
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/5.jpg" alt="Vitaminsuppe med reddik og brød">
+                    <img src="images/5.jpg" alt="Oversikt over hele restaurent">
                 </div>
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/13.jpg" alt="Croissanter toppet med mandler">
+                    <img src="images/13.jpg" alt="Koldtbord med diverse desserter, som muffins og frukt">
                 </div>
 
                 <!--Neste- og tilbakeknapper-->
@@ -83,9 +89,9 @@
 
                 <!-- Sirkler under slideshow -->
                 <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <a class="dot" onclick="currentSlide(1)" onfocus="showSlides()"></a>
+                    <a class="dot" onclick="currentSlide(2)" onfocus="showSlides()"></a>
+                    <a class="dot" onclick="currentSlide(3)" onfocus="showSlides()"></a>
                 </div>
 
             </main>
@@ -95,24 +101,24 @@
             <!--Åpningstider, kontaktinfo, adresse-->
             <div class="rad-footer">
                 <div class="kolonne-footer">
-                    <h2>Åpningstider</h2>
-                    <p>Man - tor 12 - 23</p>
-                    <p>Fre - søn 12 - 02</p>
+                    <h1>Åpningstider</h1>
+                    <p>Man - tor 10 - 23</p>
+                    <p>Fre - søn 12 - 23</p>
                 </div>
         
                 <div class="kolonne-footer">
-                    <h2>Kontaktinfo</h2>
-                    <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;"></a>
+                    <h1>Kontaktinfo</h1>
+                    <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
                     <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
                     <br>
-                    <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg"></a>
-                    <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg"></a>
+                    <a href="https://facebook.com" target="_blank" class="fa fa-facebook" title="Kontakt oss via facebook"></a>
+                    <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Kontakt oss via twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg" title="Kontakt oss via instagram"></a>
+                    <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
                 </div>
             
                 <div class="kolonne-footer">
-                    <h2>Adresse</h2>
+                    <h1>Adresse</h1>
                     <p>Skomværsgata 2</p>
                     <p>3921 Porsgrunn</p>
                 </div>
