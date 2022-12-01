@@ -328,9 +328,18 @@ img {
 }
 
 .kilder2 {
-  visibility: hidden;
+  display: none;
 }
 
+ /* Footer */
+
+ footer{
+  background-color: #869e86;
+}
+
+.boxFooter {
+  padding: 5rem;
+}
 
 
 /*Media for header og navbar*/
