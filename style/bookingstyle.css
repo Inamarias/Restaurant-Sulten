@@ -1,7 +1,5 @@
 * {
     margin: 0 auto;
-    /*outline: 1px solid red;
-    outline-offset: -1px;*/
 }
 
 
@@ -191,8 +189,6 @@ span {
     text-align: center;  
     margin: 0;
 }
-
-
 
 .bilder {
     width: 50rem;
@@ -489,20 +485,7 @@ span {
     }
     
     .booking {
-       width: 90%;
-       margin-top: 4rem;
+       margin-top: 3rem;
     }
-     /*få teksten til venstre*/
-    .booking p {
-        float: left;
-    }
-    
-    .input {
-        width: 90%;
-        flex-grow: 1;
-    }
-    
-    
 
-    
   }

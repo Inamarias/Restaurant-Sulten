@@ -5,16 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/bookingstyle.css">
+
+        <title>Booking</title>
+        <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-        <title>Booking</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     </head>
     <body>
 
@@ -26,7 +27,7 @@
             </div>
 
             <div class="booking-boks">
-                <a class="booking-link" href="#booking">Klikk for å booke!</a>
+                <a class="booking-link" href="#booking-top">Klikk for å booke!</a>
             </div>
 
             <div class="kort-info">
@@ -117,8 +118,9 @@
                 </div>
             </div>
 
-
+            <!--https://codepen.io/adityajanuardi/pen/YzydaVj-->
             <div class="bilder">
+
                 <h2>Bilder</h2>
                 <div class="scroll">
                 <img src="images/1.jpg" alt="bilde"/>
@@ -139,11 +141,13 @@
             </div>
 
             <!--https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field-->
-            <div class="booking" id="booking">
+            <div class="booking" id="booking-top">
                 <h2>Booking av lokalet</h2>
                 <p>Har du noen spørsmål ta kontakt med oss på telefon 97 33 43 86 eller send en epost: post@sulten.no</p>
+                
+                <form action="/action_page.php"></form>
                 <div class="booking-input">
-                    <input class="input" id="mail" type="text" placeholder="Epost" required>
+                    <label></label><input class="input" id="mail" type="text" placeholder="Epost" required>
                     <input class="input" type="text" placeholder="Fornavn" required>
                     <input class="input" type="text" placeholder="Etternavn" required>
                     <input class="input" type="text" placeholder="Telefonnummer" required>
@@ -154,6 +158,7 @@
                     <input class="input" type="number" placeholder="Antall personer" required>
                     <input class="input" id="melding" type="text" placeholder="Melding">
                 </div>
+                </form>
                 <button class="booking-button" type="submit">SEND</button>
             </div> 
 
