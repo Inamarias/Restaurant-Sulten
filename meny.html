@@ -21,27 +21,32 @@
     <body>
 
         <header>
-            <!--Legge inn bildekilde-->
-            <a href="index.html">
-                <img src="images/logo2.png" alt="Sulten hjemlogo">
-            </a>
+            <div class="bildeseksjon">
+
+                <!-- Legge inn kilde på js under -->
+
+                <div>            
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="Sulten hjemlogo">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="OpenOrClose()">☰</button>
+            </div>
+
+            <nav id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+                <a href="index.html">HJEM</a>
+                <a href="meny.html">MENY</a>
+                <a href="booking.html" class="nav-booking">BOOKING</a>
+                <a href="aktuelt.html">TOPICAL PAGE</a>
+                <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
+            </nav>
         </header>
 
-        <!-- Legge inn kilde på js under -->
-        <nav id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a> 
-            <a href="index.html">HJEM</a>
-            <a href="meny.html">MENY</a>
-            <a href="booking.html" class="nav-booking">BOOKING</a>
-            <a href="aktuelt.html">TOPICAL PAGE</a> 
-            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
-            
-             
-        </nav>
-        
-        <div id="main">
-            <button class="openbtn" onclick="OpenOrClose()">☰</button>
-        </div>
 
         <main>
         <!--Meny-->

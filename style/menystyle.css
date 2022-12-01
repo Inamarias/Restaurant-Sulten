@@ -10,11 +10,15 @@
 /* Header */
 
 header {
+    background-color: #d1eacd;
+}
+
+.bildeseksjon {
     display: flex;
     justify-content: center;
 }
 
-header img {
+.bildeseksjon img {
     width: 20rem;
     padding-top: 3rem;
 }
@@ -38,7 +42,8 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fbf8f8;
+    font-weight: bold;
+    color: #473a35;
     display: block;
 }
 
@@ -51,14 +56,14 @@ nav a:hover {
     font-size: 3rem;
     cursor: pointer;
     background-color: transparent;
-    color: #869e86;
+    color: #473a35;
     padding: 0.3rem 1rem;
     border: none;
+    margin-bottom: 1rem;
 }
   
 .openbtn:hover {
     background-color: #9ebb9ebf;
-    color: #ffffff;
     transition: 0.3s;
 }
 
@@ -68,11 +73,11 @@ nav a:hover {
 }
 
 #mySidebar.open {
-    width: 13rem;
+    width: 15rem;
 }
 
 #main.open {
-    margin-left: 14rem;
+    margin-left: 16rem;
 }
 
 main{
@@ -121,7 +126,7 @@ h1 {
 h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     color: #259fac;
     font-size: 2.2rem;
     padding-bottom: 2rem;
@@ -130,7 +135,7 @@ h2 {
 h3 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     overflow: hidden;
 }
 
@@ -229,7 +234,12 @@ h3 {
  /* Footer */
 
 footer{
-    background-color:#d1eacd;
+    background-color: #473a35;
+    
+ }
+
+ footer p{
+    color: #f5fffa;
  }
 
 .rad-footer {
@@ -238,16 +248,18 @@ footer{
     justify-content: center;
     padding: 1.5rem;
     
+    
 }
 
 .kolonne-footer {
     margin: 1rem 3rem;
+    
 }
 
 .kolonne-footer h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #382c20;
+    color: #f5fffa;
     padding-bottom: 0rem;
 }
 
@@ -289,18 +301,18 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 .fa-twitter {
-background: #55ACEE;
-color: white;
-border-radius: 50%;
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
 }
 
 .fa-phone {
-color: #382c20;
+    color: #f5fffa;
 }
 
 .telefonnr {
-text-decoration: none;
-color: #382c20;
+    text-decoration: none;
+    color: #f5fffa;
 }
 
 
