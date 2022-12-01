@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 body {
@@ -24,6 +25,7 @@ h2 {
 header {
     display: flex;
     justify-content: center;
+    background-color: #d1eacd;
 }
 
 header img {
@@ -93,9 +95,10 @@ nav a:hover {
 
 .slideshow {
     position: relative;
-    max-height: 30rem;
     overflow: hidden;
     margin: 1rem 0;
+    object-fit: cover;
+    max-height: 30rem;
 }
 
 .bilde-slideshow img {
@@ -111,8 +114,8 @@ nav a:hover {
     transition: 0.5s ease;
     padding: 1rem;
     user-select: none;
-    background-color: #869e86;
-    opacity: 0.8;
+    background-color: #473a35;
+    opacity: 0.9;
     color: #f1ece8;
     cursor: pointer;
     font-weight: bold;
@@ -121,7 +124,7 @@ nav a:hover {
 }
 
 .knapp-tilbake:hover, .knapp-neste:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #869e86;
     border-radius: 0.3rem;
   }
 
@@ -163,13 +166,15 @@ nav a:hover {
 
 footer {
     background-color: #473a35;
+    color: #f5fffa;
 }
 
 .rad-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 0.8rem 0 0 0;
+    padding: 2rem;
 }
 
 .kolonne-footer {
