@@ -10,13 +10,12 @@ body {
     color: #382c20;
     font-weight: 300;
     line-height: 1.7rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.2rem;
 }
 
 h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
 }
 
 /* Header */
@@ -85,11 +84,11 @@ nav a:hover {
 }
 
 #mySidebar.open {
-    width: 13rem;
+    width: 15rem;
 }
 
 #main.open {
-    margin-left: 14rem;
+    margin-left: 16rem;
 }
 
 
