@@ -38,6 +38,7 @@ header img {
 
 
 /* Navbar */
+/* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
 .nav {
     height: 100%;
     width: 0;
@@ -80,12 +81,18 @@ header img {
     background-color: var(--white);
     color: var(--green);
 }
+
 #main {
     transition: margin-left .5s;
     padding: 1rem;
   }
-  #mySidebar.open{ width:250px; }
-  #main.open{ margin-left:250px; }
+
+  #mySidebar.open { 
+    width:250px; 
+  }
+  #main.open { 
+    margin-left:250px; 
+  }
 
 
 

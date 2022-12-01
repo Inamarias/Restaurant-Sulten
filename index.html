@@ -2,16 +2,19 @@
 <html lang="no">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <title>sulten!</title>
+        <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <!--Alle må legge inn favicon-->
-        <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
-        <!--Alle må huske title i sin html-->
-        <title>sulten!</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -20,14 +23,6 @@
         <!-- Har alle brukt gode kommentarer underveis slik at en annen lett kan komme inn og ta over koden? -->
 
         <!-- Sjekk grading sheet -->
-
-        <!-- Legge til "hjem" i toggle menu på alle sider bortsett fra "hjem"? -->
-
-        <!-- På topical page: bytte til "URL" (frå "URI") + to stk .knapp-intro classes + brukes nav-booking i menyen? + .nav . closebtn? -->
-
-        <!-- <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a>  (brukes text-white-klassen?) -->
-
-        <!-- Booking: id og class heter begge "booking" - id er unik!! -->
 
         <!-- Kommentere meir i myFile.js? -->
 
@@ -38,27 +33,29 @@
         
         <header>
 
-            <!--Lage logo i annen farge enn blå? Feks brun?-->
+            <!-- Legge inn kilde på js under -->
+            <nav id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a> 
+                <a href="index.html">HJEM</a>
+                <a href="meny.html">MENY</a>
+                <a href="booking.html" class="nav-booking">BOOKING</a>
+                <a href="aktuelt.html">TOPICAL PAGE</a>
+                <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
+            </nav>
+            
+            <div id="main">
+                <button class="openbtn" onclick="OpenOrClose()">☰</button>
+            </div>
+
+                        <!--Lage logo i annen farge enn blå? Feks brun?-->
             <!--Legge inn bildekilde-->
-            <a href="index.html">
-                <img src="images/logo.png" alt="Sulten hjemlogo">
-            </a>
+            <div>            
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Sulten hjemlogo">
+                </a>
+            </div>
 
         </header>
-
-        <!-- Legge inn kilde på js under -->
-        <nav id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()"></a> 
-            <a href="index.html">FORSIDE</a>
-            <a href="meny.html">MENY</a>
-            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
-            <a href="aktuelt.html">TOPICAL PAGE</a>
-            <a href="booking.html" class="nav-booking">BOOKING</a>  
-        </nav>
-        
-        <div id="main">
-            <button class="openbtn" onclick="OpenOrClose()">☰</button>
-        </div>
 
         <main>
 
@@ -67,15 +64,15 @@
             <div class="slideshow">
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/header.jpg" alt="Kaffe, juice, smoothie, diverse retter som toast, avocado, omelett, dessert">
+                    <img src="images/4.jpg" alt="Kaffe, juice, smoothie, diverse retter som toast, avocado, omelett, dessert">
                 </div>
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/suppe.jpg" alt="Vitaminsuppe med reddik og brød">
+                    <img src="images/5.jpg" alt="Vitaminsuppe med reddik og brød">
                 </div>
 
                 <div class="bilde-slideshow fade">
-                    <img src="images/dessert.jpg" alt="Croissanter toppet med mandler">
+                    <img src="images/13.jpg" alt="Croissanter toppet med mandler">
                 </div>
 
                 <!--Neste- og tilbakeknapper-->
@@ -105,8 +102,8 @@
         
                 <div class="kolonne-footer">
                     <h2>Kontaktinfo</h2>
-                    <a href="tel:657 56 589" class="fa fa-phone"></a>
-                    <a href="tel:657 56 589" class="telefonnr">657 56 589</a>
+                    <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;"></a>
+                    <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
                     <br>
                     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
