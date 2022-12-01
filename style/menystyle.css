@@ -75,25 +75,26 @@ nav a:hover {
     margin-left: 14rem;
 }
 
-/* Bildekilde header: https://unsplash.com/photos/0uAVsDcyD0M */
-
-/*Hovedbilde med tekst. Kode hentet fra: https://www.w3schools.com/howto/howto_css_image_text.asp */
 main{
     background-color: #f5fffa;
 }
+
+/*Hovedbilde med tekst.*/
 .container {
     position: relative;    
 }
 
+/*Plasserer teksten ned og i midten. */
 .centered {
     position: absolute;
-    width: 40%;
+    width: 45%;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(252, 252, 252, 0.67); /* background with 0.5 opacity */
+    background: rgba(252, 252, 252, 0.67); /* bakgrunn for tekst med 0.67 transparency */
   }
 
+/* Fotograf headerbilde: Zakaria Zayane. Kilde https://unsplash.com/photos/0uAVsDcyD0M */
 .container img {
     width: 100%;
 }
@@ -101,6 +102,7 @@ main{
 .meny {
     margin: auto;
     padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .åpningstider {
@@ -110,18 +112,17 @@ main{
 h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     padding-bottom: 4rem;
     padding: 2rem;
-    
 }
 
 h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: #5ca5ad;
+    color: #259fac;
     font-size: 2.2rem;
     padding-bottom: 2rem;
 }
@@ -168,8 +169,7 @@ h3 {
     flex-basis: 23rem;
 }
 
-
-/*Bildekilde frokostbilde: https://unsplash.com/photos/vLHzjRNFbEQ*/
+/*Fotograf frokostbilde: Micheile dot com. Kilde: https://unsplash.com/photos/vLHzjRNFbEQ*/
 .frokostmeny img {
     height: 30rem;
     border-radius: 2%;
@@ -205,14 +205,15 @@ h3 {
     flex-basis: 23rem;
 }
 
-/*Bildekilde dessertbilde: https://unsplash.com/photos/wRU27yGfSLQ*/
+/*Fotograf dessertbilde: Maddi Bazzocco. Kilde: https://unsplash.com/photos/wRU27yGfSLQ*/
 .dessertmeny img {
     height: 30rem;
     border-radius: 2%;
 }
 
 /*Drikkemeny*/
-/*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
+
+/*Brukt grid for å dele opp drikkemeny i kolonner*/
 .drikkemeny {
     display: grid;
     grid-template-columns: auto auto;
@@ -227,9 +228,10 @@ h3 {
 
  /* Footer */
 
- footer{
-    background-color: #869e86;
+footer{
+    background-color:#d1eacd;
  }
+
 .rad-footer {
     display: flex;
     flex-direction: row;
@@ -243,6 +245,7 @@ h3 {
 }
 
 .kolonne-footer h2 {
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     color: #382c20;
     padding-bottom: 0rem;
@@ -278,11 +281,11 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 .fa-instagram {
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
--webkit-background-clip: text;
-        /* Also define standard property for compatibility */
-        background-clip: text;
--webkit-text-fill-color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-twitter {
@@ -300,8 +303,10 @@ text-decoration: none;
 color: #382c20;
 }
 
-/*Flytter kolonnene under hverandre */
+
 @media screen and (max-width: 850px) {
+
+/*Mindre skriftstørrelse*/
     header {
         justify-content: flex-start;
         margin-left: 1rem;
@@ -320,16 +325,17 @@ color: #382c20;
         letter-spacing: 0.1rem;
         font-size: 1.4rem;
     }
-
-    .drikkemeny {
-    grid-template-columns: auto;
-    grid-template-columns: 100%;
-
+    
+    .centered { 
+        font-size: 3rem;
+        padding: 0rem;
     }
 
-    .centered { 
-        font-size: 34px;
-        padding: 0rem;
+/*Flytter kolonnene under hverandre */
+    .drikkemeny {
+        grid-template-columns: auto;
+        grid-template-columns: 100%;
+
     }
 
     .frokostmeny {
@@ -351,7 +357,7 @@ color: #382c20;
     }
 
     .centered { 
-        font-size: 24px;
+        font-size: 2rem;
         padding: 0rem;
     }
 
@@ -378,6 +384,7 @@ color: #382c20;
         padding: 0rem;
     }
 }
+
 @media only screen and (max-width: 480px) {
 
     body {
@@ -392,11 +399,6 @@ color: #382c20;
         font-size: 12px;
         padding: 0rem;
     }
-
-    /* Footer 
-    .rad-footer {
-        display: none;
-    }*/
 }
 
  
