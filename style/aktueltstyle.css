@@ -50,6 +50,7 @@ header img {
     transition: 0.5s;
     padding-top: 60px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .nav a {
@@ -65,13 +66,6 @@ header img {
     color: #cfd8cf;
 }
 
-.nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
   
 .openbtn {
     font-size: 40px;

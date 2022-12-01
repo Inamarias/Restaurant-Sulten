@@ -2,13 +2,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: #f5fffa;
     color:#382c20; 
     letter-spacing: 0.02rem;
     /*border: solid red 1px*/
 }
-
-
 
 /* Header */
 
@@ -78,12 +75,12 @@ nav a:hover {
     margin-left: 14rem;
 }
 
-
-
 /* Bildekilde header: https://unsplash.com/photos/0uAVsDcyD0M */
 
 /*Hovedbilde med tekst. Kode hentet fra: https://www.w3schools.com/howto/howto_css_image_text.asp */
-
+main{
+    background-color: #f5fffa;
+}
 .container {
     position: relative;    
 }
@@ -95,27 +92,25 @@ nav a:hover {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
- 
-    
     background: rgba(250, 249, 249, 0.5); /* background with 0.5 opacity */
   }
 
-.container img{
+.container img {
     width: 100%;
 }
 
 
-.meny{
+.meny {
     margin: auto;
     padding-top: 5rem;
 }
 
-.åpningstider{
+.åpningstider {
     text-align: center;
 }
 
 
-h1{
+h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -126,7 +121,7 @@ h1{
 }
 
 
-h2{
+h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -136,7 +131,7 @@ h2{
 }
 
 
-h3{
+h3 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -156,7 +151,7 @@ h3{
     padding-bottom: 2rem;
 }
 
-.allergener{
+.allergener {
     font-size: 14px;
     padding-top: 0.6rem;
 }
@@ -173,19 +168,19 @@ h3{
     flex-basis: 33rem;
 
 }
-.box-meny-frokostbilde{
+.box-meny-frokostbilde {
     padding: 1.5rem;
     flex-basis: 23rem;
 }
 
 /*Bildekilde frokostbilde: https://unsplash.com/photos/vLHzjRNFbEQ*/
-.frokostmeny img{
+.frokostmeny img {
     height: 30rem;
     border-radius: 2%;
 }
 
 /*Lunsjmeny*/
-.lunsjmeny{
+.lunsjmeny {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -197,7 +192,7 @@ h3{
 }
 
 /*Dessertmeny*/
-.dessertmeny{
+.dessertmeny {
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
@@ -216,7 +211,7 @@ h3{
 }
 
 /*Bildekilde dessertbilde: https://unsplash.com/photos/wRU27yGfSLQ*/
-.dessertmeny img{
+.dessertmeny img {
     height: 30rem;
     border-radius: 2%;
 }
@@ -224,7 +219,7 @@ h3{
 
 /*Drikkemeny*/
 /*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
-.drikkemeny{
+.drikkemeny {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -232,17 +227,22 @@ h3{
     gap: 1rem 6rem;
 }
 
-.drikke{
+.drikke {
     padding: 1.5rem;
 }
 
 
  /* Footer */
+
+ footer{
+    background-color: #869e86;
+ }
 .rad-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem;
+    padding: 1.5rem;
+    
 }
 
 .kolonne-footer {
@@ -251,7 +251,10 @@ h3{
 
 .kolonne-footer h2 {
     margin-bottom: 0.5rem;
+    color: #382c20;
+    padding-bottom: 0rem;
 }
+
 
 /* Font Awesome Icons er hentet fra:
 https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background
@@ -306,13 +309,23 @@ color: #382c20;
 
 /*Flytter kolonnene under hverandre */
 @media screen and (max-width: 850px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+    }
+
     .drikkemeny {
     grid-template-columns: auto;
     grid-template-columns: 100%;
 
     }
 
-    .centered{ 
+    .centered { 
         font-size: 34px;
         padding: 0rem;
     }
@@ -320,7 +333,8 @@ color: #382c20;
     .frokostmeny {
         display: flex;
         justify-content: center;
-        flex-direction: column;    }
+        flex-direction: column;    
+    }
 
     .lunsjmeny {
         display: flex;
@@ -334,15 +348,17 @@ color: #382c20;
         flex-direction: column;    
     }
 
-    .centered{ font-size: 24px;
+    .centered { 
+        font-size: 24px;
         padding: 0rem;
     }
-    .box-meny-frokostbilde{
+
+    .box-meny-frokostbilde {
         display: flex;
         justify-content: center;
     }
 
-    .box-meny-dessert-bilde{
+    .box-meny-dessert-bilde {
         display: flex;
         justify-content: center;
     }
@@ -354,20 +370,31 @@ color: #382c20;
 }
 
 @media only screen and (max-width: 800px) {
-    .centered{ font-size: 16px;
+
+    .centered { 
+        font-size: 16px;
         padding: 0rem;
     }
 }
 @media only screen and (max-width: 480px) {
 
-    .centered{ font-size: 12px;
+    body {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .centered { 
+        font-size: 12px;
         padding: 0rem;
     }
 
-    /* Footer */
+    /* Footer 
     .rad-footer {
-        visibility: hidden;
-    }
+        display: none;
+    }*/
 }
 
  
