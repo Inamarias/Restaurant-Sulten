@@ -98,12 +98,12 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     margin-bottom: 0.8rem;
-    object-fit: cover;
-    max-height: 30rem;
 }
 
 .bilde-slideshow img {
     width: 100%;
+    height: 40rem;
+    object-fit: cover;
 }
 
 /* Neste- og tilbakeknapper */
@@ -246,7 +246,7 @@ color: #382c20;
         justify-content: flex-start;
     }
     
-    header img {
+    .bildeseksjon img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
@@ -258,12 +258,23 @@ color: #382c20;
         padding: 0.3rem 0.5rem;
     }
     
-    /* Skal eg heller sette visibility til hidden under enn å ha det i kolonne? */
+    /* Slideshow blir mindre */
+    .bilde-slideshow img {
+        height: 30rem;
+    }
 
     /* Info i footer går over til kolonne */
     .rad-footer {
         flex-direction: column;
-        align-items: center;
+    }
+
+    /* Font */
+    .kolonne-footer h1 {
+        font-size: 1.6rem;
+    }
+
+    .kolonne-footer p, .telefonnr {
+        font-size: 1.1rem;
     }
     
 }
@@ -287,7 +298,10 @@ color: #382c20;
         padding: 0.3rem 0.5rem;
     }
 
-    /* Dobbeltsjekk slideshow og footer ved nye bilder */
+    /* Slideshow blir mindre */
+    .bilde-slideshow img {
+        height: 20rem;
+    }
 
     /* Neste- og tilbakeknapper */
     .knapp-tilbake, .knapp-neste {
