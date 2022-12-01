@@ -13,7 +13,7 @@ body {
     letter-spacing: 0.02rem;
 }
 
-h2 {
+h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -22,11 +22,15 @@ h2 {
 /* Header */
 
 header {
+    background-color: #d1eacd;
+}
+
+.bildeseksjon {
     display: flex;
     justify-content: center;
 }
 
-header img {
+.bildeseksjon img {
     width: 20rem;
     padding-top: 3rem;
 }
@@ -51,7 +55,7 @@ nav a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fbf8f8;
+    color: #473a35;
     display: block;
 }
 
@@ -64,14 +68,14 @@ nav a:hover {
     font-size: 3rem;
     cursor: pointer;
     background-color: transparent;
-    color: #869e86;
+    color: #473a35;
     padding: 0.3rem 1rem;
     border: none;
+    margin-bottom: 1rem;
 }
   
 .openbtn:hover {
     background-color: #9ebb9ebf;
-    color: #ffffff;
     transition: 0.3s;
 }
 
@@ -93,9 +97,10 @@ nav a:hover {
 
 .slideshow {
     position: relative;
-    max-height: 30rem;
     overflow: hidden;
-    margin: 1rem 0;
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+    max-height: 30rem;
 }
 
 .bilde-slideshow img {
@@ -111,8 +116,8 @@ nav a:hover {
     transition: 0.5s ease;
     padding: 1rem;
     user-select: none;
-    background-color: #869e86;
-    opacity: 0.8;
+    background-color: #473a35;
+    opacity: 0.9;
     color: #f1ece8;
     cursor: pointer;
     font-weight: bold;
@@ -121,7 +126,7 @@ nav a:hover {
 }
 
 .knapp-tilbake:hover, .knapp-neste:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #869e86;
     border-radius: 0.3rem;
   }
 
@@ -138,14 +143,14 @@ nav a:hover {
     height: 1rem;
     width: 1rem;
     margin: 0 0.5rem;
-    background-color: #bbb;
+    background-color: #473a35;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 1s ease;
 }
 
 .dot:hover, .active {
-    background-color: #717171;
+    background-color: grey;
 }
 
 /* Fade slideshow bilder */
@@ -163,20 +168,22 @@ nav a:hover {
 
 footer {
     background-color: #473a35;
+    color: #f5fffa;
 }
 
 .rad-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 0.8rem 0 0 0;
+    padding: 2rem;
 }
 
 .kolonne-footer {
     margin: 1rem 3rem;
 }
 
-.kolonne-footer h2 {
+.kolonne-footer h1 {
     margin-bottom: 0.5rem;
 }
 
@@ -238,11 +245,11 @@ color: #382c20;
     /* Header flyttes */
     header {
         justify-content: flex-start;
-        margin-left: 1rem;
     }
     
     header img {
         width: 10rem;
+        margin-left: 1rem;
         margin-bottom: 1rem;
     }
     
@@ -267,9 +274,12 @@ color: #382c20;
 @media screen and (max-width: 480px) {
     
     /* Mindre header image */
-    header img {
+    .bildeseksjon {
+        justify-content: flex-start;
+    }
+    
+    .bildeseksjon img {
         width: 5rem;
-        margin-bottom: 1rem;
     }
     
     /* Toggle menu */
@@ -287,8 +297,12 @@ color: #382c20;
     }
 
     /* Footer */
-    .rad-footer {
-        visibility: none;
+    .kolonne-footer h1 {
+        font-size: 1.4rem;
+    }
+
+    .kolonne-footer p, .telefonnr {
+        font-size: 0.9rem;
     }
     
 }

@@ -38,6 +38,7 @@ header img {
 
 
 /* Navbar */
+/* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
 .nav {
     height: 100%;
     width: 0;
@@ -80,12 +81,18 @@ header img {
     background-color: var(--white);
     color: var(--green);
 }
+
 #main {
     transition: margin-left .5s;
     padding: 1rem;
   }
-  #mySidebar.open{ width:250px; }
-  #main.open{ margin-left:250px; }
+
+  #mySidebar.open { 
+    width:250px; 
+  }
+  #main.open { 
+    margin-left:250px; 
+  }
 
 
 
@@ -185,7 +192,7 @@ img {
   margin: 1rem auto 0 auto;
 }
 
-.bildeTekst-intro h3 {
+.bildeTekst-intro h1 {
   font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
@@ -321,9 +328,18 @@ img {
 }
 
 .kilder2 {
-  visibility: hidden;
+  display: none;
 }
 
+ /* Footer */
+
+ footer{
+  background-color: #869e86;
+}
+
+.boxFooter {
+  padding: 5rem;
+}
 
 
 /*Media for header og navbar*/

@@ -87,18 +87,16 @@ main{
 
 .centered {
     position: absolute;
-    background: none;
     width: 40%;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(250, 249, 249, 0.5); /* background with 0.5 opacity */
+    background: rgba(252, 252, 252, 0.67); /* background with 0.5 opacity */
   }
 
 .container img {
     width: 100%;
 }
-
 
 .meny {
     margin: auto;
@@ -108,7 +106,6 @@ main{
 .åpningstider {
     text-align: center;
 }
-
 
 h1 {
     font-family: 'Bebas Neue', cursive;
@@ -120,7 +117,6 @@ h1 {
     
 }
 
-
 h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
@@ -129,7 +125,6 @@ h2 {
     font-size: 2.2rem;
     padding-bottom: 2rem;
 }
-
 
 h3 {
     font-family: 'Bebas Neue', cursive;
@@ -173,6 +168,7 @@ h3 {
     flex-basis: 23rem;
 }
 
+
 /*Bildekilde frokostbilde: https://unsplash.com/photos/vLHzjRNFbEQ*/
 .frokostmeny img {
     height: 30rem;
@@ -199,7 +195,6 @@ h3 {
     justify-content: center;
 }
 
-
 .box-meny-dessert {
     padding: 1.5rem;
     flex-basis: 33rem;
@@ -216,7 +211,6 @@ h3 {
     border-radius: 2%;
 }
 
-
 /*Drikkemeny*/
 /*Brukt grid for å dele opp drikkemeny i kolonner: https://www.w3schools.com/css/css_grid.asp*/
 .drikkemeny {
@@ -230,7 +224,6 @@ h3 {
 .drikke {
     padding: 1.5rem;
 }
-
 
  /* Footer */
 
@@ -309,6 +302,15 @@ color: #382c20;
 
 /*Flytter kolonnene under hverandre */
 @media screen and (max-width: 850px) {
+    header {
+        justify-content: flex-start;
+        margin-left: 1rem;
+    }
+    
+    header img {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
 
     body {
         font-size: 0.9rem;

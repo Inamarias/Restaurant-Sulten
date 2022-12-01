@@ -12,9 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -27,7 +24,7 @@
     <header>
         <a href="index.html">
             <div class="logoSpinning">
-                      <img src="images/IoT.png" alt="Internet of things icon spinning">  
+                      <img src="images/IoT.png" alt="Header internet of things icon spinning">  
             </div>
         </a>
     </header>
@@ -35,16 +32,18 @@
     <!--Her legges sidebar-->
         <div id="mySidebar" class="nav">
             <div class="logoSpinning2">
-                <img src="images/IoT-white.png" alt="Internet of things icon spinning">  
+                <img src="images/IoT-white.png" alt="Sidebar internet of things icon spinning">  
              </div>
-            <a href="javascript:void(0)" onclick="OpenOrClose()"></a> 
+            <a href="javascript:void(0)" title="Meny" onclick="OpenOrClose()"></a> 
             <a href="index.html">HJEM</a>
             <a href="meny.html">MENY</a>
-            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
-            <a href="aktuelt.html">TOPICAL PAGE</a>
             <a href="booking.html" class="nav-booking">BOOKING</a>  
+            <a href="aktuelt.html">TOPICAL PAGE</a>
+            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
+            
         </div>
         <!--Javascript for å åpne og lukke sidebaren-->
+        <!--Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button-->
         <div id="main">
             <button class="openbtn" onclick="OpenOrClose()">☰</button>
         </div>
@@ -80,7 +79,9 @@
                     <p style="padding-top: 1.5rem;">As Oracle states: "The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, 
                         software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet. 
                         These devices range from ordinary household objects to sophisticated industrial tools."(Oracle, 2021). </p>
-                    <button class="knapp-intro" onclick=" window.open(' https://www.oracle.com/internet-of-things/what-is-iot/',' _blank' )"> Read more about IoT here! </button> 
+
+                    <!--Kode hentet fra https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html-->
+                    <button class="knapp-intro" onclick= "window.location.href='https://www.oracle.com/internet-of-things/what-is-iot/';"> Read more about IoT here! </button> 
                 </div>
                 <div class="item">
                     <div class="bildeIntro">
@@ -89,7 +90,7 @@
                             <div class="bildeTekst-kilde">
                               <p><small>OsloMet, (u.å.)</small></p>  
                             </div>
-                            <h3>Smart technologies in connected homes – A 2019 Norwegian consumer survey</h3>
+                            <h1>Smart technologies in connected homes – A 2019 Norwegian consumer survey</h1>
                             <p><b>Author</b> Dag Slettemeås</p>
                             <p><b>Publisher</b> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University</p>
                             <p><b>Published</b> 2019</p>
@@ -247,6 +248,11 @@
                 </div>
             </div>
         </div>   
-    </main>  
+    </main> 
+    <footer>
+        <div class="boxFooter">
+            
+        </div>
+    </footer> 
 </body>
 </html>
