@@ -2,7 +2,6 @@
     margin: 0 auto;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5fffa; /*#fffbf5*/
@@ -17,6 +16,7 @@ h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    font-size: 1.4rem;
 }
 
 h1 {
@@ -156,8 +156,6 @@ span {
     margin: 1.4rem 0rem;
 }
 
-
-
 .pris {
     background-color: #d1eacd;
     height: 22rem;
@@ -252,7 +250,7 @@ span {
     justify-content: space-between;
  }
  
- .input {
+ input {
      font-family: 'Roboto', sans-serif;
      width: 22.3rem;
      padding: 1rem;
@@ -263,8 +261,12 @@ span {
      transition: 0.5s;
  }
  
- .input:focus {
+ input:focus {
      border: 0.15rem solid #5ca5ad;
+ }
+
+ label {
+    display: hid
  }
  
  #mail {
@@ -397,12 +399,11 @@ span {
         float: left;
     }
     
-    .input {
+    input {
         width: 90%;
         flex-grow: 1;
     }
 }
-
 
 
 @media only screen and (max-width: 480px) {

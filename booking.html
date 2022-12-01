@@ -91,7 +91,7 @@
                     <h2>Her finner du oss</h2>
                     <p>Adressen er Skomværgata 2<span> 3921 Porsgrunn</span></p>
                     <h2>Åpningstider</h2>
-                    <p>Mandag - Torsdag 12:00 - 23:00 <span>Fredag - Søndag 12:00 - 02:00</span></p>
+                    <p>Mandag - torsdag 10 - 23 <span>Fredag - søndag 12 - 23</span></p>
                 </div>
             </div>
          
@@ -121,6 +121,7 @@
             <!--https://codepen.io/adityajanuardi/pen/YzydaVj-->
             <div class="bilder">
 
+                <!--skrive alt bilde-->
                 <h2>Bilder</h2>
                 <div class="scroll">
                 <img src="images/1.jpg" alt="bilde"/>
@@ -130,7 +131,7 @@
                 <img src="images/5.jpg" alt="bilde"/>
                 <img src="images/6.jpg" alt="bilde"/>
                 <img src="images/7.jpg" alt="bilde"/>
-                <img src="images/7.jpg" alt="bilde"/>
+                <img src="images/8.jpg" alt="bilde"/>
                 </div>
                 <div class="finger">
                     <div class="pekefinger">
@@ -143,20 +144,21 @@
             <!--https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field-->
             <div class="booking" id="booking-top">
                 <h2>Booking av lokalet</h2>
-                <p>Har du noen spørsmål ta kontakt med oss på telefon 97 33 43 86 eller send en epost: post@sulten.no</p>
+                <p>Har du noen spørsmål ta kontakt med oss på telefon 657 56 589 eller send en epost: post@sulten.no</p>
                 
-                <form action="/action_page.php"></form>
+                <form>
                 <div class="booking-input">
-                    <label></label><input class="input" id="mail" type="text" placeholder="Epost" required>
-                    <input class="input" type="text" placeholder="Fornavn" required>
-                    <input class="input" type="text" placeholder="Etternavn" required>
-                    <input class="input" type="text" placeholder="Telefonnummer" required>
-                    <input class="input" type="text" placeholder="Dato" required onfocus="(this.type='date')" onblur="(this.type='text')">
-                    <input class="input" type="text" placeholder="Starttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
-                    <input class="input" type="text" placeholder="Sluttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
-                    <input class="input" type="text" placeholder="Anledning" required>
-                    <input class="input" type="number" placeholder="Antall personer" required>
-                    <input class="input" id="melding" type="text" placeholder="Melding">
+                    <label for="mail">mail</label>
+                    <input id="mail" type="text" placeholder="Epost" required>
+                    <input type="text" placeholder="Fornavn" required>
+                    <input type="text" placeholder="Etternavn" required>
+                    <input type="text" placeholder="Telefonnummer" required>
+                    <input type="text" placeholder="Dato" required onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <input type="text" placeholder="Starttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
+                    <input type="text" placeholder="Sluttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
+                    <input type="text" placeholder="Anledning" required>
+                    <input type="number" placeholder="Antall personer" required>
+                    <input  id="melding" type="text" placeholder="Melding">
                 </div>
                 </form>
                 <button class="booking-button" type="submit">SEND</button>
