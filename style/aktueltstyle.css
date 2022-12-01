@@ -203,6 +203,14 @@ img {
   font-size: smaller;
 }
 
+.bildeTekst-kilde {
+  width: 5rem;
+  margin: -1.5rem auto 0rem auto;
+  position: relative;
+  color: #939393a2;
+  
+}
+
 .knapp-intro {
   width: 15rem;
   height: 5rem;
@@ -311,7 +319,7 @@ img {
 /*Kildeboks*/
 .utenBullets {
   list-style-type: none;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .kilder1{
