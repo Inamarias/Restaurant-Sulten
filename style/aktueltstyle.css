@@ -213,7 +213,7 @@ img {
 }
 
 .knapp-intro {
-  width: 15rem;
+  width: 25rem;
   height: 5rem;
   padding: 1rem;
   margin: 3rem auto -2rem auto;
@@ -222,7 +222,8 @@ img {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  text-align:center;
+  text-align: center;
+  justify-content: center;
 }
 
 .knapp-intro:hover {
