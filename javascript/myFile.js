@@ -22,6 +22,7 @@ function showSlides() {
     setTimeout(showSlides, 8000); // Går til neste bilde hvert 8. sekund
 }
 
+// Styrer frem- og tilbake-knapper
 function plusSlides(position) {
   slideIndex +=position;
   if (slideIndex> slides.length) {slideIndex = 1}
