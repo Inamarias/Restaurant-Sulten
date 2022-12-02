@@ -7,12 +7,6 @@
 }
 
 body {
-    background-color: #f5fffa;
-    color: #382c20;
-    font-weight: 300;
-    line-height: 1.7rem;
-    letter-spacing: 0.2rem;
-
     font-family: 'Roboto', sans-serif;
     background-color: #f5fffa;
     color:#382c20;
@@ -22,6 +16,7 @@ body {
     position: relative;   
 }
 
+/* header */
 header {
     background-color: #d1eacd;
     font-family: 'Bebas Neue', cursive;
@@ -47,6 +42,7 @@ header {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.4rem;
+    letter-spacing: 0.2rem;
     color: #473a35;
 }
 
@@ -55,71 +51,14 @@ header {
     transition: 0.2s;
 }
 
-/* Slideshow bilder*/
-.slideshow {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 0.8rem;
+/* Hovedbilde med tekst */
+.container {
+    position: relative;    
 }
 
-.bilde-slideshow img {
+/* Fotograf headerbilde: Zakaria Zayane. Kilde https://unsplash.com/photos/0uAVsDcyD0M */
+.container img {
     width: 100%;
-    height: 40rem;
-    object-fit: cover;
-}
-
-/* Neste- og tilbakeknapper */
-.knapp-tilbake, .knapp-neste {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    transition: 0.5s ease;
-    padding: 1rem;
-    user-select: none;
-    background-color: #473a35;
-    opacity: 0.9;
-    color: #f1ece8;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 0.3rem;
-}
-
-.knapp-tilbake:hover, .knapp-neste:hover {
-    background-color: #637863;
-    border-radius: 0.3rem;
-  }
-
-/* Plasserer neste-knappen til høyre */
-.knapp-neste {
-    right: 0;
-}
-
-/* Sirklene */
-.dot {
-    cursor: pointer;
-    height: 1rem;
-    width: 1rem;
-    margin: 0 0.5rem;
-    background-color: #473a35;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-}
-
-.dot:hover, .active {
-    background-color: grey;
-}
-
-/* Fade slideshow bilder */
-.fade {
-    animation-name: fade;
-    animation-duration: 3s;
-}
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
 }
 
 h1 {
@@ -140,13 +79,15 @@ h2 {
     font-size: 1.4rem;
 }
 
-.tekst {
+/* tekst etter h1, med justify for tekst for å fylle tekst til bredden av boksen */
+.første-tekst {
     text-align: justify;
     text-align-last: center;
     width: 50rem;
     margin-top: 3rem;
 }
 
+/* Boks med link til booking i bunnen av siden */ 
 .booking-boks {
     width: 50rem;
     text-align: center;
@@ -165,15 +106,15 @@ h2 {
     transition: 0.2s;
 }
 
+/* Farge når man holdere over knappen */
 .booking-link:hover {
     background-color: #414d41;
 }
 
-
+/* Enkle fakta om kapasitet */
 .kort-info {
     font-family: 'Bebas Neue', cursive;
     background-color: #d1eacd;
-    color: #382c20;
     height: 13rem;
     margin-top: 7rem;
 }
@@ -201,6 +142,7 @@ letter-spacing: 0.1rem;
     letter-spacing: 0.1rem;
 }
 
+/* Info om fasiliteter og lokalet */
 .mer-info {
     width: 35rem;
     display: flex;
@@ -231,7 +173,7 @@ letter-spacing: 0.1rem;
     text-align: right;
 }
 
-
+/* Kart og kolasjon */
 .lokasjon {
     width: 50rem;
     display: flex;
@@ -265,6 +207,7 @@ span {
     margin: 1.4rem 0rem;
 }
 
+/* Info om priser */
 .pris {
     background-color: #d1eacd;
     height: 22rem;
@@ -291,18 +234,20 @@ span {
     font-weight: 600;
     background-color: #f5fffa;
     border-radius: 0.8rem;
-    width: 8rem;
-    padding: 1rem 1rem;
+    width: 10rem;
+    padding: 0.6rem;
     text-align: center;  
     margin: 0;
 }
 
+/* Bilder med horisontal scrolling */
 .bilder {
     width: 50rem;
     margin-top: 5rem;
     position: relative;
 }
 
+/* Hentet fra https://codepen.io/adityajanuardi/pen/YzydaVj */
 .scroll {
     overflow: auto;
     white-space: nowrap;
@@ -318,12 +263,13 @@ span {
     height: 30rem;
   }
 
+  /* Finger for å vise at du kan swipe */ 
   .pekefinger img {
     position: absolute;
     width: 3.5rem;
-    transform: rotate(330deg);
-    top: 32rem;
-    left: 48.5rem;
+    transform: rotate(340deg);
+    top: 33.1rem;
+    left: 42.5rem;
 }
 
 .pekefinger p {
@@ -332,30 +278,26 @@ span {
     width: 11rem;
     font-size: 1.2rem;
     margin-top: 4.3rem;
-    top: 31.5rem;
-    left: 46rem;
+    top: 32.4rem;
+    left: 40rem;
 }
 
-
-
-
-
+/* For booking av lokalet */
 .booking {
     width: 50rem;
     margin-top: 7rem;
     margin-bottom: 3rem;
     text-align: center;
- }
+}
  
  .booking h2 {
-     float: left;
- }
+    float: left;
+}
  
  .booking p {
-     margin: 2rem 0rem;
-     float: left;
- }
-
+    margin: 2rem 0rem;
+    float: left;
+}
 
 
 
@@ -366,27 +308,20 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    text-align: left;
- }
+}
 
  .booking-input {
     position: relative;
     width: 20rem;
- }
+}
 
- label {
+label {
     position: absolute;
     left: 1rem;
     top: 1.3rem;
     width: 20rem;
-
- }
-
-label:focus {
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    z-index: -1;
- }
+    opacity: 0;
+}
 
 input {
     width: 100%;
@@ -396,7 +331,7 @@ input {
     border: solid #b4b4b4;
     border-radius: 0.3rem;
     transition: 0.2s;
- }
+}
  
 
 
@@ -404,31 +339,29 @@ input {
 
 input:focus {
     outline: 0.15rem solid #637863;
- }
+}
 
- .booking-button {
-     font-family: 'Bebas Neue', cursive;
-     font-size: 1.3rem;
-     width: 7rem;
-     background-color: #637863;
-     color: #f5fffa; 
-     padding: 0.6rem;
-     border-radius: 0.8rem;
-     letter-spacing: 0.1rem;
-     margin: 1rem 0rem;
-     border: none;
-     transition: 0.2s;
- }
+.booking-button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    width: 7rem;
+    background-color: #637863;
+    color: #f5fffa; 
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0rem;
+    border: none;
+    transition: 0.2s;
+}
  
- .booking-button:hover {
-     background-color: #414d41;
- }
- 
- ::placeholder {
-     color: #637863;
- }
+.booking-button:hover {
+    background-color: #414d41;
+}
 
-
+::placeholder {
+    color: #637863;
+}
  
  /* Footer */
 footer {
@@ -477,7 +410,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
 .fa-envelope {
     color: Salmon;
-  }
+}
 
 .fa-facebook {
     background: #3B5998;
@@ -514,7 +447,6 @@ color: #382c20;
     #main, #mySidebar {
         display: none;
     }
-
 }
 
 @media only screen and (max-width: 850px) {
@@ -522,12 +454,12 @@ color: #382c20;
         font-size: 0.9rem;
     }
 
-       /* Bildet i header flyttes og gjøres mindre */    
-       .bildeseksjon img {
+    /* Bildet i header flyttes og gjøres mindre */    
+    .bildeseksjon img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
-    }
+    }   
     
     /* Går over til toggle menu */
     nav {
@@ -585,11 +517,6 @@ color: #382c20;
     #mySidebar.open {
         width: 15rem;
     }
-    
-    /* Slideshow blir mindre */
-    .bilde-slideshow img {
-        height: 30rem;
-    }
  
     h1 {
         font-size: 2.5rem;
@@ -627,6 +554,7 @@ color: #382c20;
 
     .lokasjon {
         width: 90%;
+        margin-top: 4rem;
     }
     
     .kart {
@@ -646,17 +574,30 @@ color: #382c20;
         text-align: left;
     }
     
+    .pris {
+        height: 20rem;
+        margin-top: 4rem;
+    }
+    
+    .pris h2 {
+        margin-bottom: 1rem;
+    }
+        
+    
     .bredde2 {
         width: 90%;
     }
-    
+
     .boks {
-        width: 15%;
+        width: 18%;
+        padding: 0.6rem;
     }
+    
+
     
     .bilder {
         width: 90%;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
     .scroll {
@@ -704,28 +645,16 @@ color: #382c20;
     }
 }
 
-
 @media only screen and (max-width: 480px) {
     body {
         line-height: 1.5rem;
     }
 
-        /* Toggle menu */
-        .openbtn {
-            font-size: 1.5rem;
-            padding: 0.3rem 0.5rem;
-        }
-    
-        /* Slideshow blir mindre */
-        .bilde-slideshow img {
-            height: 20rem;
-        }
-    
-        /* Neste- og tilbakeknapper */
-        .knapp-tilbake, .knapp-neste {
-            font-size: 1rem;
-            padding: 0.5rem 0.8rem;
-        }
+    /* Toggle menu */
+    .openbtn {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem;
+    }
     
     h1 {
         font-size: 1.8rem;
@@ -769,24 +698,22 @@ color: #382c20;
         margin-top: 3rem;
     }
     
-    .bredde2 {
-        padding-top: 3rem;
+    .pris {
+        height: 20rem;
+        margin-top: 4rem;
     }
     
     .pris h2 {
         margin-bottom: 1rem;
     }
-    
-    .bokser {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 1rem 0rem; 
+        
+    .bredde2 {
+        width: 90%;
     }
-    
+
     .boks {
-        width: 7rem;
-        padding: 0.8rem 0.8rem;
-        margin: 0.5rem 0.5rem;
+        width: 5rem;
+        padding: 0.6rem;
     }
     
     .bilder {
