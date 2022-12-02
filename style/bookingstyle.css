@@ -1,14 +1,16 @@
 * {
     margin: 0 auto;
+    outline: 1px solid red;
+    outline-offset: -1px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5fffa; /*#fffbf5*/
+    background-color: #f5fffa;
     color:#382c20;
     font-weight: 300;
-    line-height: 1.7rem;
     letter-spacing: 0.02rem;
+    line-height: 1.7rem;
     position: relative;   
 }
 
@@ -26,7 +28,7 @@ h1 {
     line-height: 3.5rem;
     text-align: center;
     margin-top: 4rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     width: 50rem;
 }
 
@@ -46,17 +48,17 @@ h1 {
 .booking-link {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
-    background-color: #5ca5ad;
+    background-color: #637863;
     padding: 0.6rem 3rem;
     text-decoration: none;
     color: #f5fffa;
     border-radius: 0.8rem;
     letter-spacing: 0.1rem;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .booking-link:hover {
-    background-color: #38696f;
+    background-color: #414d41;
 }
 
 
@@ -113,7 +115,7 @@ letter-spacing: 0.1rem;
 }
 
 .vertikal-linje {
-    border-left: 0.4rem dotted #5ca5ad;
+    border-left: 0.4rem dotted #637863;
     height: 31rem;
 }
 
@@ -131,7 +133,6 @@ letter-spacing: 0.1rem;
 }
 
 .kart {
-    filter: grayscale();
     width: 65%;
     height: 16rem;
     border: 0;
@@ -227,6 +228,10 @@ span {
     left: 46rem;
 }
 
+
+
+
+
 .booking {
     width: 50rem;
     margin-top: 7rem;
@@ -243,61 +248,69 @@ span {
      float: left;
  }
 
- .booking-input {
+
+
+
+
+form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
- }
- 
- input {
-     font-family: 'Roboto', sans-serif;
-     width: 22.3rem;
-     padding: 1rem;
-     margin: 0.5rem 0rem;
-     outline: none;
-     border: solid #b4b4b4;
-     border-radius: 0.3rem;
-     transition: 0.5s;
- }
- 
- input:focus {
-     border: 0.15rem solid #5ca5ad;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: left;
  }
 
- label {
-    display: hid
+ .booking-input {
+    position: relative;
+    width: 20rem;
+ }
+
+ .booking-input label {
+    position: absolute;
+    left: 1rem;
+    top: 1.3rem;
+    width: 20rem;
+    
+ }
+input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    outline: none;
+    border: solid #b4b4b4;
+    border-radius: 0.3rem;
+    transition: 0.2s;
  }
  
- #mail {
-     width: 100%;
+
+
+
+
+input:focus {
+    outline: 0.15rem solid #637863;
  }
- 
- #melding {
-     width: 100%;
-     padding-bottom: 4rem;
- }
- 
+
  .booking-button {
      font-family: 'Bebas Neue', cursive;
      font-size: 1.3rem;
      width: 7rem;
-     background-color: #5ca5ad;
+     background-color: #637863;
      color: #f5fffa; 
      padding: 0.6rem;
      border-radius: 0.8rem;
      letter-spacing: 0.1rem;
      margin: 1rem 0rem;
      border: none;
-     transition: 0.5s;
+     transition: 0.2s;
  }
  
  .booking-button:hover {
-     background-color: #38696f;
+     background-color: #414d41;
  }
  
  ::placeholder {
-     color: #5ca5ad;
+     color: #637863;
  }
 
 
