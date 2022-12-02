@@ -59,8 +59,8 @@ header {
     object-fit: cover;
 }
 
-/* Neste- og tilbakeknapper */
-.knapp-tilbake, .knapp-neste {
+/* Frem- og tilbakeknapper */
+.knapp-tilbake, .knapp-frem {
     position: absolute;
     top: 50%;
     width: auto;
@@ -76,13 +76,13 @@ header {
     border-radius: 0.3rem;
 }
 
-.knapp-tilbake:hover, .knapp-neste:hover {
+.knapp-tilbake:hover, .knapp-frem:hover {
     background-color: #637863;
     border-radius: 0.3rem;
   }
 
-/* Plasserer neste-knappen til høyre */
-.knapp-neste {
+/* Plasserer frem-knappen til høyre */
+.knapp-frem {
     right: 0;
 }
 
@@ -99,7 +99,7 @@ header {
 }
 
 .dot:hover, .active {
-    background-color: grey;
+    background-color: #637863;
 }
 
 /* Fade slideshow bilder */
