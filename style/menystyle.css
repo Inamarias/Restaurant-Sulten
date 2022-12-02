@@ -32,7 +32,7 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #869e86;
+    background-color: #637863;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 5rem;
@@ -42,13 +42,15 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #473a35;
+    color: white;
     display: block;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #cfd8cf;
+    color: white;
     transition: 0.3s;
 }
   
@@ -127,7 +129,7 @@ h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    color: #259fac;
+    color: #637863;
     font-size: 2.2rem;
     padding-bottom: 2rem;
 }
@@ -135,8 +137,15 @@ h2 {
 h3 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
     overflow: hidden;
+    font-size: 1.4rem;
+    
+}
+
+span{
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .tittel {
@@ -235,7 +244,6 @@ h3 {
 
 footer{
     background-color: #473a35;
-    
  }
 
  footer p{
@@ -257,7 +265,7 @@ footer{
 }
 
 .kolonne-footer h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #f5fffa;
     padding-bottom: 0rem;
@@ -318,23 +326,16 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
 @media screen and (max-width: 850px) {
 
-/*Mindre skriftstørrelse*/
-    header {
-        justify-content: flex-start;
-        margin-left: 1rem;
-    }
-    
-    header img {
+    .header img {
         width: 10rem;
         margin-bottom: 1rem;
     }
-
+/*Mindre skriftstørrelse*/
     body {
         font-size: 0.9rem;
     }
 
     h2 {
-        letter-spacing: 0.1rem;
         font-size: 1.4rem;
     }
     
@@ -342,6 +343,11 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         font-size: 3rem;
         padding: 0rem;
     }
+
+    .kolonne-footer h2 {
+        font-size: 1.4rem;
+    }
+    
 
 /*Flytter kolonnene under hverandre */
     .drikkemeny {
@@ -384,7 +390,6 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     }
     .rad-footer {
         flex-direction: column;
-        align-items: center;
     }
     
 }
@@ -398,7 +403,24 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 @media only screen and (max-width: 480px) {
-
+    /* Header flyttes */
+    header {
+        justify-content: flex-start;
+    }
+    
+    .bildeseksjon img {
+        width: 10rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Toggle menu */
+    .openbtn {
+        font-size: 2.5rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    
     body {
         font-size: 0.9rem;
     }
