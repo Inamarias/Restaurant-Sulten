@@ -50,7 +50,8 @@ header img {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
@@ -224,6 +225,8 @@ img {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .knapp-intro:hover {
@@ -449,7 +452,7 @@ img {
 }
 
 /* mobile */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 480px){
 
   /* header flyttes*/
   header {
