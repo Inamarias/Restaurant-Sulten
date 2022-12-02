@@ -314,7 +314,7 @@ img {
 }
 
   /* tablet*/
-@media screen and (max-width: 850px) and (min-width: 450px) {
+@media screen and (max-width: 850px) and (min-width: 480px) {
 
   /*Flexbox + main - små endringer*/
     .container {
@@ -336,6 +336,7 @@ img {
       }
 
 
+       
     /*Header gjøres mindre */
     header img {
         width: 9rem;
@@ -399,6 +400,11 @@ img {
         margin-left: 16rem;
     }
 
+    /*Spinning logo i navbar skjules*/
+    .logoSpinning2{
+      visibility: hidden;
+  }
+
 
     /* Tittelboks minskes*/
     .boxTittel {
@@ -436,7 +442,7 @@ img {
       display: none;
     }
     .kilder2 {
-      font-size: smaller;
+      
       visibility: visible;
     }
 
@@ -465,11 +471,11 @@ img {
 
 /* mobile */
 @media screen and (max-width: 480px){
-    /* header flyttes*/
-    header {
-        justify-content: flex-start;
-    }
 
+   /* header flyttes*/
+   header {
+    justify-content: flex-start;
+}
     header img {
         width: 6rem;
         padding: 0.5rem;
