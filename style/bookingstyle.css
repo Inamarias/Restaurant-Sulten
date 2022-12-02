@@ -248,45 +248,48 @@ span {
      float: left;
  }
 
+
+
+
+
 form {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    text-align: left;
  }
 
  .booking-input {
     position: relative;
-    width: 22rem;
+    width: 20rem;
  }
 
  .booking-input label {
     position: absolute;
     left: 1rem;
     top: 1.3rem;
+    width: 20rem;
     
  }
- 
- .booking-input input {
-     width: 100%;
-     padding: 1rem;
-     margin: 0.5rem 0rem;
-     outline: none;
-     border: solid #b4b4b4;
-     border-radius: 0.3rem;
-     transition: 0.2s;
- }
- 
- .booking-input input:focus {
-    outline: 0.15rem solid #637863;
- }
- 
-.booking-input input:focus + label {
-    
-    top: 1rem;
+input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    outline: none;
+    border: solid #b4b4b4;
+    border-radius: 0.3rem;
+    transition: 0.2s;
  }
  
 
+
+
+
+input:focus {
+    outline: 0.15rem solid #637863;
+ }
 
  .booking-button {
      font-family: 'Bebas Neue', cursive;
