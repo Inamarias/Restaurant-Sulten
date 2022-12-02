@@ -8,9 +8,6 @@
 
         <title>Accessibility Page</title>
         <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
-       
-        <script src="https://kit.fontawesome.com/fbb98cbe58.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,17 +64,16 @@
             <p>For å sjekke brukervennligheten på de ulike sidene våre brukte vi Google Chrome-utvidelsen <a href="https://wave.webaim.org/">WAVE</a>, 
                 et verktøy for evaluering av brukervennlighet på nett. WAVE gir oss tilbakemelding om vi har noen store problemer med oppsettet, 
                 kontraster, og gir kommentarer på gode funksjoner. Allerede fra starten, la gruppen fokus på å gjøre nettsiden så tilgjengelig for så mange brukere som mulig. 
-                Vi tenkte dermed nøye gjennom hvilke farger, fonter og størrelser på tekst vi ville bruke. Alt tekst i bilder sørget vi også for å ha med. 
-                Da vi kjørte de ulike sidene gjennom WAVE-testen for første gang, fikk vi utslag på et par problemer. De problemene var hovedsakelig kontrastproblemer</p>
-                <p>Gruppen gjorde bevisste valg på ulike ting, blant annet når det kom til overskrifter, media queries og alt tekst. 
+                Vi tenkte dermed nøye gjennom hvilke farger, fonter og størrelser på tekst vi ville bruke. Alt tekst i bilder sørget vi også for å ha med. Gruppen gjorde bevisste valg på ulike ting, blant annet når det kom til overskrifter, media queries og alt tekst. 
                     På H1 og de andre overskriftsnivåene har vi valgt å gjøre om fonten fra brødtekst (Roboto) til den vi bruker i headeren (Bebas Neue), samt øke fontstørrelse, avstand på bokstaver og linjehøyde. 
                     For at nettsiden skal være tilgjengelig på alle enheter, valgte vi å dele inn media queries til standard skjermen (850px og høyere), tablet (850px til 470px), og mobil (480px og mindre)</p>
+                <p></p>
         </div>
         <!--Flexbox for å dele inn bilder på siden-->
         <div class="container">
             <div class="item">
                 <div class="bilde1">
-                    <img src="images/accessibility1.png">
+                    <img src="images/accessibility1.png" alt="Skjermbilde av nettside etter utført test">
                     <div class="bildeTekst">
                      <p>Topical page etter første test og hvilke feil som slo ut</p>
                     </div> 
@@ -85,7 +81,7 @@
         </div> 
         <div class="item">
             <div class="bilde2">
-                <img src="images/accessibility2.png">
+                <img src="images/accessibility2.png" alt="Skjermbilde av nettsides endringer etter utført test">
                 <div class="bildeTekst">
                     <p>Topical page etter endringer av første test</p>
                 </div>
@@ -93,7 +89,10 @@
         </div>
         </div>
         <div class="box2">
-            <h1>Endringer av nettside etter test</H1>
+            <h1>Endringer av nettside etter test</h1>
+            <p>Etter å ha kjørt de ulike sidene gjennom WAVE-testen første gang, fikk vi utslag på et par problemer. Som sett på bildet over, var disse problemene hovedsakelig grunnet kontrasten på tekst og bakgrunn. 
+                Dermed gjorde vi grønnfargen en del mørkere for at alle med både godt og dårlig syn skal klare å lese de boksene med farge. 
+                I tillegg til kontrastutfordringene, kom det varsel om en tom link i sidebaren vår, som viste seg å være javascript:void(0)-linken som trengte en tittel. </p>
         </div>
 
     </main>
