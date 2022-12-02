@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #f5fffa;
     color: #382c20;
     font-weight: 300;
@@ -13,15 +12,10 @@ body {
     letter-spacing: 0.2rem;
 }
 
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-}
-
 /* Header */
-
 header {
     background-color: #d1eacd;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .bildeseksjon {
@@ -35,65 +29,24 @@ header {
 }
 
 /* Navbar */
-
-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #869e86;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 5rem;
+.navbar-home {
+    text-align: center;
+    padding: 2rem 0;
 }
 
-nav a {
-    padding: 1rem;
+.navbar-home a {
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin: 0 1rem;
+    font-size: 2rem;
     color: #473a35;
-    display: block;
 }
 
-nav a:hover {
+.navbar-home a:hover {
     color: #cfd8cf;
-    transition: 0.3s;
+    transition: 0.2s;
 }
-  
-.openbtn {
-    font-size: 3rem;
-    cursor: pointer;
-    background-color: transparent;
-    color: #473a35;
-    padding: 0.3rem 1rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-  
-.openbtn:hover {
-    background-color: #9ebb9ebf;
-    transition: 0.3s;
-}
-
-#main {
-    transition: 0.5s;
-    margin-left: 1rem;
-}
-
-#mySidebar.open {
-    width: 15rem;
-}
-
-#main.open {
-    margin-left: 16rem;
-}
-
 
 /* Slideshow bilder*/
-
 .slideshow {
     position: relative;
     overflow: hidden;
@@ -107,7 +60,6 @@ nav a:hover {
 }
 
 /* Neste- og tilbakeknapper */
-
 .knapp-tilbake, .knapp-neste {
     position: absolute;
     top: 50%;
@@ -130,13 +82,11 @@ nav a:hover {
   }
 
 /* Plasserer neste-knappen til høyre */
-
 .knapp-neste {
     right: 0;
 }
 
 /* Sirklene */
-
 .dot {
     cursor: pointer;
     height: 1rem;
@@ -164,10 +114,10 @@ nav a:hover {
 }
 
 /* Footer */
-
 footer {
     background-color: #473a35;
     color: #f5fffa;
+    font-family: 'Roboto', sans-serif;
 }
 
 .rad-footer {
@@ -184,6 +134,7 @@ footer {
 
 .kolonne-footer h1 {
     margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', cursive;
 }
 
 /* Font Awesome Icons er hentet fra:
@@ -237,26 +188,82 @@ text-decoration: none;
 color: #382c20;
 }
 
-/* Responsive navigation menu for tablets */
+/* Responsive for bigger screens */
+@media screen and (min-width: 768px) {
 
+    #main, #mySidebar {
+        display: none;
+    }
+
+}
+
+/* Responsive for tablets */
 @media screen and (max-width: 768px) {
     
-    /* Header flyttes */
-    header {
-        justify-content: flex-start;
-    }
-    
+    /* Bildet i header flytter og gjøres mindre */    
     .bildeseksjon img {
+        justify-content: flex-start;
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
     
-    /* Toggle menu */
+    /* Går over til toggle menu */
+    nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #869e86;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5rem;
+    }
+    
+    nav a {
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #473a35;
+        display: block;
+    }
+    
+    nav a:hover {
+        color: #cfd8cf;
+        transition: 0.3s;
+    }
+      
     .openbtn {
         font-size: 2.5rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: #473a35;
         padding: 0.3rem 0.5rem;
+        border: none;
+        margin-bottom: 1rem;
     }
+      
+    .openbtn:hover {
+        background-color: #9ebb9ebf;
+        transition: 0.3s;
+    }
+    
+    #main {
+        transition: 0.5s;
+        margin-left: 1rem;
+    }
+    
+    #mySidebar.open {
+        width: 15rem;
+    }
+    
+    #main.open {
+        margin-left: 16rem;
+    }
+    
     
     /* Slideshow blir mindre */
     .bilde-slideshow img {
@@ -279,8 +286,7 @@ color: #382c20;
     
 }
 
-/* Responsive navigation menu for mobile devices */
-
+/* Responsive for mobile devices */
 @media screen and (max-width: 480px) {
     
     /* Mindre header image */
