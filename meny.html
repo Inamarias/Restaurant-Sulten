@@ -21,29 +21,44 @@
     <body>
 
         <header>
-            <div class="bildeseksjon">
+            <div class="bildeseksjon">    
 
-                <!-- Legge inn kilde på js under -->
-
-                <div>            
-                    <a href="index.html">
-                        <img src="images/logo2.png" alt="Sulten hjemlogo">
-                    </a>
-                </div>
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="Sulten hjemlogo">
+                </a>
 
             </div>
 
+            <!-- Meny for større skjermer -->
+            <nav>
+
+                <div class="navbar-home" >
+
+                    <a href="index.html">Hjem</a>
+                    <a href="meny.html">Meny</a>
+                    <a href="booking.html" class="nav-booking">Booking</a>
+                    <a href="aktuelt.html">Topical Page</a>
+                    <a href="brukervennlighet.html">Accessibility Page</a>
+
+                </div>
+    
+            </nav>
+
+            <!-- Meny for mindre skjermer -->
+            <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
             <div id="main">
                 <button class="openbtn" onclick="OpenOrClose()">☰</button>
             </div>
 
             <nav id="mySidebar">
+
                 <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
                 <a href="index.html">Hjem</a>
                 <a href="meny.html">Meny</a>
                 <a href="booking.html" class="nav-booking">Booking</a>
-                <a href="aktuelt.html">Topical page</a>
-                <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
+                <a href="aktuelt.html">Topical Page</a>
+                <a href="brukervennlighet.html">Accessibility Page</a>
+
             </nav>
         </header>
 
