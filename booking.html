@@ -91,7 +91,7 @@
                     <h2>Her finner du oss</h2>
                     <p>Adressen er Skomværgata 2<span> 3921 Porsgrunn</span></p>
                     <h2>Åpningstider</h2>
-                    <p>Mandag - torsdag 10 - 23 <span>Fredag - søndag 12 - 23</span></p>
+                    <p>Mandag - torsdag 10:00 - 23:00 <span>Fredag - søndag 12:00 - 23:00</span></p>
                 </div>
             </div>
          
@@ -132,11 +132,13 @@
                 <img src="images/6.jpg" alt="bilde"/>
                 <img src="images/7.jpg" alt="bilde"/>
                 <img src="images/8.jpg" alt="bilde"/>
+                <img src="images/9.jpg" alt="bilde"/>
+                <img src="images/10.jpg" alt="bilde"/>
                 </div>
                 <div class="finger">
                     <div class="pekefinger">
                      <img src="images/finger.png" alt="finger">
-                     <p>Scroll for flere bilder!</p>
+                     <p>Swipe for flere bilder!</p>
                      </div>
                 </div>
             </div>
@@ -145,21 +147,49 @@
             <div class="booking" id="booking-top">
                 <h2>Booking av lokalet</h2>
                 <p>Har du noen spørsmål ta kontakt med oss på telefon 657 56 589 eller send en epost: post@sulten.no</p>
-                
-                <form>
+            <div class="booking-form">
+                <form action="action_page.php">
                 <div class="booking-input">
-                    <label for="mail">mail</label>
-                    <input id="mail" type="text" placeholder="Epost" required>
-                    <input type="text" placeholder="Fornavn" required>
-                    <input type="text" placeholder="Etternavn" required>
-                    <input type="text" placeholder="Telefonnummer" required>
-                    <input type="text" placeholder="Dato" required onfocus="(this.type='date')" onblur="(this.type='text')">
-                    <input type="text" placeholder="Starttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
-                    <input type="text" placeholder="Sluttid" required onfocus="(this.type='time')" onblur="(this.type='text')">
-                    <input type="text" placeholder="Anledning" required>
-                    <input type="number" placeholder="Antall personer" required>
-                    <input  id="melding" type="text" placeholder="Melding">
+                    <label for="mail">Mail</label>
+                    <input type="text" id="mail" name="mail" placeholder="">
                 </div>
+                <div class="booking-input">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" id="fornavn" name="fornavn" placeholder="">
+                </div>
+                <div class="booking-input">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" id="etternavn" name="etternavn" placeholder="">
+                </div>
+                <div class="booking-input">
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="text" id="telefonnummer" name="telefonnummer" placeholder="">
+                </div>
+                <div class="booking-input">
+                    <label for="dato">Dato</label>
+                    <input type="text" id="dato" name="dato" placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')">
+                </div>
+                <div class="booking-input">
+                    <label for="starttid">Starttid</label>
+                    <input type="text" id="starttid" name="starttid" placeholder="" onfocus="(this.type='time')" onblur="(this.type='text')">
+                </div>
+                <div class="booking-input">
+                    <label for="sluttid">Sluttid</label>
+                    <input type="text" id="sluttid" name="sluttid" placeholder="" onfocus="(this.type='time')" onblur="(this.type='text')">
+                </div>
+                <div class="booking-input">
+                    <label for="anledning">Anledning</label>
+                    <input type="text" id="anledning" name="anledning" placeholder="">
+                </div>
+                <div class="booking-input">
+                    <label for="antall-personer">Antall personer</label>
+                    <input type="number" id="antall-personer" name="fornavn" placeholder="">
+                </div>
+                <div class="booking-input">
+                    <label for="melding">Melding</label>
+                    <input type="text" id="melding" name="melding">
+                </div>
+            </div>
                 </form>
                 <button class="booking-button" type="submit">SEND</button>
             </div> 
