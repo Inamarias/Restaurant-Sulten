@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     --white: #ffffff;
-    --green: #839d83;
+    --green: #637863;
 }
 
 
@@ -36,65 +36,25 @@ header img {
 }
 
 
-
 /* Navbar */
-/* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
-.nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #869e86;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
+.navbar-home {
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-.nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fbf8f8;
-    display: block;
-    transition: 0.3s;
+.navbar-home a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  color: #473a35;
 }
 
-.nav a:hover {
-    color: #cfd8cf;
+.navbar-home a:hover {
+  color: #cfd8cf;
+  transition: 0.2s;
 }
-
-  
-.openbtn {
-    font-size: 40px;
-    cursor: pointer;
-    background-color: var(--white);
-    color: var(--green);
-    padding: 10px 15px;
-    border: none;
-}
-  
-.openbtn:hover {
-    background-color: var(--white);
-    color: var(--green);
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 1rem;
-  }
-
-  #mySidebar.open { 
-    width:250px; 
-  }
-  #main.open { 
-    margin-left:250px; 
-  }
-
 
 
 /* main og tittel sections*/
@@ -142,10 +102,9 @@ tittel {
 }
 
 .logoSpinning2 img {
-    margin-left: 1.7rem;
-    margin-top: -2rem;
+    margin-left: 0rem;
+    margin-top: -4rem;
     width: 6.3rem;
-    margin-bottom: 3rem;
     animation-name: spin;
     animation-duration: 7.5s;
     animation-iteration-count: infinite;
@@ -336,9 +295,8 @@ img {
 }
 
  /* Footer */
-
  footer{
-  background-color: #869e86;
+  background-color: var(--green);
 }
 
 .boxFooter {
@@ -346,10 +304,17 @@ img {
 }
 
 
-/*Media for header og navbar*/
+/* Responsive for bigger screens */
+@media screen and (min-width: 850px) {
+
+  #main, #mySidebar {
+      display: none;
+  }
+
+}
 
   /* tablet*/
-@media screen and (max-width: 768px) and (min-width: 450px) {
+@media screen and (max-width: 850px) and (min-width: 450px) {
 
   /*Flexbox + main - små endringer*/
     .container {
@@ -371,20 +336,68 @@ img {
       }
 
 
-    /*Header flyttes */
-    header {
-        justify-content: flex-start;
+    /*Header gjøres mindre */
+    header img {
+        width: 9rem;
+    }
+
+
+    /* Går over til toggle menu */
+    /* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
+    nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #637863;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.2rem;
     }
     
-    header img {
-        width: 7rem;
+    nav a {
         padding: 1rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #f5fffa;
+        display: block;
     }
-
-
-    /*Nav-knapp blir mindre*/
+    
+    nav a:hover {
+        color: #d1eacd;
+        transition: 0.3s;
+    }
+      
     .openbtn {
-      font-size: 2rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--green);
+        padding: 0.3rem 0.5rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+      
+    .openbtn:hover {
+        background-color: transparent;
+        transition: 0.2s;
+    }
+    
+    #main {
+        transition: 0.5s;
+        margin-left: 1rem;
+    }
+    
+    #mySidebar.open {
+        width: 15rem;
+    }
+    
+    #main.open {
+        margin-left: 16rem;
     }
 
 
@@ -453,62 +466,124 @@ img {
 
 /* mobile */
 @media screen and (max-width: 480px){
+    /* header flyttes*/
+    header {
+        justify-content: flex-start;
+    }
 
-  /* header flyttes*/
-  header {
-      justify-content: flex-start;
-  }
-
-  header img {
-      width: 6rem;
-      padding: 0.5rem;
-  } 
-
+    header img {
+        width: 6rem;
+        padding: 0.5rem;
+    } 
 
 
-  /*Flexbox + main - små endringer*/
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
+    /* Navbar forsvinner */
+    .navbar-home {
+      display: none;
+    }
+    
+    .navbar-home a {
+      display: none;
+    }
+    
+    .navbar-home a:hover {
+      display: none;
+    }
 
-  .item {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
-  }
+    /* Går over til toggle menu */
+      /* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
+    nav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #637863;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 5rem;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.2rem;
+      }
+      
+      nav a {
+          padding: 1rem;
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: #f5fffa;
+          display: block;
+          line-height: 0.01rem;
+      }
+      
+      nav a:hover {
+          color: #d1eacd;
+          transition: 0.3s;
+      }
+        
+      .openbtn {
+          font-size: 1.5rem;
+          cursor: pointer;
+          background-color: transparent;
+          color: var(--green);
+          padding: 0.3rem 0.5rem;
+          border: none;
+          margin-bottom: 1rem;
+      }
+        
+      .openbtn:hover {
+          background-color: transparent;
+          transition: 0.2s;
+      }
+      
+      #main {
+          transition: 0.5s;
+          margin-left: 1rem;
+      }
+      
+      #mySidebar.open {
+          width: 15rem;
+      }
+      
+      #main.open {
+          margin-left: 16rem;
+      }
 
-  main {
-    width: 100%;
-    margin: 1rem;
-  }
+        /*Gjør img inni nav mindre*/
+      .logoSpinning2 img{
+        width: 7rem;
+        padding: 1rem;
+      }
 
+    /*Flexbox + main - små endringer*/
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
 
+    .item {
+      width: 100%;
+      height: auto;
+      margin: 1rem auto;
+    }
 
-  /*Gjør nav-knapp og img inni nav mindre*/
-  .nav a{
-    font-size: medium;
-  }
+    main {
+      width: 100%;
+      margin: 1rem;
+    }
 
-  .logoSpinning2 img{
-    width: 5.5rem;
-  }
- 
- 
 
  /*Tekst i tittelboks blir mindre*/
-  .boxTittel {
-    font-size: small;
-  }
-
+    .boxTittel {
+      font-size: small;
+    }
 
 
   /*Knapp midtstilt og større*/
-  .knapp-intro {
-    width: 90%;
-    margin-bottom: 3rem;
-  }
-
+    .knapp-intro {
+      width: 90%;
+      margin-bottom: 3rem;
+    }
 
 
   /*Endrer størrelse på grafer*/
@@ -529,7 +604,6 @@ img {
   .graf p {
       font-size: 0.7rem;
     }
-
 
 
   /*Gir grønn section nok lengde og bredde*/
@@ -558,7 +632,6 @@ img {
   }
 
 
-
   /*Kilder*/
   .kilder1 {
     display: none;
@@ -569,13 +642,14 @@ img {
     visibility: visible;
   }
 
+ 
 }
-@media screen and (min-width: 768px){
+/*Media for å fikse småting*/
+@media screen and (min-width: 850px){
   /*Gjemme logo i navbar*/
     .logoSpinning2{
         visibility: hidden;
     }
-
 
     /*Gjøre graf lenger*/
     .graf2 {

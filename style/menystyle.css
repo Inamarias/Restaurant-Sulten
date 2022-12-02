@@ -26,61 +26,23 @@ header {
 
 /* Navbar */
 
-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #637863;
-    overflow-x: hidden;
-    transition: 0.2s;
-    padding-top: 5rem;
+.navbar-home {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
 }
 
-nav a {
-    padding: 1rem;
+.navbar-home a {
     text-decoration: none;
-    font-size: 1.5rem;
-    color: #f5fffa;
-    display: block;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: #473a35;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 0.2rem;
-    text-transform: uppercase;
 }
 
-nav a:hover {
-    color: #d1eacd;
-    transition: 0.3s;
-}
-  
-.openbtn {
-    font-size: 3rem;
-    cursor: pointer;
-    background-color: transparent;
-    color: #473a35;
-    padding: 0.3rem 1rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-  
-.openbtn:hover {
-    background-color: #9ebb9ebf;
-    transition: 0.3s;
-}
-
-#main {
-    transition: 0.5s;
-    margin-left: 1rem;
-}
-
-#mySidebar.open {
-    width: 15rem;
-}
-
-#main.open {
-    margin-left: 16rem;
+.navbar-home a:hover {
+    color: #637863;
+    transition: 0.2s;
 }
 
 main{
@@ -325,12 +287,77 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     color: #382c20;
 }
 
+/* Responsive for bigger screens */
+@media screen and (min-width: 850px) {
 
+    #main, #mySidebar {
+        display: none;
+    }
+
+}
 @media screen and (max-width: 850px) {
 
-    .header img {
+    .bildeseksjon img {
         width: 10rem;
+        margin-left: 1rem;
         margin-bottom: 1rem;
+    }
+
+    /* Går over til toggle menu */
+    nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #637863;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5rem;
+    }
+    
+    nav a {
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #f5fffa;
+        display: block;
+    }
+    
+    nav a:hover {
+        color: #d1eacd;
+        transition: 0.3s;
+    }
+      
+    .openbtn {
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: #473a35;
+        padding: 0.3rem 0.5rem;
+        border: none;
+    }
+      
+    .openbtn:hover {
+        background-color: #637863;
+        transition: 0.2s;
+    }
+    
+    #main {
+        transition: 0.5s;
+        margin-left: 0.5rem;
+    }
+    
+    #main.open {
+        margin-left: 15.5rem;
+        position: fixed;
+        background-color: #d1eacd;
+        z-index: 1;
+    }
+
+    #mySidebar.open {
+        width: 15rem;
     }
 /*Mindre skriftstørrelse*/
     body {
@@ -340,6 +367,15 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     h2 {
         font-size: 1.4rem;
     }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    span{
+        font-size: 1.2rem;
+    }
+
     
     .centered { 
         font-size: 3rem;
@@ -392,6 +428,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     }
     .rad-footer {
         flex-direction: column;
+        align-items: center;
     }
     
 }
@@ -422,21 +459,8 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         padding: 0.3rem 0.5rem;
     }
     
-    
     body {
         font-size: 0.9rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    h3{
-        font-size: 1.2rem;
-    }
-
-    span{
-        font-size: 1.2rem;
     }
 
     .centered { 
