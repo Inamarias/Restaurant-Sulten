@@ -34,7 +34,7 @@ nav {
     left: 0;
     background-color: #637863;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.2s;
     padding-top: 5rem;
 }
 
@@ -42,7 +42,7 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
+    color: #f5fffa;
     display: block;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 0.2rem;
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: #d1eacd;
     transition: 0.3s;
 }
   
@@ -427,6 +427,14 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
     h2 {
         font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    span{
+        font-size: 1.2rem;
     }
 
     .centered { 
