@@ -29,33 +29,39 @@
         </a>
     </header>
 
-    <!--Her legges sidebar-->
-        <div id="mySidebar" class="nav">
-            <div class="logoSpinning2">
-                <img src="images/IoT-white.png" alt="Sidebar internet of things icon spinning">  
-             </div>
-            <a href="javascript:void(0)" title="Meny" onclick="OpenOrClose()"></a> 
-            <a href="index.html">HJEM</a>
-            <a href="meny.html">MENY</a>
-            <a href="booking.html" class="nav-booking">BOOKING</a>  
-            <a href="aktuelt.html">TOPICAL PAGE</a>
-            <a href="brukervennlighet.html">ACCESSIBILITY PAGE</a>
-            
-        </div>
-        <!--Javascript for å åpne og lukke sidebaren-->
-        <!--Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button-->
+         <!-- Meny for større skjermer -->
+         <nav>
+
+            <div class="navbar-home" >
+
+                <a href="index.html">Hjem</a>
+                <a href="meny.html">Meny</a>
+                <a href="booking.html" class="nav-booking">Booking</a>
+                <a href="aktuelt.html">Topical Page</a>
+                <a href="brukervennlighet.html">Accessibility Page</a>
+
+            </div>
+        </nav>
+
+        <!-- Meny for mindre skjermer -->
+        <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
         <div id="main">
             <button class="openbtn" onclick="OpenOrClose()">☰</button>
         </div>
-        <script>
-            function OpenOrClose() {
-            document.getElementById("mySidebar").classList.toggle("open");
-            document.getElementById("main").classList.toggle("open");
-            }
-        </script>
-    
-    
-    <!--Her legges tittelboks-->
+
+        <nav id="mySidebar">
+            <div class="logoSpinning2">
+                <img src="images/IoT-white.png" alt="Sidebar internet of things icon spinning">  
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+            <a href="index.html">Hjem</a>
+            <a href="meny.html">Meny</a>
+            <a href="booking.html" class="nav-booking">Booking</a>
+            <a href="aktuelt.html">Topical Page</a>
+            <a href="brukervennlighet.html">Accessibility Page</a>
+
+        </nav>
+        <script src="javascript/openClose.js"></script>
+    <!--Tittelboks-->
     <tittel>
         <div class="boxTittel">
             <h1>Opinions of the development of the smart 
