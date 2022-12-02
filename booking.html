@@ -19,298 +19,258 @@
     </head>
     <body>
 
-        <header>
+    <header>
 
-            <div class="bildeseksjon">    
+        <div class="bildeseksjon">    
+            <a href="index.html">
+                <img src="images/logo2.png" alt="Sulten hjemlogo">
+            </a>
+        </div>
 
-                <a href="index.html">
-                    <img src="images/logo2.png" alt="Sulten hjemlogo">
-                </a>
-
-            </div>
-
-            <!-- Meny for større skjermer -->
-            <nav>
-
-                <div class="navbar-home" >
-
-                    <a href="index.html">Hjem</a>
-                    <a href="meny.html">Meny</a>
-                    <a href="booking.html" class="nav-booking">Booking</a>
-                    <a href="aktuelt.html">Topical Page</a>
-                    <a href="brukervennlighet.html">Accessibility Page</a>
-
-                </div>
-    
-            </nav>
-
-            <!-- Meny for mindre skjermer -->
-            <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
-            <div id="main">
-                <button class="openbtn" onclick="OpenOrClose()">☰</button>
-            </div>
-
-            <nav id="mySidebar">
-
-                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+        <!-- Meny for større skjermer -->
+        <nav>
+            <div class="navbar-home" >
                 <a href="index.html">Hjem</a>
                 <a href="meny.html">Meny</a>
                 <a href="booking.html" class="nav-booking">Booking</a>
                 <a href="aktuelt.html">Topical Page</a>
                 <a href="brukervennlighet.html">Accessibility Page</a>
+            </div>
+        </nav>
 
-            </nav>
+        <!-- Meny for mindre skjermer -->
+        <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
+        <div id="main">
+            <button class="openbtn" onclick="OpenOrClose()">☰</button>
+        </div>
+
+        <nav id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+            <a href="index.html">Hjem</a>
+            <a href="meny.html">Meny</a>
+            <a href="booking.html" class="nav-booking">Booking</a>
+            <a href="aktuelt.html">Topical Page</a>
+            <a href="brukervennlighet.html">Accessibility Page</a>
+        </nav>
         
-        </header>
+    </header>
 
-        <main>
+    <main>
+        <!--Bildet i header-->
+        <div class="container">
+            <img src="images/restaurantMeny.jpg" alt="restaurant med bord og stoler">
+        </div>
+    
+        <!--Overskrift og info om booking av restauranten-->
+        <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
+        <div class="første-tekst">
+            <p>Sulten er ikke bare en restaurant, men et lokale du kan leie til din neste sammenkomst! Lokalet er perfekt til alt fra bryllup og middager til utstillinger eller møter. Atmosfæren i lokalet er avslappende, koselig og moderne. Du vil absolutt føle deg hjemme her! Lokalet rommer opp til 50 sitteplasser og 20 ståplasser så her er det masse plass! Om dere i tillegg kunne tenke dere å få servert mat, tilbyr vi servering av kjempedeilig mat til store eller små begivenheter. Vi har til og med en bar hvor det serveres all slags drikke på kveldene. Kontakt oss om du ønsker servering av mat. </p>
+        </div>
 
-            <!--Slideshow-->
-            <!--Legge inn bildekilde på alle tre bilder-->
-            <div class="slideshow">
+        <!--Boks med link til booking i bunnen av siden-->
+        <div class="booking-boks">
+            <a class="booking-link" href="#booking-top">Klikk for å booke!</a>
+        </div>
 
-                <div class="bilde-slideshow fade">
-                    <img src="images/4.jpg" alt="Kaffebar med ulike kaffetyper bak en disk">
+        <!--Enkle fakta om kapasitet-->
+        <div class="kort-info">
+            <div class="bredde1">
+                <div class="kapasitet">
+                    <h3>10</h3><p>Bord</p>
                 </div>
-
-                <div class="bilde-slideshow fade">
-                    <img src="images/5.jpg" alt="Oversikt over hele restauranten">
+                <div class="kapasitet">
+                    <h3>50</h3><p>Sitteplasser</p>
                 </div>
-
-                <div class="bilde-slideshow fade">
-                    <img src="images/2.jpg" alt="Koldtbord med diverse desserter, som muffins og frukt">
+                <div class="kapasitet">
+                    <h3>50 m²</h3><p>Areal</p>
                 </div>
-
-                <!--Neste- og tilbakeknapper-->
-                <a class="knapp-tilbake" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="knapp-neste" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-
-                <!-- Sirkler under slideshow -->
-                <div style="text-align: center">
-
-                    <a class="dot" onclick="currentSlide(1)" onfocus="showSlides()"></a>
-                    <a class="dot" onclick="currentSlide(2)" onfocus="showSlides()"></a>
-                    <a class="dot" onclick="currentSlide(3)" onfocus="showSlides()"></a>
-
-                </div>
-        
-            <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
-            <div class="tekst">
-                <p>Sulten er ikke bare en restaurant, men et lokale du kan leie til din neste sammenkomst! Lokalet er perfekt til alt fra bryllup og middager til utstillinger eller møter. Atmosfæren i lokalet er avslappende, koselig og moderne. Du vil absolutt føle deg hjemme her! Lokalet rommer opp til 50 sitteplasser og 20 ståplasser så her er det masse plass! Om dere i tillegg kunne tenke dere å få servert mat, tilbyr vi servering av kjempedeilig mat til store eller små begivenheter. Vi har til og med en bar hvor det serveres all slags drikke på kveldene. Kontakt oss om du ønsker servering av mat. </p>
-            </div>
-
-            <div class="booking-boks">
-                <a class="booking-link" href="#booking-top">Klikk for å booke!</a>
-            </div>
-
-            <div class="kort-info">
-
-                <div class="bredde1">
-                    <div class="kapasitet">
-                        <h3>10</h3><p>Bord</p>
-                    </div>
-                    <div class="kapasitet">
-                        <h3>50</h3><p>Sitteplasser</p>
-                    </div>
-                    <div class="kapasitet">
-                        <h3>50 m²</h3><p>Areal</p>
-                    </div>
-                    <div class="kapasitet">
-                        <h3>20</h3><p>Ståplasser</p>
-                    </div>
+                <div class="kapasitet">
+                    <h3>20</h3><p>Ståplasser</p>
                 </div>
             </div>
+        </div>
 
-            <div class="mer-info">
-
-                <div class="column1" id="fasiliteter">
-                    <ul>
-                        <h2>Våre fasiliteter</h2>
-                        <li>Parkering</li>
-                        <li>Lydanlegg </li>
-                        <li>Prosjektor</li>
-                        <li>Tilbyr matservering</li>
-                        <li>Bar</li>
-                        <li>Barnevennlig </li>
-                        <li>Rullestolvennlig</li>
-                        <li>WiFi</li>
-                        <li>Dansegulv</li>
-                        <li>Uteområde</li>
-                    </ul>
+        <!--Info om fasiliteter og lokalet-->
+        <div class="mer-info">
+            <div class="column1" id="fasiliteter">
+                <ul>
+                    <h2>Våre fasiliteter</h2>
+                    <li>Parkering</li>
+                    <li>Lydanlegg </li>
+                    <li>Prosjektor</li>
+                    <li>Tilbyr matservering</li>
+                    <li>Bar</li>
+                    <li>Barnevennlig </li>
+                    <li>Rullestolvennlig</li>
+                    <li>WiFi</li>
+                    <li>Dansegulv</li>
+                    <li>Uteområde</li>
+                </ul>
+            </div>
+            <div class="vertikal-linje"></div>
+            <div class="column1" id="lokalet-passer-til">
+                <ul>
+                    <h2>Lokalet er perfekt til</h2>
+                    <li>Bryllup</li>
+                    <li>Dåp/konfirmasjon</li>
+                    <li>Feiring</li>
+                    <li>Julebord</li>
+                    <li>Bedriftsarrangement</li>
+                    <li>Konferanser</li>
+                    <li>Møter</li>
+                    <li>Kurs</li>
+                    <li>Utstillinger</li>
+                    <li>Private middager</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--Kart og kolasjon-->
+        <!--Hentet fra https://www.geeksforgeeks.org/how-to-add-google-map-inside-html-page-without-using-api-key/-->
+        <div class="lokasjon">
+            <iframe class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.6178148590357!2d9.64166331623829!3d59.138794033326846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647206ce0f4d717%3A0x40d34cb06e1f6a23!2sSkomv%C3%A6rgata%202%2C%203921%20Porsgrunn!5e0!3m2!1sno!2sno!4v1668524519720!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="info-om-lokasjon">
+                <h2>Her finner du oss</h2>
+                <p>Adressen er Skomværgata 2<span> 3921 Porsgrunn</span></p>
+                <h2>Åpningstider</h2>
+                <p>Mandag - torsdag 10:00 - 23:00 <span>Fredag - søndag 12:00 - 23:00</span></p>
+            </div>
+        </div>
+    
+        <!--Info om priser-->
+        <div class="pris">
+            <div class="bredde2">
+                <h2>Priser ved booking</h2>
+                <p>Det er mulig å booke lokalet torsdag, fredag, lørdag og søndag.</p>
+                <div class="bokser">
+                <div class="boks">
+                    <p>2 timer<br>5 500,-</p>
                 </div>
-                <div class="vertikal-linje"></div>
-                <div class="column1" id="lokalet-passer-til">
-                    <ul>
-                        <h2>Lokalet er perfekt til</h2>
-                        <li>Bryllup</li>
-                        <li>Dåp/konfirmasjon</li>
-                        <li>Feiring</li>
-                        <li>Julebord</li>
-                        <li>Bedriftsarrangement</li>
-                        <li>Konferanser</li>
-                        <li>Møter</li>
-                        <li>Kurs</li>
-                        <li>Utstillinger</li>
-                        <li>Private middager</li>
-                    </ul>
+                <div class="boks">
+                    <p>5 timer<br>6 500,-</p>
+                </div>
+                <div class="boks">
+                    <p>Hel dag<br>8 000,-</p>
+                </div>
+                <div class="boks">
+                    <p>Hel helg<br>15 000,-</p>
+                </div>
+                </div>
+                <p>Prisene kan variere ut i fra hva som avtales med utleier.</p>
+            </div>
+        </div>
+
+        <!--Bilder med horisontal scrolling-->
+        <!--Hentet fra https://codepen.io/adityajanuardi/pen/YzydaVj-->
+        <div class="bilder">
+            <!--skrive alt bilde-->
+            <h2>Bilder</h2>
+            <div class="scroll">
+            <img src="images/1.jpg" alt="bilde"/>
+            <img src="images/2.jpg" alt="bilde"/>
+            <img src="images/3.jpg" alt="bilde"/>
+            <img src="images/4.jpg" alt="bilde"/>
+            <img src="images/5.jpg" alt="bilde"/>
+            <img src="images/6.jpg" alt="bilde"/>
+            <img src="images/7.jpg" alt="bilde"/>
+            <img src="images/8.jpg" alt="bilde"/>
+            <img src="images/9.jpg" alt="bilde"/>
+            <img src="images/10.jpg" alt="bilde"/>
+            </div>
+            <!--Finger for å vise at du kan swipe-->
+            <div class="finger">
+                <div class="pekefinger">
+                <img src="images/finger.png" alt="finger">
+                <p>Swipe for flere bilder!</p>
                 </div>
             </div>
-            
-             <!--https://www.geeksforgeeks.org/how-to-add-google-map-inside-html-page-without-using-api-key/-->
-             <div class="lokasjon">
+        </div>
 
-                <iframe class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.6178148590357!2d9.64166331623829!3d59.138794033326846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647206ce0f4d717%3A0x40d34cb06e1f6a23!2sSkomv%C3%A6rgata%202%2C%203921%20Porsgrunn!5e0!3m2!1sno!2sno!4v1668524519720!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="info-om-lokasjon">
-                    <h2>Her finner du oss</h2>
-                    <p>Adressen er Skomværgata 2<span> 3921 Porsgrunn</span></p>
-                    <h2>Åpningstider</h2>
-                    <p>Mandag - torsdag 10:00 - 23:00 <span>Fredag - søndag 12:00 - 23:00</span></p>
-                </div>
+        <!--En form med input for booking av lokalet-->
+        <!--Kilden viser: onfocus og onblur som gjør at default date og time 
+            ikke vises før man klikker på boksen-->
+        <!--Hentet fra https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field-->
+        <div class="booking" id="booking-top">
+            <h2>Booking av lokalet</h2>
+            <p>Har du noen spørsmål ta kontakt med oss på telefon 657 56 589 eller send en epost: post@sulten.no</p>
+    
+        <form action="action_page.php">
+            <div class="booking-input">
+                <label class="hidden" for="mail">Mail</label>
+                <input type="text" id="mail" name="mail" placeholder="Epost">
             </div>
-         
-            <div class="pris">
-
-                <div class="bredde2">
-                    <h2>Priser ved booking</h2>
-                    <p>Det er mulig å booke lokalet onsdag, torsdag, fredag, lørdag og søndag.</p>
-                    <div class="bokser">
-                    <div class="boks">
-                        <p>2 timer<br>5 500,-</p>
-                    </div>
-                    <div class="boks">
-                        <p>5 timer<br>6 500,-</p>
-                    </div>
-                    <div class="boks">
-                        <p>Hel dag<br>8 000,-</p>
-                    </div>
-                    <div class="boks">
-                        <p>Hel helg<br>15 000,-</p>
-                    </div>
-                    </div>
-                    <p>Prisene kan variere ut i fra hva som avtales med utleier.</p>
-                </div>
+            <div class="booking-input">
+                <label for="telefonnummer">Telefonnummer</label>
+                <input type="text" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer">
             </div>
-
-            <!--https://codepen.io/adityajanuardi/pen/YzydaVj-->
-            <div class="bilder">
-
-                <!--skrive alt bilde-->
-                <h2>Bilder</h2>
-                <div class="scroll">
-                <img src="images/1.jpg" alt="bilde"/>
-                <img src="images/2.jpg" alt="bilde"/>
-                <img src="images/3.jpg" alt="bilde"/>
-                <img src="images/4.jpg" alt="bilde"/>
-                <img src="images/5.jpg" alt="bilde"/>
-                <img src="images/6.jpg" alt="bilde"/>
-                <img src="images/7.jpg" alt="bilde"/>
-                <img src="images/8.jpg" alt="bilde"/>
-                <img src="images/9.jpg" alt="bilde"/>
-                <img src="images/10.jpg" alt="bilde"/>
-                </div>
-                <div class="finger">
-                    <div class="pekefinger">
-                     <img src="images/finger.png" alt="finger">
-                     <p>Swipe for flere bilder!</p>
-                     </div>
-                </div>
+            <div class="booking-input">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn">
             </div>
+            <div class="booking-input">
+                <label for="etternavn">Etternavn</label>
+                <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn">
+            </div>
+            <div class="booking-input">
+                <label for="dato">Dato</label>
+                <input type="text" id="dato" name="dato" placeholder="Dato" onfocus="(this.type='date')" onblur="(this.type='text')">
+            </div>
+            <div class="booking-input">
+                <label for="starttid">Starttid</label>
+                <input type="text" id="starttid" name="starttid" placeholder="Starttid" onfocus="(this.type='time')" onblur="(this.type='text')">
+            </div>
+            <div class="booking-input">
+                <label for="sluttid">Sluttid</label>
+                <input type="text" id="sluttid" name="sluttid" placeholder="Sluttid" onfocus="(this.type='time')" onblur="(this.type='text')">
+            </div>
+            <div class="booking-input">
+                <label for="anledning">Anledning</label>
+                <input type="text" id="anledning" name="anledning" placeholder="Anledning">
+            </div>
+            <div class="booking-input">
+                <label for="antall-personer">Antall personer</label>
+                <input type="number" id="antall-personer" name="fornavn" placeholder="Antall personer">
+            </div>
+            <div class="booking-input">
+                <label for="melding">Melding</label>
+                <input type="text" id="melding" name="melding" placeholder="Melding">
+            </div>
+        </form>
+            <button class="booking-button" type="submit">SEND</button>
+        </div> 
 
-            <!--https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field-->
-            <div class="booking" id="booking-top">
-                <h2>Booking av lokalet</h2>
-                <p>Har du noen spørsmål ta kontakt med oss på telefon 657 56 589 eller send en epost: post@sulten.no</p>
-           
-            <form action="action_page.php">
-                <div class="booking-input">
-                    <label class="hidden" for="mail">Mail</label>
-                    <input type="text" id="mail" name="mail" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="fornavn">Fornavn</label>
-                    <input type="text" id="fornavn" name="fornavn" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="etternavn">Etternavn</label>
-                    <input type="text" id="etternavn" name="etternavn" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="telefonnummer">Telefonnummer</label>
-                    <input type="text" id="telefonnummer" name="telefonnummer" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="dato">Dato</label>
-                    <input type="text" id="dato" name="dato" placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')">
-                </div>
-                <div class="booking-input">
-                    <label for="starttid">Starttid</label>
-                    <input type="text" id="starttid" name="starttid" placeholder="" onfocus="(this.type='time')" onblur="(this.type='text')">
-                </div>
-                <div class="booking-input">
-                    <label for="sluttid">Sluttid</label>
-                    <input type="text" id="sluttid" name="sluttid" placeholder="" onfocus="(this.type='time')" onblur="(this.type='text')">
-                </div>
-                <div class="booking-input">
-                    <label for="anledning">Anledning</label>
-                    <input type="text" id="anledning" name="anledning" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="antall-personer">Antall personer</label>
-                    <input type="number" id="antall-personer" name="fornavn" placeholder="">
-                </div>
-                <div class="booking-input">
-                    <label for="melding">Melding</label>
-                    <input type="text" id="melding" name="melding">
-                </div>
-            </form>
-                <button class="booking-button" type="submit">SEND</button>
-            </div> 
+    </main>
 
-            </main>
-            
-            <div class="footer">
+    <footer>
 
-                <footer>
+        <!--Åpningstider, kontaktinfo, adresse-->
+        <div class="rad-footer">
+            <div class="kolonne-footer">
+                <h1>Åpningstider</h1>
+                <p>Man - tor 10 - 23</p>
+                <p>Fre - søn 12 - 23</p>
+            </div>
+            <div class="kolonne-footer">
+                <h1>Kontaktinfo</h1>
+                <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
+                <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
+                <br>
+                <a href="https://facebook.com" target="_blank" class="fa fa-facebook" title="Kontakt oss via facebook"></a>
+                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Kontakt oss via twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg" title="Kontakt oss via instagram"></a>
+                <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
+            </div>
+            <div class="kolonne-footer">
+                <h1>Adresse</h1>
+                <p>Skomværsgata 2</p>
+                <p>3921 Porsgrunn</p>
+            </div>
+        </div>
+    
+    </footer>
 
-                    <!--Åpningstider, kontaktinfo, adresse-->
-                    <div class="rad-footer">
-        
-                        <div class="kolonne-footer">
-        
-                            <h1>Åpningstider</h1>
-                            <p>Man - tor 10 - 23</p>
-                            <p>Fre - søn 12 - 23</p>
-        
-                        </div>
-                
-                        <div class="kolonne-footer">
-        
-                            <h1>Kontaktinfo</h1>
-                            <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
-                            <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
-                            <br>
-                            <a href="https://facebook.com" target="_blank" class="fa fa-facebook" title="Kontakt oss via facebook"></a>
-                            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Kontakt oss via twitter"></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg" title="Kontakt oss via instagram"></a>
-                            <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
-        
-                        </div>
-                    
-                        <div class="kolonne-footer">
-        
-                            <h1>Adresse</h1>
-                            <p>Skomværsgata 2</p>
-                            <p>3921 Porsgrunn</p>
-                            
-                        </div>
-        
-                    </div>
-                
-                </footer>
-        
-                <!-- JavaScript for toggle menu og slideshow -->
-                <script src="javascript/myFile.js"></script>
+    <!--JavaScript for toggle menu-->
+    <script src="javascript/myFile.js"></script>
+    
     </body>
 </html> 

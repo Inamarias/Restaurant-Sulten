@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(252, 252, 252, 0.90); /* bakgrunn for tekst med 0.90 transparency */
-  }
+}
 
 .container img {
     width: 100%;
@@ -84,8 +84,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    padding-bottom: 4rem;
-    padding: 2rem;
+    padding: 3rem 0;
     font-weight: 300;
 }
 
@@ -106,10 +105,9 @@ h3 {
     overflow: hidden;
     font-size: 1.4rem;
     font-weight: 300;
-    
 }
 
-span{
+span {
     font-size: 1.4rem;
     font-family: 'Bebas Neue', cursive;
 }
@@ -204,9 +202,9 @@ span{
     padding: 1.5rem;
 }
 
- /* Footer */
+/* Footer */
 
-footer{
+footer {
     background-color: #473a35;
     color: #f5fffa;
 }
@@ -352,6 +350,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     #mySidebar.open {
         width: 15rem;
     }
+
 /*Mindre skriftstørrelse*/
     body {
         font-size: 0.9rem;
@@ -368,11 +367,6 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     span{
         font-size: 1.2rem;
     }
-    
-    .centered { 
-        font-size: 2.5rem;
-        padding: 0rem;
-    }
 
     .kolonne-footer h2 {
         font-size: 1.4rem;
@@ -383,7 +377,6 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     .drikkemeny {
         grid-template-columns: auto;
         grid-template-columns: 100%;
-
     }
 
     .frokostmeny {
@@ -419,11 +412,11 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         display: flex;
         justify-content: center;
     }
+
     .rad-footer {
         flex-direction: column;
         align-items: center;
     }
-    
 }
 
 @media only screen and (max-width: 800px) {
@@ -462,10 +455,3 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         padding: 0rem;
     }
 }
-
- 
-
-  
-
-
-
