@@ -303,16 +303,16 @@ span {
 
 
 form {
-    width: 100%;
+    width: 50rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+
 }
 
  .booking-input {
     position: relative;
-    width: 20rem;
 }
 
 label {
@@ -324,7 +324,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 24rem;
     padding: 1rem;
     margin: 0.5rem 0rem;
     outline: none;
