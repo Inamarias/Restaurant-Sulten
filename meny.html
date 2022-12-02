@@ -9,7 +9,6 @@
         <title>Meny</title>
         <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
        
-        <script src="https://kit.fontawesome.com/fbb98cbe58.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,265 +19,271 @@
 
     <body>
 
-        <header>
-            <div class="bildeseksjon">    
+            <header>
+                <div class="bildeseksjon">    
 
-                <a href="index.html">
-                    <img src="images/logo2.png" alt="Sulten hjemlogo">
-                </a>
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="Sulten hjemlogo">
+                    </a>
 
-            </div>
+                </div>
 
-            <!-- Meny for større skjermer -->
-            <nav>
+                <!-- Meny for større skjermer -->
+                <nav>
 
-                <div class="navbar-home" >
+                    <div class="navbar-home" >
 
+                        <a href="index.html">Hjem</a>
+                        <a href="meny.html">Meny</a>
+                        <a href="booking.html" class="nav-booking">Booking</a>
+                        <a href="aktuelt.html">Topical Page</a>
+                        <a href="brukervennlighet.html">Accessibility Page</a>
+
+                    </div>
+        
+                </nav>
+
+                <!-- Meny for mindre skjermer -->
+                <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
+                <div id="main">
+                    <button class="openbtn" onclick="OpenOrClose()">☰</button>
+                </div>
+
+                <nav id="mySidebar">
+
+                    <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
                     <a href="index.html">Hjem</a>
                     <a href="meny.html">Meny</a>
                     <a href="booking.html" class="nav-booking">Booking</a>
                     <a href="aktuelt.html">Topical Page</a>
                     <a href="brukervennlighet.html">Accessibility Page</a>
 
-                </div>
-    
-            </nav>
-
-            <!-- Meny for mindre skjermer -->
-            <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
-            <div id="main">
-                <button class="openbtn" onclick="OpenOrClose()">☰</button>
-            </div>
-
-            <nav id="mySidebar">
-
-                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
-                <a href="index.html">Hjem</a>
-                <a href="meny.html">Meny</a>
-                <a href="booking.html" class="nav-booking">Booking</a>
-                <a href="aktuelt.html">Topical Page</a>
-                <a href="brukervennlighet.html">Accessibility Page</a>
-
-            </nav>
-        </header>
+                </nav>
+            </header>
 
 
         <main>
         <!--Meny-->
- 
-<!--Hovedbilde med tekst-->
-        <div class="container">
-            <!--Fotograf: Zakaria Zayane Kilde https://unsplash.com/photos/0uAVsDcyD0M -->
-            <img src="images/restaurantMeny.jpg" alt="restaurant med bord og stoler">
-            <h1 class="centered">Velkommen til vår restaurant. Her kan du nyte et godt måltid i en behagelig atmosfære.</h1>
-        </div>
-
-        <div class="meny">  
-            <h1 style=" font-size: 3.5rem; text-align: center;">Meny</h1> 
-            <h2 style="color: #382c20; font-size: 1.4rem; text-align: center;">Åpningstider: </h2>
-            <p class="åpningstider">Mandag-torsdag 10:00-23:00 </p>
-            <p class="åpningstider">Fredag-søndag 12:00-23:00</p>
-                    
     
-    <!--Frokostmeny-->
-        <div class="tittel">
-            <h2>Frokost</h2>
-        </div>
+            <!--Hovedbilde med tekst-->
+            <div class="container">
+                <!--Fotograf: Zakaria Zayane Kilde https://unsplash.com/photos/0uAVsDcyD0M -->
+                <img src="images/restaurantMeny.jpg" alt="restaurant med bord og stoler">
+                <h1 class="centered">Velkommen til vår restaurant. Her kan du nyte et godt måltid i en behagelig atmosfære.</h1>
+            </div>
 
-        <div class="frokostmeny">
+            <div class="meny">  
+                <h1 style=" font-size: 3.5rem; text-align: center;">Meny</h1> 
+                <h2 style="color: #382c20; font-size: 1.4rem; text-align: center;">Åpningstider: </h2>
+                <p class="åpningstider">Mandag-torsdag 10:00-23:00 </p>
+                <p class="åpningstider">Fredag-søndag 12:00-23:00</p>
+                        
         
-            <div class="box-meny">
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Havregrøt <span style="float: right">89,-</span></h3>
-                    <p>Havregrøt med friske bringebær, skivet banan,</p> 
-                    <p>kokosflak, kanel og sirup.</p>
-                    <p class ="allergener">[Hvete, melk]</p>
+            <!--Frokostmeny-->
+            <div class="tittel">
+                <h2>Frokost</h2>
+            </div>
+
+            <div class="frokostmeny">
+            
+                <div class="box-meny">
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Havregrøt <span style="float: right">89,-</span></h3>
+                        <p>Havregrøt med friske bringebær, skivet banan,</p> 
+                        <p>kokosflak, kanel og sirup.</p>
+                        <p class ="allergener">[Hvete, melk]</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Avokadotoast <i class="fa-solid fa-leaf"></i> <span style="float: right">99,-</span></h3>
+                        <p>Avokado, syltet rødløk, sesamfrø,</p>
+                        <p>alfalfaspirer på toasted surdeigsbrød.</p>
+                        <p class ="allergener">[Hvete]</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Vitaminsuppe <span style="float: right">119,-</span></h3>
+                        <p>Suppe med gulrøtter, selleri, paprika og reddiker.</p>
+                        <p>Toppet med krutonger og rømme.</p>
+                        <p class ="allergener">[Hvete, melk]</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Granola yoghurt<span style="float: right">89,-</span></h3>
+                        <p>Vaniljeyoghurt, granola og blåbær.</p>
+                        <p>Toppet med tørkede jordbær.</p>
+                        <p class ="allergener">[Hvete, mandler]</p>
+                    </div>
                 </div>
 
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Avokadotoast <i class="fa-solid fa-leaf"></i> <span style="float: right">99,-</span></h3>
-                    <p>Avokado, syltet rødløk, sesamfrø,</p>
-                    <p>alfalfaspirer på toasted surdeigsbrød.</p>
-                    <p class ="allergener">[Hvete]</p>
-                </div>
-
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Vitaminsuppe <span style="float: right">119,-</span></h3>
-                    <p>Suppe med gulrøtter, selleri, paprika og reddiker.</p>
-                    <p>Toppet med krutonger og rømme.</p>
-                    <p class ="allergener">[Hvete, melk]</p>
-                </div>
-
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Granola yoghurt<span style="float: right">89,-</span></h3>
-                    <p>Vaniljeyoghurt, granola og blåbær.</p>
-                    <p>Toppet med tørkede jordbær.</p>
-                    <p class ="allergener">[Hvete, mandler]</p>
+                <div class="box-meny-frokostbilde">
+                    <!--Fotograf: Micheile dot com. Kilde: https://unsplash.com/photos/vLHzjRNFbEQ-->
+                    <img src="images/havre.jpg" alt="havregrøt i skål">
                 </div>
             </div>
 
-            <div class="box-meny-frokostbilde">
-                <!--Fotograf: Micheile dot com. Kilde: https://unsplash.com/photos/vLHzjRNFbEQ-->
-                <img src="images/havre.jpg" alt="havregrøt i skål">
+            <!--Lunsjmeny-->
+            <div class="tittel">
+                <h2>Lunsj</h2>
             </div>
-        </div>
+                <div class ="lunsjmeny">
 
-    <!--Lunsjmeny-->
-        <div class="tittel">
-            <h2>Lunsj</h2>
-        </div>
-            <div class ="lunsjmeny">
+                    <div class="box-meny-lunsj">
 
-                <div class="box-meny-lunsj">
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Acai bowl <i class="fa-solid fa-leaf"></i><span style="float: right;">119,-</span></h3>
+                                <p>Frossen acai toppet med granola, blåbær,</p>
+                                <p>banan, kokosflak og hempfrø.</p>
+                                <p class ="allergener">[Hvete, mandler]</p>
+                        </div>
 
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Acai bowl <i class="fa-solid fa-leaf"></i><span style="float: right;">119,-</span></h3>
-                            <p>Frossen acai toppet med granola, blåbær,</p>
-                            <p>banan, kokosflak og hempfrø.</p>
-                            <p class ="allergener">[Hvete, mandler]</p>
-                    </div>
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Kyllingwrap <span style="float: right;">119,-</span></h3>
+                                <p>Grove lefser fylt med kylling, ruccola, tomat,</p>
+                                <p>mangosalsa, gulrot og rømme.</p>
+                                <p class ="allergener">[Hvete, melk]</p>
+                        </div>
 
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Kyllingwrap <span style="float: right;">119,-</span></h3>
-                            <p>Grove lefser fylt med kylling, ruccola, tomat,</p>
-                            <p>mangosalsa, gulrot og rømme.</p>
-                            <p class ="allergener">[Hvete, melk]</p>
-                    </div>
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Belgisk vaffel <span style="float: right;">109,-</span></h3>
+                                <p>Belgisk vaffel toppet med spekeskinke, ost,</p>
+                                <p>spinat, tomat og agurk.</p>
+                                <p class ="allergener">[Hvete, melk, egg]</p>
+                        </div>
 
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Belgisk vaffel <span style="float: right;">109,-</span></h3>
-                            <p>Belgisk vaffel toppet med spekeskinke, ost,</p>
-                            <p>spinat, tomat og agurk.</p>
-                            <p class ="allergener">[Hvete, melk, egg]</p>
-                    </div>
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Omelett<span style="float: right;">119,-</span></h3>
+                                <p>Kremet omelett toppet med gressløk og spirer.</p>
+                                <p>Tomat og grovbrød på siden.</p>
+                                <p class ="allergener">[Hvete, melk, egg]</p>
+                        </div>
 
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Omelett<span style="float: right;">119,-</span></h3>
-                            <p>Kremet omelett toppet med gressløk og spirer.</p>
-                            <p>Tomat og grovbrød på siden.</p>
-                            <p class ="allergener">[Hvete, melk, egg]</p>
-                    </div>
-
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Grønnkålsalat <i class="fa-solid fa-leaf"></i><span style="float: right;">129,-</span></h3>
-                            <p>Grønnkål, bakt søtpotet, syltet rødløk</p>
-                            <p>og grapefrukt med balsamico.</p>
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Grønnkålsalat <i class="fa-solid fa-leaf"></i><span style="float: right;">129,-</span></h3>
+                                <p>Grønnkål, bakt søtpotet, syltet rødløk</p>
+                                <p>og grapefrukt med balsamico.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-    <!--Dessertmeny-->
-        <div class="tittel">
-            <h2>Dessert</h2>
-        </div>
-
-        <div class="dessertmeny">
-
-            <div class="box-meny-dessert-bilde">
-                <!--Fotograf: Maddi Bazzocco. Kilde: https://unsplash.com/photos/wRU27yGfSLQ-->
-                <img src="images/croissant.jpg" alt="croissant med mandler på et trefat">
-            </div>
-
-                <div class="box-meny-dessert">  
-                    <div class="matrett">        
-                        <h3 class="matrett-innhold">Pannekaker <span style="float: right;"> 69,-</span></h3>
-                        <p>Små pannekaker toppet med fiken</p>
-                        <p>og jordbærsirup.</p>
-                        <p class = "allergener">[Hvete, melk]</p>
-                    </div>
-
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Proteinballer <span style="float: right;"> 59,-</span></h3>
-                        <p>Tre proteinfulle baller av nøtter og</p>
-                        <p>frø dekket i mørk sjokolade.</p> 
-                        <p class ="allergener">[Hvete, hasselnøtter, mandler]</p>  
-                    </div>
-
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Croissant <span style="float: right;">89,-</span></h3>
-                        <p>Fersk croissant fylt med sjokolade.</p>
-                        <p>Toppet med mandler.</p>
-                        <p class ="allergener">[Hvete, melk, mandler]</p>
-                    </div>
-
-                    <div class="matrett">
-                        <h3 class="matrett-innhold">Dagens utvalg av bakevarer <span style="float: right;"> 79,-</span></h3>
-                        <p class ="allergener">Sjekk tavle for allergener</p>      
-                    </div>
-                </div>
-        </div>
         
-    <!--drikkemeny-->
-        <div class="drikkemeny">
-            <div class="drikke">
-                <h2>Smoothies</h2> 
-
-                <div class="matrett">               
-                    <h3 class="matrett-innhold">Fersk <span style="float: right;">79,-</span></h3>
-                    <p>Fersken, mango, bringebær og banan</p>
-                </div>
-
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Fokus <span style="float: right;">79,-</span></h3>
-                    <p>Grapefrukt, ananas og jordbær</p>
-                </div>
-
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Grønn <span style="float: right;">79,-</span></h3>
-                    <p>Eple, mango, spinat og lime</p>
-                </div>
+            <!--Dessertmeny-->
+            <div class="tittel">
+                <h2>Dessert</h2>
             </div>
 
-            <div class="drikke">
-                <h2>Juices</h2>
+            <div class="dessertmeny">
 
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Høst <span style="float: right;">79,-</span></h3>
-                    <p>Gulrot, appelsin, eple og ingefær</p>
+                <div class="box-meny-dessert-bilde">
+                    <!--Fotograf: Maddi Bazzocco. Kilde: https://unsplash.com/photos/wRU27yGfSLQ-->
+                    <img src="images/croissant.jpg" alt="croissant med mandler på et trefat">
                 </div>
 
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Vår <span style="float: right;">79,-</span></h3>
-                    <p>Agurk, eple, spinat og spirer</p>
+                    <div class="box-meny-dessert">  
+                        <div class="matrett">        
+                            <h3 class="matrett-innhold">Pannekaker <span style="float: right;"> 69,-</span></h3>
+                            <p>Små pannekaker toppet med fiken</p>
+                            <p>og jordbærsirup.</p>
+                            <p class = "allergener">[Hvete, melk]</p>
+                        </div>
+
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Proteinballer <span style="float: right;"> 59,-</span></h3>
+                            <p>Tre proteinfulle baller av nøtter og</p>
+                            <p>frø dekket i mørk sjokolade.</p> 
+                            <p class ="allergener">[Hvete, hasselnøtter, mandler]</p>  
+                        </div>
+
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Croissant <span style="float: right;">89,-</span></h3>
+                            <p>Fersk croissant fylt med sjokolade.</p>
+                            <p>Toppet med mandler.</p>
+                            <p class ="allergener">[Hvete, melk, mandler]</p>
+                        </div>
+
+                        <div class="matrett">
+                            <h3 class="matrett-innhold">Dagens utvalg av bakevarer <span style="float: right;"> 79,-</span></h3>
+                            <p class ="allergener">Sjekk tavle for allergener</p>      
+                        </div>
+                    </div>
+            </div>
+            
+            <!--drikkemeny-->
+            <div class="drikkemeny">
+                <div class="drikke">
+                    <h2>Smoothies</h2> 
+
+                    <div class="matrett">               
+                        <h3 class="matrett-innhold">Fersk <span style="float: right;">79,-</span></h3>
+                        <p>Fersken, mango, bringebær og banan</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Fokus <span style="float: right;">79,-</span></h3>
+                        <p>Grapefrukt, ananas og jordbær</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Grønn <span style="float: right;">79,-</span></h3>
+                        <p>Eple, mango, spinat og lime</p>
+                    </div>
                 </div>
 
-                <div class="matrett">
-                    <h3 class="matrett-innhold">Sommer <span style="float: right;">79,-</span></h3>
-                    <p>Mango, jordbær, melon og lime</p>
+                <div class="drikke">
+                    <h2>Juices</h2>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Høst <span style="float: right;">79,-</span></h3>
+                        <p>Gulrot, appelsin, eple og ingefær</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Vår <span style="float: right;">79,-</span></h3>
+                        <p>Agurk, eple, spinat og spirer</p>
+                    </div>
+
+                    <div class="matrett">
+                        <h3 class="matrett-innhold">Sommer <span style="float: right;">79,-</span></h3>
+                        <p>Mango, jordbær, melon og lime</p>
+                    </div>
+                </div>
+
+                <div class="drikke">
+                    <h2>Varm drikke</h2>
+                    <h3 class="matrett-innhold">Chai latte <span style="float: right;">54,-</span></h2>
+                    <h3 class="matrett-innhold">Kaffe mocha <span style="float: right;">54,-</span></h2>
+                    <h3 class="matrett-innhold">Golden latte <span style="float: right;">49,-</span></h2>
+                    <h3 class="matrett-innhold">Matcha latte <span style="float: right;">59,-</span></h2>
+                    <h3 class="matrett-innhold">Varm sjokolade <span style="float: right;">44,-</span></h2>
+                </div>
+
+                <div class="drikke">
+                    <h2>Kald drikke</h2>
+                    <h3 class="matrett-innhold">Iskaffe <span style="float: right;">49,-</span></h3>
+                    <h3 class="matrett-innhold">Ismocha karamell <span style="float: right;">62,-</span></h3>
+                    <h3 class="matrett-innhold">Kombucha <span style="float: right;">54,-</span></h3>
+                    <h3 class="matrett-innhold">Lemonade <span style="float: right;">44,-</span></h3>
+                    <h3 class="matrett-innhold">Matcha latte <span style="float: right;">62,-</span></h3> 
                 </div>
             </div>
-
-            <div class="drikke">
-                <h2>Varm drikke</h2>
-                <h3 class="matrett-innhold">Chai latte <span style="float: right;">54,-</span></h2>
-                <h3 class="matrett-innhold">Kaffe mocha <span style="float: right;">54,-</span></h2>
-                <h3 class="matrett-innhold">Golden latte <span style="float: right;">49,-</span></h2>
-                <h3 class="matrett-innhold">Matcha latte <span style="float: right;">59,-</span></h2>
-                <h3 class="matrett-innhold">Varm sjokolade <span style="float: right;">44,-</span></h2>
-            </div>
-
-            <div class="drikke">
-                <h2>Kald drikke</h2>
-                <h3 class="matrett-innhold">Iskaffe <span style="float: right;">49,-</span></h3>
-                <h3 class="matrett-innhold">Ismocha karamell <span style="float: right;">62,-</span></h3>
-                <h3 class="matrett-innhold">Kombucha <span style="float: right;">54,-</span></h3>
-                <h3 class="matrett-innhold">Lemonade <span style="float: right;">44,-</span></h3>
-                <h3 class="matrett-innhold">Matcha latte <span style="float: right;">62,-</span></h3> 
-            </div>
-        </div>
-    </div>      
+        </div>      
 
         </main>
+
         <footer>
+
             <!--Åpningstider, kontaktinfo, adresse-->
             <div class="rad-footer">
+
                 <div class="kolonne-footer">
+
                     <h2>Åpningstider</h2>
                     <p>Man - tor 10 - 23</p>
                     <p>Fre - søn 12 - 23</p>
+
                 </div>
 
                 <div class="kolonne-footer">
+
                     <h2>Kontaktinfo</h2>
                     <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
                     <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
@@ -287,19 +292,23 @@
                     <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Kontakt oss via twitter"></a>
                     <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg" title="Kontakt oss via instagram"></a>
                     <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
-                </div>
 
+                </div>
+            
                 <div class="kolonne-footer">
+
                     <h2>Adresse</h2>
                     <p>Skomværsgata 2</p>
                     <p>3921 Porsgrunn</p>
+                    
                 </div>
 
             </div>
 
         </footer>
 
-<!-- JavaScript for toggle menu og slideshow -->
-<script src="javascript/myFile.js"></script>
-</body>
+        <!-- JavaScript for toggle menu -->
+        <script src="javascript/myFile.js"></script>
+        
+    </body>
 </html>
