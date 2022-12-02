@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/brukervennlighetstyle.css">
+
+        <title>Accessibility Page</title>
+        <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
+       
+        <script src="https://kit.fontawesome.com/fbb98cbe58.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="bildeseksjon">    
+
+            <a href="index.html">
+                <img src="images/logo2.png" alt="Sulten hjemlogo">
+            </a>
+
+        </div>
+
+        <!-- Meny for større skjermer -->
+        <nav>
+
+            <div class="navbar-home" >
+
+                <a href="index.html">Hjem</a>
+                <a href="meny.html">Meny</a>
+                <a href="booking.html" class="nav-booking">Booking</a>
+                <a href="aktuelt.html">Topical Page</a>
+                <a href="brukervennlighet.html">Accessibility Page</a>
+
+            </div>
+
+        </nav>
+
+        <!-- Meny for mindre skjermer -->
+        <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
+        <div id="main">
+            <button class="openbtn" onclick="OpenOrClose()">☰</button>
+        </div>
+
+        <nav id="mySidebar">
+
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+            <a href="index.html">Hjem</a>
+            <a href="meny.html">Meny</a>
+            <a href="booking.html" class="nav-booking">Booking</a>
+            <a href="aktuelt.html">Topical Page</a>
+            <a href="brukervennlighet.html">Accessibility Page</a>
+
+        </nav>
+    </header>
+    <main>
+        <div class="box1">
+            <h1>Hvordan vi testet brukervennlighet</h1>
+            <p>For å sjekke brukervennligheten på de ulike sidene våre brukte vi Google Chrome-utvidelsen <a href="https://wave.webaim.org/">WAVE</a>, 
+                et verktøy for evaluering av brukervennlighet på nett. WAVE gir oss tilbakemelding om vi har noen store problemer med oppsettet, 
+                kontraster, og gir kommentarer på gode funksjoner. Allerede fra starten, la gruppen fokus på å gjøre nettsiden så tilgjengelig for så mange brukere som mulig. 
+                Vi tenkte dermed nøye gjennom hvilke farger, fonter og størrelser på tekst vi ville bruke. Alt tekst i bilder sørget vi også for å ha med. 
+                Da vi kjørte de ulike sidene gjennom WAVE-testen for første gang, fikk vi utslag på et par problemer. De problemene var hovedsakelig kontrastproblemer</p>
+                <p>Gruppen gjorde bevisste valg på ulike ting, blant annet når det kom til overskrifter, media queries og alt tekst. 
+                    På H1 og de andre overskriftsnivåene har vi valgt å gjøre om fonten fra brødtekst (Roboto) til den vi bruker i headeren (Bebas Neue), samt øke fontstørrelse, avstand på bokstaver og linjehøyde. 
+                    For at nettsiden skal være tilgjengelig på alle enheter, valgte vi å dele inn media queries til standard skjermen (850px og høyere), tablet (850px til 470px), og mobil (480px og mindre)</p>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="boxFooter"></div>
+        <!-- JavaScript for toggle menu -->
+        <script src="javascript/myFile.js"></script> 
+    </footer>
+ 
+</body>
+</html>

@@ -19,7 +19,82 @@
     </head>
     <body>
 
+        <header>
+
+            <div class="bildeseksjon">    
+
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="Sulten hjemlogo">
+                </a>
+
+            </div>
+
+            <!-- Meny for større skjermer -->
+            <nav>
+
+                <div class="navbar-home" >
+
+                    <a href="index.html">Hjem</a>
+                    <a href="meny.html">Meny</a>
+                    <a href="booking.html" class="nav-booking">Booking</a>
+                    <a href="aktuelt.html">Topical Page</a>
+                    <a href="brukervennlighet.html">Accessibility Page</a>
+
+                </div>
+    
+            </nav>
+
+            <!-- Meny for mindre skjermer -->
+            <!-- Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button -->
+            <div id="main">
+                <button class="openbtn" onclick="OpenOrClose()">☰</button>
+            </div>
+
+            <nav id="mySidebar">
+
+                <a href="javascript:void(0)" class="closebtn text-white" onclick="OpenOrClose()" title="Åpne meny"></a>
+                <a href="index.html">Hjem</a>
+                <a href="meny.html">Meny</a>
+                <a href="booking.html" class="nav-booking">Booking</a>
+                <a href="aktuelt.html">Topical Page</a>
+                <a href="brukervennlighet.html">Accessibility Page</a>
+
+            </nav>
+        
+        </header>
+
         <main>
+
+            <!--Slideshow-->
+            <!--Legge inn bildekilde på alle tre bilder-->
+            <div class="slideshow">
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/4.jpg" alt="Kaffebar med ulike kaffetyper bak en disk">
+                </div>
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/5.jpg" alt="Oversikt over hele restauranten">
+                </div>
+
+                <div class="bilde-slideshow fade">
+                    <img src="images/2.jpg" alt="Koldtbord med diverse desserter, som muffins og frukt">
+                </div>
+
+                <!--Neste- og tilbakeknapper-->
+                <a class="knapp-tilbake" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="knapp-neste" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+                <!-- Sirkler under slideshow -->
+                <div style="text-align: center">
+
+                    <a class="dot" onclick="currentSlide(1)" onfocus="showSlides()"></a>
+                    <a class="dot" onclick="currentSlide(2)" onfocus="showSlides()"></a>
+                    <a class="dot" onclick="currentSlide(3)" onfocus="showSlides()"></a>
+
+                </div>
         
             <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
             <div class="tekst">
@@ -150,7 +225,7 @@
            
             <form action="action_page.php">
                 <div class="booking-input">
-                    <label for="mail">Mail</label>
+                    <label class="hidden" for="mail">Mail</label>
                     <input type="text" id="mail" name="mail" placeholder="">
                 </div>
                 <div class="booking-input">
@@ -197,10 +272,45 @@
             
             <div class="footer">
 
-        <footer>
+                <footer>
 
+                    <!--Åpningstider, kontaktinfo, adresse-->
+                    <div class="rad-footer">
         
+                        <div class="kolonne-footer">
         
-        </footer>
+                            <h1>Åpningstider</h1>
+                            <p>Man - tor 10 - 23</p>
+                            <p>Fre - søn 12 - 23</p>
+        
+                        </div>
+                
+                        <div class="kolonne-footer">
+        
+                            <h1>Kontaktinfo</h1>
+                            <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
+                            <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
+                            <br>
+                            <a href="https://facebook.com" target="_blank" class="fa fa-facebook" title="Kontakt oss via facebook"></a>
+                            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Kontakt oss via twitter"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg" title="Kontakt oss via instagram"></a>
+                            <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
+        
+                        </div>
+                    
+                        <div class="kolonne-footer">
+        
+                            <h1>Adresse</h1>
+                            <p>Skomværsgata 2</p>
+                            <p>3921 Porsgrunn</p>
+                            
+                        </div>
+        
+                    </div>
+                
+                </footer>
+        
+                <!-- JavaScript for toggle menu og slideshow -->
+                <script src="javascript/myFile.js"></script>
     </body>
 </html> 
