@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     color:#382c20; 
     letter-spacing: 0.02rem;
+    font-weight: 300;
     /*border: solid red 1px*/
 }
 
@@ -244,10 +245,11 @@ span{
 
 footer{
     background-color: #473a35;
- }
+}
 
  footer p{
     color: #f5fffa;
+
  }
 
 .rad-footer {
@@ -315,12 +317,12 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 .fa-phone {
-    color: #f5fffa;
-}
-
+    color: #382c20;
+    }
+    
 .telefonnr {
     text-decoration: none;
-    color: #f5fffa;
+    color: #382c20;
 }
 
 
@@ -438,7 +440,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     }
 
     .centered { 
-        font-size: 12px;
+        font-size: 1rem;
         padding: 0rem;
     }
 }
