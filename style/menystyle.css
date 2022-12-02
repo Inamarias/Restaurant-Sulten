@@ -32,7 +32,7 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #869e86;
+    background-color: #637863;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 5rem;
@@ -42,13 +42,15 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #473a35;
+    color: white;
     display: block;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #cfd8cf;
+    color: white;
     transition: 0.3s;
 }
   
@@ -127,7 +129,7 @@ h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    color: #869e86;
+    color: #637863;
     font-size: 2.2rem;
     padding-bottom: 2rem;
 }
@@ -263,7 +265,7 @@ footer{
 }
 
 .kolonne-footer h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #f5fffa;
     padding-bottom: 0rem;
