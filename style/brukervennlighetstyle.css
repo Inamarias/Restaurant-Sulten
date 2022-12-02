@@ -1,0 +1,189 @@
+*, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:#382c20; 
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+    /*border: solid red 1px*/
+}
+
+/* Header */
+
+header {
+    background-color: #d1eacd;
+}
+.bildeseksjon {
+    display: flex;
+    justify-content: center;
+}
+
+.bildeseksjon img {
+    width: 20rem;
+    padding-top: 3rem;
+}
+
+/* Navbar */
+
+.navbar-home {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+
+.navbar-home a {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: #473a35;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+}
+
+.navbar-home a:hover {
+    color: #637863;
+    transition: 0.2s;
+}
+
+main{
+    background-color: #f5fffa;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding: 2rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #637863;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    font-size: 1.4rem;
+    
+}
+
+span{
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.tittel {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Footer */
+
+footer{
+    background-color: #473a35;
+}
+.boxFooter {
+    padding: 5rem;
+  }
+
+
+/* Responsive for bigger screens */
+@media screen and (min-width: 850px) {
+
+    #main, #mySidebar {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    .bildeseksjon img {
+        width: 10rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* Går over til toggle menu */
+    nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #637863;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5rem;
+    }
+    
+    nav a {
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #f5fffa;
+        display: block;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.02rem;
+    }
+    
+    nav a:hover {
+        color: #d1eacd;
+        transition: 0.3s;
+    }
+      
+    .openbtn {
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: #473a35;
+        padding: 0.3rem 0.5rem;
+        border: none;
+    }
+      
+    .openbtn:hover {
+        background-color: #637863;
+        transition: 0.2s;
+    }
+    
+    #main {
+        transition: 0.5s;
+        margin-left: 0.5rem;
+    }
+    
+    #main.open {
+        margin-left: 15.5rem;
+        position: fixed;
+        background-color: #d1eacd;
+        z-index: 1;
+    }
+
+    #mySidebar.open {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header flyttes */
+    header {
+        justify-content: flex-start;
+    }
+
+    .bildeseksjon img {
+        width: 10rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    /* Toggle menu */
+    .openbtn {
+        font-size: 2.5rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
