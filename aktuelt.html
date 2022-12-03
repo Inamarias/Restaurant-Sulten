@@ -9,11 +9,13 @@
     <title>Topical page</title>
     <link rel="icon" href="images/IoT.png" type="image/x-icon">
 
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
+
+    <!--Grafer-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,6 +24,7 @@
 </head>
 <body>
     <header>
+        <!--Spinning logo som header-->
         <a href="index.html">
             <div class="logoSpinning">
                       <img src="images/IoT.png" alt="Header internet of things icon spinning">  
@@ -50,6 +53,7 @@
         </div>
 
         <nav id="mySidebar">
+            <!--Liten spinning logo i sidebar som skjules frem til mobil versjon-->
             <div class="logoSpinning2">
                 <img src="images/IoT-white.png" alt="Sidebar internet of things icon spinning">  
             </div>
@@ -61,17 +65,20 @@
             <a href="brukervennlighet.html">Accessibility Page</a>
 
         </nav>
+        <!--Javascript for å åpne og lukke sidebar-->
         <script src="javascript/openClose.js"></script>
-    <!--Tittelboks-->
-    <tittel>
-        <div class="boxTittel">
+    
+        <!--Tittelboks-->
+        <section id="tittel">
+          <div class="boxTittel">
             <h1>Opinions of the development of the smart 
                 society and the Internet of things</h1>    
-        </div>
-    </tittel>
+        </div>  
+        </section>
+        
             
 
-   <!--Her legges intro-->
+   <!--Introduksjonsboks-->
    <main>
         <section class="boxIntro">
             <div class="container">
@@ -90,6 +97,7 @@
                     <!--Kode hentet fra https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html-->
                     <button class="knapp-intro" onclick= "window.location.href='https://www.oracle.com/internet-of-things/what-is-iot/';"> Read more about Internet of Things here! </button> 
                 </div>
+                <!--Boks om artikkel med kilder-->
                 <div class="item">
                     <div class="bildeIntro">
                         <img src="images/dag.jpeg" alt="Dag Slettemeås">
@@ -109,7 +117,7 @@
         </section>
    </main> 
 
-        <!--Her legges section med grønn bakgrunn-->   
+        <!--Section med grønn bakgrunn som dekker hele bredden-->   
         <section class="grønn-section">
             <div class="container">
                 <div class="item">
@@ -125,6 +133,7 @@
                             </p>     
                     </div>
                 </div>
+                <!--Graf nr. 1 med javascript-->
                 <div class="item">
                     <div class="graf" style="margin-top: 2rem; margin-bottom: 2rem;">
                         <div class="graf1">
@@ -143,7 +152,7 @@
         </section>
     
     <main>
-        <!--Her legges kolonner med paragraf og grafer-->
+        <!--Kolonner med paragrafer-->
         <div class="container">
            <div class="item">
             <div class="boxP2">
@@ -163,6 +172,7 @@
                     </p>
             </div> 
            </div>
+           <!--Graf nr. 2 med javascript-->
            <div class="item">
              <div class="graf">
                 <div class="graf2">
@@ -179,7 +189,7 @@
             </div>
            </div>
         </div>
-
+        <!--Paragraf 3 og 4 med kildeboks-->
         <div class="container">
             <div class="item">
              <div class="boxP3">
@@ -197,8 +207,8 @@
                     consumers to be somewhat involved in IoT development. This could be explained by a 
                     generational effect, as the younger generation are considered to be “digital natives”. 
                     They only have experience with a life that includes the social, participatory and 
-                    collaborative internet (web 2.0 and web 3.0).  
-                    </p> 
+                    collaborative internet (web 2.0 and web 3.0). </p> 
+                <!--Kildeboks 1 som gjemmes på små skjermer, men vises på store skjermer-->
                 <div class="kilder1">
                     <h2>Sources</h2>
                     <ul class="utenBullets">
@@ -237,6 +247,7 @@
                     years old. If we compare those that feel “very well” equipped, they account for 40% in 
                     the youngest group and only 4% in the oldest group. In the latter age group, 32% do 
                     not feel well equipped to participate in this development.</p>
+                <!--Kildeboks 2 som vises i bunnen av siden på tablet og mobil, men skjules på store skjermer-->
                 <div class="kilder2">
                     <h2>Sources</h2>
                     <ul class="utenBullets">
@@ -249,11 +260,8 @@
                         <li>Slettemeås, D. (2019). <i>Smart technologies in connected homes – A 2019 Norwegian consumer survey.</i> Consumption Research Norway (SIFO), OsloMet – Oslo Metropolitan University.</li>
                     </ul> 
                 </div>
-                    
-                    
-                
-                </div>
             </div>
+          </div>
         </div>   
     </main> 
 

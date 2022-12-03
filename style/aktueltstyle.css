@@ -1,11 +1,15 @@
-*, body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
     --white: #ffffff;
     --green: #637863;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02rem;
+    font-weight: 300;
 }
-
 
 
 /* flexbox */
@@ -67,7 +71,7 @@ main {
     padding: 2rem;
 }
 
-tittel {
+#tittel {
     display: flex;
     margin-left: 2rem;
     margin-right: 6rem;
@@ -93,229 +97,224 @@ tittel {
 }
 
 
-
-/*spinning logo */
-.logoSpinning img {
-    animation-name: spin;
-    animation-duration: 7.5s;
-    animation-iteration-count: infinite;
-}
-
-.logoSpinning2 img {
-    margin-left: 0rem;
-    margin-top: -4rem;
-    width: 6.3rem;
-    animation-name: spin;
-    animation-duration: 7.5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  /*spinning logo */
+  .logoSpinning img {
+      animation-name: spin;
+      animation-duration: 7.5s;
+      animation-iteration-count: infinite;
   }
 
-
-
-  /* ting til intro*/
-.boxIntro {
-  width: 100%;
-  height: auto;
-  text-align: left;
-  line-height: 2rem;
-  padding-top: 3rem;
-  position: relative;
-}
-
-img {
-  width: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
-.bildeIntro {
-  margin: 0 auto;
-  position: relative;
-}
-
-.bildeIntro img {
-  border-radius: 50%;
-}
-
-.bildeTekst-intro{
-  width: 50%;
-  margin: 1rem auto 0 auto;
-}
-
-.bildeTekst-intro h1 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.bildeTekst-intro p {
-  line-height: 2rem;
-  font-size: smaller;
-}
-
-.bildeTekst-kilde {
-  width: 5rem;
-  margin: -1.5rem auto 0rem auto;
-  position: relative;
-  color: #939393a2;
-  
-}
-
-.knapp-intro {
-  width: 25rem;
-  height: 5rem;
-  padding: 1rem;
-  margin: 3rem auto -2rem auto;
-  border:2px solid #869e86;
-  background-color: white;
-  box-sizing: border-box;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 0.1rem;
-}
-
-.knapp-intro:hover {
-  background-color: #869e86;
-  color:white;
-}
-
-
-
-/* ting til grafer*/
-.tekstGraf {
-  width: 100%;
-  margin-top: 0.5rem;
-  text-align: left;
-  margin-left: 1.5rem;
-}
-
-.tekstGraf p{
-  font-size: 0.8rem;
-}
-
-.graf1 {
-  width: 90%;
-  height: 20rem;
-  margin: -4.5rem auto 3rem auto;
-}
-
-.graf h1{
-  font-size:0.9rem;
-  text-align: center;
-}
-
-.graf2 {
-  width: 90%;
-  height: 20rem;
-  margin: -3.5rem auto 0 auto;
+  .logoSpinning2 img {
+      margin-left: 0rem;
+      margin-top: -4rem;
+      width: 6.3rem;
+      animation-name: spin;
+      animation-duration: 7.5s;
+      animation-iteration-count: infinite;
   }
 
+  @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
 
-/*Grønn section*/
-.grønn-section {
-  margin: 3rem auto 3rem auto;
-  padding: 4rem;
-  padding-bottom: 6.5rem;
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--green);
-  color: var(--white);
-}
-
-
-
-/* bokser til paragrafer*/
-.boxP1 {
+    /* ting til intro*/
+  .boxIntro {
     width: 100%;
     height: auto;
     text-align: left;
+    line-height: 2rem;
+    padding-top: 3rem;
+    position: relative;
   }
 
-.boxP2 {
-  width: 100%;
-  height: auto;
-  text-align: left;
-  margin-top: -4rem;
-  line-height: 2rem;
-}
+  img {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
 
-.boxP3 {
-  width: 100%;
-  height: auto;
-  text-align: left;
-  margin-top: 1rem;
-  line-height: 2rem;
-}
-.boxP3 p {
-  margin-bottom: 3rem;
-}
+  .bildeIntro {
+    margin: 0 auto;
+    position: relative;
+  }
 
-.boxP4 {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  text-align: left;
-  line-height: 2rem;
-  margin-top: 1rem;
-}
+  .bildeIntro img {
+    border-radius: 50%;
+  }
 
-.boxP4 p {
-  margin-bottom: 1rem;
-}
+  .bildeTekst-intro{
+    width: 50%;
+    margin: 1rem auto 0 auto;
+  }
+
+  .bildeTekst-intro h1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .bildeTekst-intro p {
+    line-height: 2rem;
+    font-size: smaller;
+  }
+
+  .bildeTekst-kilde {
+    width: 5rem;
+    margin: -1.5rem auto 0rem auto;
+    position: relative;
+    color: #939393a2;
+    
+  }
+
+  /*IoT knapp i intro*/
+  .knapp-intro {
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
+    margin: 3rem auto -2rem auto;
+    border:2px solid #869e86;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1rem;
+  }
+
+  .knapp-intro:hover {
+    background-color: #869e86;
+    color:white;
+  }
 
 
+  /* ting til grafer*/
+  .tekstGraf {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: left;
+    padding: 0.5rem;
+  }
 
-/*Kildeboks*/
-.utenBullets {
-  list-style-type: none;
-  padding-bottom: 1rem;
-}
+  .tekstGraf p{
+    font-size: 0.8rem;
+  }
 
-.kilder1{
-  font-size: smaller;
-}
+  .graf1 {
+    width: 90%;
+    height: 20rem;
+    margin: -4.5rem auto 3rem auto;
+  }
 
-.kilder2 {
-  display: none;
-}
+  .graf h1{
+    font-size:0.9rem;
+    text-align: center;
+  }
 
- /* Footer */
- footer{
-  background-color: var(--green);
-}
-
-.boxFooter {
-  padding: 5rem;
-}
+  .graf2 {
+    width: 90%;
+    height: 20rem;
+    margin: -3.5rem auto 0 auto;
+    }
 
 
-/* Responsive for bigger screens */
+  /*Grønn section*/
+  .grønn-section {
+    margin: 3rem auto 3rem auto;
+    padding: 4rem;
+    padding-bottom: 6.5rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--green);
+    color: var(--white);
+  }
+
+
+  /* bokser til paragrafer*/
+  .boxP1 {
+      width: 100%;
+      height: auto;
+      text-align: left;
+    }
+
+  .boxP2 {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: -4rem;
+    line-height: 2rem;
+  }
+
+  .boxP3 {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  .boxP3 p {
+    margin-bottom: 3rem;
+  }
+
+  .boxP4 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    text-align: left;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+
+  .boxP4 p {
+    margin-bottom: 1rem;
+  }
+
+
+  /*Kildeboks*/
+  .utenBullets {
+    list-style-type: none;
+    padding-bottom: 1rem;
+  }
+
+  .kilder1{
+    font-size: smaller;
+  }
+
+  .kilder2 {
+    display: none;
+  }
+
+
+  /* Footer */
+  footer{
+    background-color: var(--green);
+  }
+
+  .boxFooter {
+    padding: 5rem;
+  }
+
+
+  /*Større skjermer*/
 @media screen and (min-width: 850px) {
-
+  /*Skjuler sidebar på større skjermer*/
   #main, #mySidebar {
       display: none;
   }
 
 }
 
-  /* tablet*/
+  /* Tablet*/
 @media screen and (max-width: 850px) and (min-width: 480px) {
-
   /*Flexbox + main - små endringer*/
     .container {
       display: flex;
@@ -331,10 +330,9 @@ img {
     }
 
     main {
-        width: 100%;
+        width: 95%;
         margin: 1rem;
       }
-
 
        
     /*Header gjøres mindre */
@@ -400,10 +398,11 @@ img {
         margin-left: 16rem;
     }
 
+
     /*Spinning logo i navbar skjules*/
     .logoSpinning2{
       visibility: hidden;
-  }
+    }
 
 
     /* Tittelboks minskes*/
@@ -418,6 +417,7 @@ img {
     .knapp-intro {
       width: 90%;
       margin-bottom: 3rem;
+      margin-left: 2rem;
     }
 
 
@@ -436,24 +436,22 @@ img {
     }
 
 
-
     /*Kilder*/
     .kilder1 {
       display: none;
     }
     .kilder2 {
-      
-      visibility: visible;
+      display: block;
+      padding-top: 3rem;
+      font-size: smaller;
     }
-
 
 
     /*Gir grønn section full bredde*/
     .grønn-section {
-      width: 105%;
+      width: 100%;
       padding-bottom: 2.9rem;
     }
-
 
 
     /*Endre størrelse på grafer*/
@@ -471,18 +469,18 @@ img {
 
 /* mobile */
 @media screen and (max-width: 480px){
-
    /* header flyttes*/
-   header {
-    justify-content: flex-start;
-}
+    header {
+      justify-content: flex-start;
+    }
+
     header img {
         width: 6rem;
         padding: 0.5rem;
     } 
 
 
-    /* Navbar forsvinner */
+  /* Navbar forsvinner */
     .navbar-home {
       display: none;
     }
@@ -495,8 +493,7 @@ img {
       display: none;
     }
 
-    /* Går over til toggle menu */
-      /* Hentet fra https://stackoverflow.com/questions/63960934/i-want-to-close-this-side-bar-by-clicking-same-button*/
+  /* Går over til toggle menu */
     nav {
       height: 100%;
       width: 0;
@@ -510,57 +507,59 @@ img {
       padding-top: 5rem;
       font-family: 'Bebas Neue', sans-serif;
       letter-spacing: 0.2rem;
-      }
+    } 
       
-      nav a {
-          padding: 1rem;
-          text-decoration: none;
-          font-size: 1.3rem;
-          color: #f5fffa;
-          display: block;
-          line-height: 0.01rem;
-      }
-      
-      nav a:hover {
-          color: #d1eacd;
-          transition: 0.3s;
-      }
-        
-      .openbtn {
-          font-size: 1.5rem;
-          cursor: pointer;
-          background-color: transparent;
-          color: var(--green);
-          padding: 0.3rem 0.5rem;
-          border: none;
-          margin-bottom: 1rem;
-      }
-        
-      .openbtn:hover {
-          background-color: transparent;
-          transition: 0.2s;
-      }
-      
-      #main {
-          transition: 0.5s;
-          margin-left: 1rem;
-      }
-      
-      #mySidebar.open {
-          width: 15rem;
-      }
-      
-      #main.open {
-          margin-left: 16rem;
-      }
-
-        /*Gjør img inni nav mindre*/
-      .logoSpinning2 img{
-        width: 7rem;
+    nav a {
         padding: 1rem;
-      }
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #f5fffa;
+        display: block;
+        line-height: 0.01rem;
+    }
+    
+    nav a:hover {
+        color: #d1eacd;
+        transition: 0.3s;
+    }
+        
+    .openbtn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--green);
+        padding: 0.3rem 0.5rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+        
+    .openbtn:hover {
+        background-color: transparent;
+        transition: 0.2s;
+    }
+    
+    #main {
+        transition: 0.5s;
+        margin-left: 1rem;
+    }
+    
+    #mySidebar.open {
+        width: 15rem;
+    }
+    
+    #main.open {
+        margin-left: 16rem;
+    }
 
-    /*Flexbox + main - små endringer*/
+
+  /*Gjør img inni nav mindre*/
+    .logoSpinning2 img{
+      width: 7rem;
+      padding: 1rem;
+    }
+
+
+  /*Flexbox + main - små endringer*/
     .container {
       display: flex;
       flex-direction: column;
@@ -573,7 +572,7 @@ img {
     }
 
     main {
-      width: 100%;
+      width: 95%;
       margin: 1rem;
     }
 
@@ -588,39 +587,41 @@ img {
     .knapp-intro {
       width: 90%;
       margin-bottom: 3rem;
+      margin-left: 1rem;
     }
 
 
   /*Endrer størrelse på grafer*/
-  .graf1{
-    width: 80%;
-  }
-
-  .graf2 {
-    margin-top: 0.1rem;
-    margin: 0.1rem auto 5rem auto
-  }
-
-  .graf h1{
-      font-size: 0.85rem ;
-      text-align: center;
+    .graf1{
+      width: 80%;
     }
 
-  .graf p {
-      font-size: 0.7rem;
+    .graf2 {
+      margin-top: 0.1rem;
+      margin: 0.1rem auto 5rem auto
     }
+
+    .graf h1{
+        font-size: 0.85rem ;
+        text-align: center;
+      }
+
+    .graf p {
+        font-size: 0.7rem;
+      }
+    
 
 
   /*Gir grønn section nok lengde og bredde*/
-  .grønn-section {
-    padding-bottom: 9rem;
-    width: 105%;
-  }
+    .grønn-section {
+      padding-bottom: 9rem;
+      width: 100%;
+    }
 
 
 
   /*Paragraf endres - mindre tekst*/
-  .boxP1 {
+    .boxP1 {
       padding: 1rem;
       width: 100%;
       font-size: smaller;
@@ -628,27 +629,25 @@ img {
       margin-top: -3rem;
     }
 
-   .boxP3 {
-    margin-top: 2.5rem;
-   } 
+    .boxP3 {
+      margin-top: 4.5rem;
+    } 
 
-  .boxP4 {
-    width: 100%;
-  }
+    .boxP4 {
+      width: 100%;
+    }
 
 
   /*Kilder*/
-  .kilder1 {
-    display: none;
-  }
+    .kilder1 {
+      display: none;
+    }
 
-  .kilder2 {
-    font-size: smaller;
-    visibility: visible;
-  }
-
- 
+    .kilder2 {
+      font-size: smaller;
+    }
 }
+
 /*Media for å fikse småting*/
 @media screen and (min-width: 850px){
   /*Gjemme logo i navbar*/
@@ -663,7 +662,7 @@ img {
 }
 @media screen and (min-width: 1370px){
   /*Flytte tekst for å unngå overlapping med graf2*/
-  .boxP4 {
-    margin-top: 4rem;
-  }
+    .boxP4 {
+      margin-top: 4rem;
+    }
 }
