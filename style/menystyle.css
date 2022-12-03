@@ -313,6 +313,8 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         font-size: 1.4rem;
         color: #f5fffa;
         display: block;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.2rem;
     }
     
     nav a:hover {
