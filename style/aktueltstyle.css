@@ -61,9 +61,8 @@ header img {
 }
 
 
-/* main og tittel sections*/
+/* main og tittel section*/
 main {
-    font-family: 'Roboto', sans-serif;
     margin: 3rem;
     display: table;
     width: 95%;
@@ -82,7 +81,7 @@ main {
 /* boks til tittel*/
 .boxTittel {
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-left: 3rem;
     width: 100%;
     height: auto;
@@ -184,7 +183,6 @@ main {
     background-color: white;
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -232,7 +230,6 @@ main {
     margin: 3rem auto 3rem auto;
     padding: 4rem;
     padding-bottom: 6.5rem;
-    font-family: 'Roboto', sans-serif;
     background-color: var(--green);
     color: var(--white);
   }
@@ -644,6 +641,8 @@ main {
     }
 
     .kilder2 {
+      display: block;
+      padding-top: 3rem;
       font-size: smaller;
     }
 }
@@ -660,7 +659,7 @@ main {
       height: 22rem;
     }
 }
-@media screen and (min-width: 1370px){
+@media screen and (min-width: 1200px){
   /*Flytte tekst for å unngå overlapping med graf2*/
     .boxP4 {
       margin-top: 4rem;
