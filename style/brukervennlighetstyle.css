@@ -60,15 +60,9 @@ header {
 }
 
 /*Bilder*/
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 50rem;
-    align-items: center;
-}
-
 .bilder {
     margin-top: 2rem;
+    width: 50rem;
 }
 
 .bilder img {
@@ -167,7 +161,7 @@ footer{
     }
 
     /*Bilder*/
-    .container {
+    .bilder {
         width: 90%;
     }
 }

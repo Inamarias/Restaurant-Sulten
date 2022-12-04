@@ -311,6 +311,8 @@ form {
     margin: 0.5rem 0;
 }
 
+/* Opacity: 0 for å gjøre label usynlig, men likevel være 
+    brukervennlig for de som bruker screen readers */
 label {
     position: absolute;
     left: 1rem;
