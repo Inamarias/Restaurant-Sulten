@@ -9,6 +9,7 @@
         <title>Booking</title>
         <link rel="icon" href="images/utropstegn.png" type="image/x-icon">
         
+        <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 
     <header>
 
-        <div class="bildeseksjon">    
+        <div class="logo">    
             <a href="index.html">
                 <img src="images/logo2.png" alt="Sulten hjemlogo">
             </a>
@@ -57,13 +58,14 @@
 
     <main>
         <!--Bildet i header-->
-        <div class="container">
-            <img src="images/restaurantMeny.jpg" alt="restaurant med bord og stoler">
+        <div class="headerbilde">
+            <!--Fotograf: Jay Wennington Kilde https://unsplash.com/photos/N_Y88TWmGwA -->
+            <img src="images/1.jpg" alt="langbord med fokus på en fiskemiddag">
         </div>
     
         <!--Overskrift og info om booking av restauranten-->
-        <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
         <div class="første-tekst">
+            <h1>Leter du etter et sted du kan ha din neste sammenkomst?</h1>
             <p>Sulten er ikke bare en restaurant, men et lokale du kan leie til din neste sammenkomst! Lokalet er perfekt til alt fra bryllup og middager til utstillinger eller møter. Atmosfæren i lokalet er avslappende, koselig og moderne. Du vil absolutt føle deg hjemme her! Lokalet rommer opp til 50 sitteplasser og 20 ståplasser så her er det masse plass! Om dere i tillegg kunne tenke dere å få servert mat, tilbyr vi servering av kjempedeilig mat til store eller små begivenheter. Vi har til og med en bar hvor det serveres all slags drikke på kveldene. Kontakt oss om du ønsker servering av mat. </p>
         </div>
 
@@ -76,16 +78,16 @@
         <div class="kort-info">
             <div class="bredde1">
                 <div class="kapasitet">
-                    <h3>10</h3><p>Bord</p>
+                    <h2>10</h2><p>Bord</p>
                 </div>
                 <div class="kapasitet">
-                    <h3>50</h3><p>Sitteplasser</p>
+                    <h2>50</h2><p>Sitteplasser</p>
                 </div>
                 <div class="kapasitet">
-                    <h3>50 m²</h3><p>Areal</p>
+                    <h2>50 m²</h2><p>Areal</p>
                 </div>
                 <div class="kapasitet">
-                    <h3>20</h3><p>Ståplasser</p>
+                    <h2>20</h2><p>Ståplasser</p>
                 </div>
             </div>
         </div>
@@ -166,16 +168,26 @@
             <!--skrive alt bilde-->
             <h2>Bilder</h2>
             <div class="scroll">
-            <img src="images/1.jpg" alt="bilde"/>
-            <img src="images/2.jpg" alt="bilde"/>
-            <img src="images/3.jpg" alt="bilde"/>
-            <img src="images/4.jpg" alt="bilde"/>
-            <img src="images/5.jpg" alt="bilde"/>
-            <img src="images/6.jpg" alt="bilde"/>
-            <img src="images/7.jpg" alt="bilde"/>
-            <img src="images/8.jpg" alt="bilde"/>
-            <img src="images/9.jpg" alt="bilde"/>
-            <img src="images/10.jpg" alt="bilde"/>
+            <!--Fotograf: Jay Wennington Kilde https://unsplash.com/photos/N_Y88TWmGwA -->
+            <img src="images/1.jpg" alt="langbord med fokus på en fiskemiddag"/>
+            <!--Fotograf: Chasse Sauvage Kilde https://unsplash.com/photos/zlUGL4hBHcw -->
+            <img src="images/2.jpg" alt="Koldtbord med diverse desserter, som muffins og frukt"/>
+            <!--Fotograf: Lee Campbell Kilde https://unsplash.com/photos/31QfYo1h32o -->
+            <img src="images/3.jpg" alt="Barista som lager kaffe"/>
+            <!--Fotograf: Nafinia Putra Kilde https://unsplash.com/photos/Kwdp-0pok-I -->
+            <img src="images/4.jpg" alt="Kaffebar med ulike kaffetyper bak en disk"/>
+            <!--Fotograf: shawnanggg Kilde https://unsplash.com/photos/nmpW_WwwVSc -->
+            <img src="images/5.jpg" alt="Oversikt over hele restauranten"/>
+            <!--Fotograf: Zakaria Zayane Kilde https://unsplash.com/photos/0uAVsDcyD0M -->
+            <img src="images/6.jpg" alt="Restaurant med bord og stoler"/>
+            <!--Fotograf: Bee Balogun Kilde https://unsplash.com/photos/KGyzk-EvTwQ -->
+            <img src="images/7.jpg" alt="Dj som spiller musikk for folk som danser"/>
+            <!--Fotograf: Mihai Moisa Kilde https://unsplash.com/photos/Djtc1T38-GY -->
+            <img src="images/8.jpg" alt="Utsiden av restauranten med stoler og bord"/>
+            <!--Fotograf: Fahmi Fakhrudin Kilde https://unsplash.com/photos/nzyzAUsbV0M -->
+            <img src="images/9.jpg" alt="Barista som heller melk i en kaffekopp"/>
+            <!--Fotograf: Toa Heftiba Kilde https://unsplash.com/photos/QnUywvDdI1o -->
+            <img src="images/10.jpg" alt="Lite bord ved vinduet med en kaffekopp og bok"/>
             </div>
             <!--Finger for å vise at du kan swipe-->
             <div class="finger">
@@ -216,6 +228,10 @@
                 <input type="text" id="dato" name="dato" placeholder="Dato" onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
             <div class="booking-input">
+                <label for="antall-personer">Antall personer</label>
+                <input type="number" id="antall-personer" name="fornavn" placeholder="Antall personer">
+            </div>
+            <div class="booking-input">
                 <label for="starttid">Starttid</label>
                 <input type="text" id="starttid" name="starttid" placeholder="Starttid" onfocus="(this.type='time')" onblur="(this.type='text')">
             </div>
@@ -228,15 +244,11 @@
                 <input type="text" id="anledning" name="anledning" placeholder="Anledning">
             </div>
             <div class="booking-input">
-                <label for="antall-personer">Antall personer</label>
-                <input type="number" id="antall-personer" name="fornavn" placeholder="Antall personer">
-            </div>
-            <div class="booking-input">
                 <label for="melding">Melding</label>
                 <input type="text" id="melding" name="melding" placeholder="Melding">
             </div>
-        </form>
             <button class="booking-button" type="submit">SEND</button>
+        </form>
         </div> 
 
     </main>
@@ -246,12 +258,12 @@
         <!--Åpningstider, kontaktinfo, adresse-->
         <div class="rad-footer">
             <div class="kolonne-footer">
-                <h1>Åpningstider</h1>
+                <h2>Åpningstider</h2>
                 <p>Man - tor 10 - 23</p>
                 <p>Fre - søn 12 - 23</p>
             </div>
             <div class="kolonne-footer">
-                <h1>Kontaktinfo</h1>
+                <h2>Kontaktinfo</h2>
                 <a href="tel:657 56 589" class="fa fa-phone" style="color: #f5fffa;" title="Kontakt oss via telefon"></a>
                 <a href="tel:657 56 589" class="telefonnr" style="color: #f5fffa;">657 56 589</a>
                 <br>
@@ -261,7 +273,7 @@
                 <a href="mailto:restaurantsulten@sulten.com" class="fa fa-envelope fa-lg" title="Kontakt oss via mail"></a>
             </div>
             <div class="kolonne-footer">
-                <h1>Adresse</h1>
+                <h2>Adresse</h2>
                 <p>Skomværsgata 2</p>
                 <p>3921 Porsgrunn</p>
             </div>

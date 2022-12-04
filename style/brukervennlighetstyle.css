@@ -1,15 +1,16 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color:#382c20; 
     letter-spacing: 0.02rem;
     font-weight: 300;
 }
-/* Header */
 
+/* Header */
 header {
     background-color: #d1eacd;
 }
@@ -24,7 +25,6 @@ header {
 }
 
 /* Navbar */
-
 .navbar-home {
     text-align: center;
     padding: 3rem 0 2rem 0;
@@ -44,96 +44,49 @@ header {
     transition: 0.2s;
 }
 
-/* Størrelser og fonts*/
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    padding-bottom: 4rem;
-    padding: 2rem;
-}
-
-h2 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: #637863;
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-}
-
-h3 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    overflow: hidden;
-    font-size: 1.4rem;
-    
-}
-
-span {
-    font-size: 1.4rem;
-    font-family: 'Bebas Neue', cursive;
-}
-
 /* Bokser til tekst*/
-.box1 {
-    margin: 2rem 6rem;
-    font-size: 1.1rem;
+.tekst {
+    width: 50rem;
+    margin: 0 auto;
+    margin-top: 4rem;
     letter-spacing: 0.02rem;
-    line-height: 2rem;
+    line-height: 1.7rem;
+}
 
-}
-.box2 {
-    margin: 2rem 6rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.02rem;
-    line-height: 2rem;
-}
-.box3 {
-    margin: 2rem 6rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.02rem;
-    line-height: 2rem;
+.tekst h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    margin: 2rem 0;
 }
 
 /*Bilder*/
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    
-}
-.bildeTekst {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.8rem;
-}
-
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1.5rem;
+    flex-direction: column;
+    width: 50rem;
+    align-items: center;
 }
 
-.item {
-    margin: 1rem 3rem;
+.bilder {
+    margin-top: 2rem;
 }
 
+.bilder img {
+    width: 100%;
+    border: 0.01rem solid #637863;    
+}
 
+.bildeTekst {
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
 
 /* Footer */
-
 footer{
     background-color: #473a35;
+    height: 10rem;
+    margin-top: 3rem;
 }
-.boxFooter {
-    padding: 5rem;
-  }
-
 
 /* Responsive for bigger screens */
 @media screen and (min-width: 850px) {
@@ -142,17 +95,9 @@ footer{
         display: none;
     }
 }
-@media screen and (max-width: 850px) {
-    .box1 h1 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
 
-    .bildeseksjon img {
-        width: 10rem;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width: 850px) {
+
     /* Går over til toggle menu */
     nav {
         height: 100%;
@@ -211,11 +156,19 @@ footer{
     #mySidebar.open {
         width: 15rem;
     }
+    
+    .tekst {
+        width: 90%;
+    }
 
-    /*Flexbox stackes*/
+    .tekst h1 {
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    /*Bilder*/
     .container {
-        flex-direction: column;
-        align-items: center;
+        width: 90%;
     }
 }
 
@@ -230,7 +183,6 @@ footer{
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
-
 
     /* Toggle menu */
     .openbtn {

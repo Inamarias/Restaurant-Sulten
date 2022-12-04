@@ -2,8 +2,6 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
-    outline-offset: -1px;
 }
 
 body {
@@ -22,20 +20,20 @@ header {
     font-family: 'Bebas Neue', cursive;
 }
 
-.bildeseksjon {
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.bildeseksjon img {
+.logo img {
     width: 20rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 /* Navbar */
 .navbar-home {
     text-align: center;
-    padding: 3rem 0 2rem 0;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 .navbar-home a {
@@ -52,26 +50,18 @@ header {
 }
 
 /* Hovedbilde med tekst */
-.container {
+.headerbilde {
     position: relative;    
 }
 
 /* Fotograf headerbilde: Zakaria Zayane. Kilde https://unsplash.com/photos/0uAVsDcyD0M */
-.container img {
+.headerbilde img {
     width: 100%;
+    height: 50rem;
+    object-fit: cover;
 }
 
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    text-align: center;
-    margin-top: 4rem;
-    letter-spacing: 0.15rem;
-    width: 50rem;
-}
-
+/* Alle h2 overskriftene */
 h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
@@ -79,8 +69,19 @@ h2 {
     font-size: 1.4rem;
 }
 
-/* tekst etter h1, med justify for tekst for å fylle tekst til bredden av boksen */
-.første-tekst {
+/* Overskrift og innledningstekst */
+.første-tekst h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    letter-spacing: 0.15rem;
+    width: 50rem;
+}
+
+.første-tekst p {
     text-align: justify;
     text-align-last: center;
     width: 50rem;
@@ -131,7 +132,7 @@ h2 {
     margin: 0rem;   
 }
 
-.kapasitet h3 {
+.kapasitet h2 {
 font-size: 2.2rem;
 padding-bottom: 0.5rem;
 letter-spacing: 0.1rem;
@@ -255,20 +256,19 @@ span {
     height: 30rem;
     margin-top: 2rem;
     object-fit: cover;
-    border-radius: 0.8rem;
-  }
+}
   
-  .scroll img {
+.scroll img {
     margin-right: 0.5rem;
-    height: 30rem;
-  }
+    height: 29rem;
+}
 
   /* Finger for å vise at du kan swipe */ 
-  .pekefinger img {
+.pekefinger img {
     position: absolute;
     width: 3.5rem;
     transform: rotate(340deg);
-    top: 33.1rem;
+    top: 32rem;
     left: 42.5rem;
 }
 
@@ -278,7 +278,7 @@ span {
     width: 11rem;
     font-size: 1.2rem;
     margin-top: 4.3rem;
-    top: 32.4rem;
+    top: 31.1rem;
     left: 40rem;
 }
 
@@ -290,55 +290,48 @@ span {
     text-align: center;
 }
  
- .booking h2 {
+.booking h2 {
     float: left;
 }
  
- .booking p {
+.booking p {
     margin: 2rem 0rem;
     float: left;
 }
 
-
-
-
 form {
     width: 50rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
-
+    justify-content: space-between;
 }
 
- .booking-input {
+.booking-input {
     position: relative;
+    margin: 0.5rem 0;
 }
 
 label {
     position: absolute;
     left: 1rem;
     top: 1.3rem;
-    width: 20rem;
     opacity: 0;
 }
 
 input {
-    width: 24rem;
+    width: 24.5rem;
     padding: 1rem;
-    margin: 0.5rem 0rem;
-    outline: none;
     border: solid #b4b4b4;
     border-radius: 0.3rem;
     transition: 0.2s;
 }
- 
-
-
-
 
 input:focus {
     outline: 0.15rem solid #637863;
+}
+
+::placeholder {
+    color: #637863;
 }
 
 .booking-button {
@@ -348,9 +341,9 @@ input:focus {
     background-color: #637863;
     color: #f5fffa; 
     padding: 0.6rem;
+    margin-top: 1rem;
     border-radius: 0.8rem;
     letter-spacing: 0.1rem;
-    margin: 1rem 0rem;
     border: none;
     transition: 0.2s;
 }
@@ -358,12 +351,8 @@ input:focus {
 .booking-button:hover {
     background-color: #414d41;
 }
-
-::placeholder {
-    color: #637863;
-}
  
- /* Footer */
+/* Footer */
 footer {
     background-color: #473a35;
     color: #f5fffa;
@@ -395,7 +384,6 @@ footer {
 https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background
 https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 */
-
 .fa {
     padding: 0.3rem;
     margin: 0.3rem 0;
@@ -441,7 +429,7 @@ text-decoration: none;
 color: #382c20;
 }
 
-/* Responsive for bigger screens */
+/* Responsiv for større skjermer */
 @media screen and (min-width: 850px) {
 
     #main, #mySidebar {
@@ -449,14 +437,15 @@ color: #382c20;
     }
 }
 
+/* Responsiv for tablets */ 
 @media only screen and (max-width: 850px) {
     body {
         font-size: 0.9rem;
     }
 
     /* Bildet i header flyttes og gjøres mindre */    
-    .bildeseksjon img {
-        width: 10rem;
+    .logo img {
+        width: 15rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }   
@@ -517,28 +506,32 @@ color: #382c20;
     #mySidebar.open {
         width: 15rem;
     }
+
+    .headerbilde img {
+        height: 30rem;
+    }
  
-    h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
-        letter-spacing: 0.08rem;
+    /* Overskrift og innledningstekst */
+    .første-tekst h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.07rem;
         width: 90%;
+        margin-top: 3rem;
     }
     
-    .tekst {
+    .første-tekst p {
         width: 90%;
         margin-top: 2rem;
     }
     
+    /* Boks med link til booking i bunnen av siden */
     .booking-boks {
         width: 90%;
         margin-top: 3rem;
     }
     
-    .booking-link {
-        font-size: 1.3rem;
-    }
-    
+    /* Enkle fakta om kapasitet */
     .kort-info {
         margin-top: 4rem;
     }
@@ -547,14 +540,14 @@ color: #382c20;
         width: 90%;
     }
 
+    /* Info om fasiliteter og lokalet */
     .mer-info {
         width: 80%;
-        margin-top: 4rem;
     }
 
+    /* Kart og kolasjon */
     .lokasjon {
         width: 90%;
-        margin-top: 4rem;
     }
     
     .kart {
@@ -572,8 +565,10 @@ color: #382c20;
     
     .info-om-lokasjon p {
         text-align: left;
+        margin: 0.5rem 0 1.5rem;
     }
     
+    /* Info om priser */
     .pris {
         height: 20rem;
         margin-top: 4rem;
@@ -583,21 +578,18 @@ color: #382c20;
         margin-bottom: 1rem;
     }
         
-    
     .bredde2 {
         width: 90%;
     }
 
     .boks {
         width: 18%;
-        padding: 0.6rem;
     }
     
-
-    
+    /* Bilder med horisontal scrolling */
     .bilder {
         width: 90%;
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 
     .scroll {
@@ -605,37 +597,39 @@ color: #382c20;
     }
   
     .scroll img {
-        height: 25rem;
+        height: 24rem;
     }
     
-    .pekefinger img {
+    /* For å ta bort finger på mindre skjerm */
+    .pekefinger img, .pekefinger p {
         display: none;
     }
     
-    .pekefinger p {
-        display: none;
-    }
-    
+    /* For booking av lokalet */
     .booking {
        width: 90%;
-       margin-top: 4rem;
+       margin-top: 3rem;
     }
-     /*få teksten til venstre*/
+ 
     .booking p {
-        float: left;
+      text-align: left;
     }
     
-    input {
-        width: 90%;
-        flex-grow: 1;
+    form, .booking-input, input {
+        width: 100%;
     }
 
     /* Info i footer går over til kolonne */
     .rad-footer {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
-    /* Font */
+    .kolonne-footer {
+        margin: 0.5rem;
+    }
+
     .kolonne-footer h1 {
         font-size: 1.2rem;
     }
@@ -645,6 +639,7 @@ color: #382c20;
     }
 }
 
+/* Responsiv for telefoner */ 
 @media only screen and (max-width: 480px) {
     body {
         line-height: 1.5rem;
@@ -655,11 +650,17 @@ color: #382c20;
         font-size: 1.5rem;
         padding: 0.3rem 0.5rem;
     }
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .headerbilde img {
+        height: 20rem;
+    }
     
-    h1 {
+    .første-tekst h1 {
         font-size: 1.8rem;
-        line-height: 2.5rem;
-        margin-top: 3rem;
     }
     
     .kort-info {
@@ -673,8 +674,8 @@ color: #382c20;
     }
     
     .kapasitet {
-        margin: 1.5rem 0rem;  
-        width: 9rem; 
+        margin: 1.6rem 0rem;  
+        width: 9.5rem; 
     }
 
     .mer-info {
@@ -694,26 +695,11 @@ color: #382c20;
     }
     
     .pris {
-        height: 27rem;
-        margin-top: 3rem;
+        height: 22rem;
     }
     
-    .pris {
-        height: 20rem;
-        margin-top: 4rem;
-    }
-    
-    .pris h2 {
-        margin-bottom: 1rem;
-    }
-        
-    .bredde2 {
-        width: 90%;
-    }
-
     .boks {
         width: 5rem;
-        padding: 0.6rem;
     }
     
     .bilder {
@@ -721,15 +707,19 @@ color: #382c20;
     }
 
     .scroll {
-        height: 15rem;
+        height: 19rem;
     }
   
     .scroll img {
-        height: 15rem;
+        height: 18rem;
     }
     
     .booking {
        margin-top: 3rem;
     }
 
+    .rad-footer {
+        flex-direction: column;
+    }
   }
+
