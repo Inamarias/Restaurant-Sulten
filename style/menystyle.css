@@ -329,7 +329,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     }
       
     .openbtn {
-        font-size: 2rem;
+        font-size: 2.5rem;
         cursor: pointer;
         background-color: transparent;
         color: #473a35;
@@ -458,12 +458,6 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
     .headerbilde img {
         height: 20rem;
-    }
-    
-    /* Toggle menu */
-    .openbtn {
-        font-size: 2.5rem;
-        padding: 0.3rem 0.5rem;
     }
     
     body {
