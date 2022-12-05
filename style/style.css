@@ -206,7 +206,7 @@ color: #382c20;
     
     /* Bildet i header flyttes og gjøres mindre */    
     .logo img {
-        width: 10rem;
+        width: 15rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
@@ -273,10 +273,8 @@ color: #382c20;
         height: 30rem;
     }
 
-    /* Info i footer går over til kolonne */
-    .rad-footer {
-        flex-direction: column;
-        align-items: center;
+    .kolonne-footer {
+        margin: 0.5rem;
     }
 
     /* Footer */
@@ -309,5 +307,11 @@ color: #382c20;
         font-size: 1rem;
         padding: 0.5rem 0.8rem;
     }
+
+        /* Info i footer går over til kolonne */
+        .rad-footer {
+            flex-direction: column;
+            align-items: center;
+        }
     
 }
