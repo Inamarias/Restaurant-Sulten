@@ -14,12 +14,12 @@ body {
 header {
     background-color: #d1eacd;
 }
-.bildeseksjon {
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.bildeseksjon img {
+.logo img {
     width: 20rem;
     padding-top: 3rem;
 }
@@ -89,9 +89,15 @@ footer{
         display: none;
     }
 }
-
+/*Responsive for tablet*/
 @media screen and (max-width: 850px) {
-
+    /* Bildet i header flyttes og gjøres mindre */    
+    .logo img {
+        width: 10rem;
+        width: 15rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
     /* Går over til toggle menu */
     nav {
         height: 100%;
@@ -165,22 +171,18 @@ footer{
         width: 90%;
     }
 }
-
+/*Responsive for mobile*/
 @media only screen and (max-width: 480px) {
     /* Header flyttes */
     header {
         justify-content: flex-start;
     }
 
-    .bildeseksjon img {
+    .logo img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
 
-    /* Toggle menu */
-    .openbtn {
-        font-size: 2.5rem;
-        padding: 0.3rem 0.5rem;
-    }
+
 }
