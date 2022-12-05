@@ -67,6 +67,8 @@ header {
 
 .headerbilde img {
     width: 100%;
+    height: 40rem;
+    object-fit: cover;
 }
 
 .meny {
@@ -105,7 +107,7 @@ h3 {
     font-size: 1.4rem;
     font-weight: 300;
 }
-
+/*Prisen*/
 span {
     font-size: 1.4rem;
     font-family: 'Bebas Neue', cursive;
@@ -292,7 +294,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 @media screen and (max-width: 850px) {
 
     .logo img {
-        width: 10rem;
+        width: 15rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
@@ -356,6 +358,10 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         width: 15rem;
     }
 
+    .headerbilde img {
+        height: 30rem;
+    }
+
 /*Mindre skriftstørrelse*/
     body {
         font-size: 0.9rem;
@@ -387,7 +393,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     .frokostmeny {
         display: flex;
         justify-content: center;
-        flex-direction: column;    
+        flex-direction: column-reverse; /*legger bildet over frokostmeny*/   
     }
 
     .lunsjmeny {
@@ -419,10 +425,15 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     }
 
     .rad-footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+    }
+    .kolonne-footer {
+        margin: 0.5rem;
     }
 }
+
 
 @media only screen and (max-width: 800px) {
 
@@ -444,6 +455,10 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
+
+    .headerbilde img {
+        height: 20rem;
+    }
     
     /* Toggle menu */
     .openbtn {
@@ -458,5 +473,10 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
     .centered { 
         font-size: 1rem;
         padding: 0rem;
+    }
+
+    .rad-footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
