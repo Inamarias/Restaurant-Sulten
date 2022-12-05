@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f5fffa;
+    background-color: #d1eacd;
     color: #382c20;
     font-weight: 300;
     line-height: 1.7rem;
@@ -14,7 +14,6 @@ body {
 
 /* Header */
 header {
-    background-color: #d1eacd;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -171,25 +170,25 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 .fa-instagram {
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
--webkit-background-clip: text;
-        background-clip: text;
--webkit-text-fill-color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-twitter {
-background: #55ACEE;
-color: white;
-border-radius: 50%;
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
 }
 
 .fa-phone {
-color: #382c20;
+    color: #382c20;
 }
 
 .telefonnr {
-text-decoration: none;
-color: #382c20;
+    text-decoration: none;
+    color: #382c20;
 }
 
 /* Responsive for bigger screens */
@@ -273,11 +272,11 @@ color: #382c20;
         height: 30rem;
     }
 
+    /* Footer */
     .kolonne-footer {
         margin: 0.5rem;
     }
 
-    /* Footer */
     .kolonne-footer h1 {
         font-size: 1.2rem;
     }
