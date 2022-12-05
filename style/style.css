@@ -25,13 +25,13 @@ header {
 
 .bildeseksjon img {
     width: 20rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 /* Navbar */
 .navbar-home {
     text-align: center;
-    padding: 3rem 0 2rem 0;
+    padding: 1.5rem;
 }
 
 .navbar-home a {

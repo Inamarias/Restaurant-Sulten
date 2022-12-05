@@ -18,21 +18,21 @@ header {
     background-color: #d1eacd;
 }
 
-.bildeseksjon {
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.bildeseksjon img {
+.logo img {
     width: 20rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 
 /* Navbar */
 
 .navbar-home {
     text-align: center;
-    padding: 3rem 0 2rem 0;
+    padding: 1.5rem;
 }
 
 .navbar-home a {
@@ -51,7 +51,7 @@ header {
 
 
 /*Hovedbilde med tekst.*/
-.container {
+.headerbilde {
     position: relative;    
 }
 
@@ -65,7 +65,7 @@ header {
     background: rgba(252, 252, 252, 0.90); /* bakgrunn for tekst med 0.90 transparency */
 }
 
-.container img {
+.headerbilde img {
     width: 100%;
 }
 
@@ -291,7 +291,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
 @media screen and (max-width: 850px) {
 
-    .bildeseksjon img {
+    .logo img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
@@ -439,7 +439,7 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
         justify-content: flex-start;
     }
     
-    .bildeseksjon img {
+    .logo img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
