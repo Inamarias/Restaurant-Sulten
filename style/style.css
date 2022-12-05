@@ -239,7 +239,7 @@ color: #382c20;
     }
       
     .openbtn {
-        font-size: 2rem;
+        font-size: 2.5rem;
         cursor: pointer;
         background-color: transparent;
         color: #473a35;
@@ -290,12 +290,6 @@ color: #382c20;
 
 /* Responsive for mobile devices */
 @media screen and (max-width: 480px) {
-    
-    /* Toggle menu */
-    .openbtn {
-        font-size: 1.5rem;
-        padding: 0.3rem 0.5rem;
-    }
 
     /* Slideshow blir mindre */
     .bilde-slideshow img {
@@ -303,15 +297,15 @@ color: #382c20;
     }
 
     /* Neste- og tilbakeknapper */
-    .knapp-tilbake, .knapp-neste {
+    .knapp-tilbake, .knapp-frem {
         font-size: 1rem;
         padding: 0.5rem 0.8rem;
     }
 
-        /* Info i footer går over til kolonne */
-        .rad-footer {
-            flex-direction: column;
-            align-items: center;
-        }
+    /* Info i footer går over til kolonne */
+    .rad-footer {
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
