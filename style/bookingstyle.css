@@ -133,9 +133,9 @@ h2 {
 }
 
 .kapasitet h2 {
-font-size: 2.2rem;
-padding-bottom: 0.5rem;
-letter-spacing: 0.1rem;
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .kapasitet p {
@@ -410,25 +410,25 @@ https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 }
 
 .fa-instagram {
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
--webkit-background-clip: text;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
         background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-twitter {
-background: #55ACEE;
-color: white;
-border-radius: 50%;
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
 }
 
 .fa-phone {
-color: #382c20;
+    color: #382c20;
 }
 
 .telefonnr {
-text-decoration: none;
-color: #382c20;
+    text-decoration: none;
+    color: #382c20;
 }
 
 /* Responsiv for større skjermer */
@@ -480,7 +480,7 @@ color: #382c20;
     }
       
     .openbtn {
-        font-size: 2rem;
+        font-size: 2.5rem;
         cursor: pointer;
         background-color: transparent;
         color: #473a35;
@@ -621,7 +621,7 @@ color: #382c20;
         width: 100%;
     }
 
-    /* Info i footer går over til kolonne */
+    /* Footer */
     .rad-footer {
         flex-direction: row;
         align-items: center;
@@ -720,6 +720,7 @@ color: #382c20;
        margin-top: 3rem;
     }
 
+    /* Info i footer går over til kolonne */
     .rad-footer {
         flex-direction: column;
     }
