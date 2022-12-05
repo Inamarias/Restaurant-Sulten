@@ -201,6 +201,10 @@ span {
     padding: 1.5rem;
 }
 
+#varm-drikke, #kald-drikke {
+    line-height: 2.5rem;
+}
+
 /* Footer */
 
 footer {
