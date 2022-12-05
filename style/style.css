@@ -18,12 +18,12 @@ header {
     font-family: 'Bebas Neue', cursive;
 }
 
-.bildeseksjon {
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.bildeseksjon img {
+.logo img {
     width: 20rem;
     padding-top: 1.5rem;
 }
@@ -205,7 +205,7 @@ color: #382c20;
 @media screen and (max-width: 850px) {
     
     /* Bildet i header flyttes og gjøres mindre */    
-    .bildeseksjon img {
+    .logo img {
         width: 10rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
